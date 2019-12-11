@@ -1,0 +1,301 @@
+---
+title: "Kalmthout analyse van de monitoringgegevens na de brand van 2011"
+author: "Marijke Thoonen, Hans Van Calster"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# in deze chunk zet je alle R-packages die je nodig hebt
+library(knitr)
+# in onderstaande kan je chunk opties specifiëren die gelden voor alle chunks 
+# in het document. Zie https://yihui.name/knitr/options/
+opts_chunk$set(echo = TRUE,
+               fig.height = 100/25.4,
+               fig.width = 150/25.4)
+
+library(DBI)
+library(lme4)
+library(ggeffects)
+# ontbrekende packages installeren met install.packages("package-name")
+# onderstaande is een functie om data vanuit een accessdatabank binnen te halen
+# vereist 32-bit R versie
+# Veranderen in Tools -> Global options -> Rversion: Change
+source("./src/connect_to_access_dbi.R")
+# bij inlezen van text wordt dit als character ipv factor variabele ingelezen met volgende optie
+options(stringsAsFactors = FALSE)
+library(tidyverse)
+```
+
+## Design
+
+Kalmthout: monitoring herstel na brand 2011
+
+- Locaties (6-tal)
+  - begraasd, niet begraasd (exclosure)
+  - afgebrand, niet afgebrand
+
+- Jaren: 2011 - 2012 - 2013
+  - Maanden: Juni - Juli - Augustus - September
+  
+- Metingen
+  - 5-tal plots binnen de exclosure en 5 buiten de exclosure
+  - bedekkingen
+    - vegtype: Mos, strooisel, pijpestrootje, heide, fijn gras, open, andere
+  - 8 metingen van vegetatiehoogte: variantie = maat voor structuur
+  - verschillende analyses plant:
+    - ruw eiwit, ligninegehalte, ...
+
+
+## Voorbereiden van de data voor analyse
+
+<!--tekst tussen deze tekens is commentaar die niet wordt getoond in de html output-->
+<!--Structuur van de mappen:
+./src/
+./data/
+mijn_Rstudioprojectnaam.Rproj
+-->
+
+<!--chunks gebruiken om r-code in logische blokken te organiseren-->
+
+```{r eval = FALSE}
+# naam van de databank toevoegen aan het path
+con <- connect_to_access_dbi(db_file_path = "./data/")
+
+# om een lijst van tabellen in de databank te tonen:
+dbListTables(con)
+# om de kolomnamen van een tabel te kennen:
+dbListFields(con, "tabelnaam")
+
+# om een tabel uit de databank te halen:
+tabelnaam <- dbReadTable(con, "tabelnaam")
+
+# Om een SQL query binnen te halen:
+res <- dbSendQuery(con, "SELECT * FROM tabelnaam WHERE kolomnaam = 4")
+dbFetch(res)
+
+# om de verbinding met de databank te verbreken:
+dbDisconnect(con)
+```
+
+
+Fictief voorbeelddatasetje
+
+```{r}
+kh <- expand.grid(LocatieID = 1:6,
+                  plotID = 1:10,
+                  Jaar = 2011:2013,
+                  Maand = 6:9,
+                  VegType = c("Open", "Mos", "Strooisel","Pijpestrootje", 
+                              "Fijn gras", "Heide", "Andere"), 
+                  stringsAsFactors = FALSE) %>%
+  mutate(Begrazing = ifelse(plotID <= 5, "begraasd", "niet begraasd"),
+         Bedekking = rbinom(n = n(), size = 1, prob = 0.8) * 
+           rbeta(n = n(), shape1 = 2, shape2 = 2) * 100)
+
+```
+
+<!--aparte chunks gebruiken wanneer die output genereren -->
+<!-- 1 figuur of tabel = 1 chunk-->
+
+```{r}
+glimpse(kh)
+```
+
+
+```{r}
+kh <- kh %>%
+  mutate(LocatieID = factor(LocatieID),
+         plotID = factor(plotID),
+         Jaar = factor(Jaar), # we beschouwen Jaar als factor in de analyses omdat er nog maar 3 jaren zijn
+         Maand = factor(Maand))
+  
+```
+
+
+
+```{r}
+# omzetten van lang formaat naar breed formaat
+kh_breed <- kh %>%
+  spread(VegType, Bedekking)
+```
+
+
+```{r}
+glimpse(kh_breed)
+```
+
+
+
+## Verkennende analyse
+
+vb1
+
+```{r}
+kh %>%
+  filter(Maand == 8) %>%
+  ggplot(aes(x = VegType, y = Bedekking)) +
+  geom_point(alpha = 0.3, position = position_dodge(width = 0.4)) + 
+  # gemiddelde +/- 95% bootstrap betrouwbaarheidsintervallen
+  # voor elke locatie
+  stat_summary(aes(group = LocatieID),
+               fun.data = mean_cl_boot, 
+               position = position_dodge(width = 0.4),
+               colour = "red") + 
+  facet_grid(Jaar~Begrazing) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+```
+
+vb2
+
+```{r}
+kh %>%
+  filter(Maand == 8) %>%
+  ggplot(aes(x = Begrazing, y = Bedekking)) +
+  geom_point(alpha = 0.3, position = position_dodge(width = 0.4)) + 
+  # gemiddelde +/- 95% bootstrap betrouwbaarheidsintervallen
+  # voor elke locatie
+  stat_summary(aes(group = LocatieID),
+               fun.data = mean_cl_boot, 
+               position = position_dodge(width = 0.4),
+               colour = "red") + 
+  facet_grid(Jaar~VegType)+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+```
+
+vb3
+
+```{r}
+kh %>%
+  filter(Maand == 8) %>%
+  ggplot(aes(x = Jaar, y = Bedekking)) +
+  geom_point(alpha = 0.3, position = position_dodge(width = 0.4)) + 
+  # gemiddelde +/- 95% bootstrap betrouwbaarheidsintervallen
+  # voor elke locatie
+  stat_summary(aes(group = LocatieID),
+               fun.data = mean_cl_boot, 
+               position = position_dodge(width = 0.4),
+               colour = "red") + 
+  facet_grid(Begrazing~VegType)+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+```
+
+
+
+enzovoort
+
+
+
+## Modelbouw
+
+Transformeer de bedekkingen (0 - 100%) zodat ze met een Gaussiaanse distributie kunnen geanalyseerd worden (niet helemaal juist...).
+
+
+```{r}
+samplesize <- length(unique(kh$LocatieID:kh$plotID))
+
+# transformation
+my_qlogis <- function(x) {
+  qlogis((x / 100 * (samplesize - 1) + 0.5) / samplesize)
+}
+
+# backtransformation
+my_plogis <- function(x) {
+  x <- plogis(x)
+  x <- (x * samplesize - 0.5) / (samplesize - 1)
+  x # proportie, geen percentage
+}
+
+#x <- my_qlogis(kh$Bedekking)
+#bb <- my_plogis(x)
+#all.equal(bb*100, kh$Bedekking)
+
+kh <- kh %>%
+  mutate(logitbedekking = my_qlogis(Bedekking))
+
+```
+
+
+Fit een mixed model voor de bedekkingen in Augustus
+
+```{r}
+mfull <- lmer(logitbedekking ~ Begrazing*Jaar*VegType + 
+                (1|LocatieID) + (1|LocatieID:plotID),
+              data = kh %>% 
+                filter(Maand == 8))
+```
+
+Parameterschattingen:
+
+```{r}
+summary(mfull)
+```
+
+
+## Modelselectie
+
+De random component zou ik behouden: is nodig "by design".
+
+Op de fixed component is eventueel wel verdere vereenvoudiging mogelijk.
+
+Zie 5.10.7 in Zuur et al. 2009 (https://drive.google.com/file/d/0B7K_7SGyjAgMa1NZY0hZem5MS2s/view)
+
+
+
+
+## Modelvalidatie
+
+```{r}
+plot(mfull)
+```
+
+Later verder te bekijken
+
+
+## Modelvisualisatie
+
+
+Visualisatie van de parameterschattingen
+
+zie https://cran.r-project.org/web/packages/ggeffects/vignettes/marginaleffects.html
+en https://cran.r-project.org/web/packages/ggeffects/vignettes/plotmethod.html
+
+```{r}
+mpred <- ggpredict(mfull, 
+                   terms = c("Begrazing", 
+                             "Jaar",
+                             "VegType"), 
+                   x.as.factor = TRUE)
+mpred <- mpred %>%
+  mutate_at(.vars = vars("predicted", "conf.low", "conf.high"),
+            .funs = my_plogis)
+```
+
+
+```{r}
+ggplot(mpred, 
+       aes(x = x, y = predicted, colour = group)) + 
+  geom_point(position = position_dodge(width = 0.5)) + 
+  geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+           position = position_dodge(width = 0.5),
+           width = 0.2) + 
+  facet_wrap(~facet) + 
+  scale_y_continuous("Bedekking", labels = scales::percent) + 
+  theme_light() + 
+  theme(axis.title.x = element_blank())
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

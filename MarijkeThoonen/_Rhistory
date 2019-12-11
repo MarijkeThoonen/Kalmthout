@@ -1,0 +1,512 @@
+mfull <- lmer(logitbedekking ~ Begrazing*Jaar*VegType +
+(1|LocatieID) + (1|LocatieID:plotID),
+data = kh %>%
+filter(Maand == 8))
+summary(mfull)
+mpred <- ggpredict(mfull, terms = "Bedekking")
+kh
+mpred <- ggpredict(mfull, terms = "Begrazing")
+plot(mpred, facet = TRUE)
+mpred <- ggpredict(mfull, terms = c("Begrazing", "Jaar", "VegType"))
+plot(mpred, facet = TRUE)
+backtransform <- function(x) {
+x <- plogis(x)
+x <- (x * samplesize - 0.5) / (samplesize - 1)
+x # proportie, geen percentage
+}
+mpred <- ggpredict(mfull, terms = c("Begrazing [backtransform]",
+"Jaar [backtransform]",
+"VegType [backtransform]"))
+samplesize <- length(unique(kh$LocatieID:kh$plotID))
+# transformation
+my_qlogis <- function(x) {
+qlogis((x / 100 * (samplesize - 1) + 0.5) / samplesize)
+}
+# backtransformation
+my_plogis <- function(x) {
+x <- plogis(x)
+x <- (x * samplesize - 0.5) / (samplesize - 1)
+x # proportie, geen percentage
+}
+mfull <- lmer(my_qlogis(Bedekking) ~ Begrazing*Jaar*VegType +
+(1|LocatieID) + (1|LocatieID:plotID),
+data = kh %>%
+filter(Maand == 8))
+summary(mfull)
+mpred <- ggpredict(mfull, terms = c("Begrazing [my_plogis]",
+"Jaar [my_plogis]",
+"VegType [my_plogis]"))
+kh$Bedekking
+my_qlogis(kh$Bedekking)
+bb <- my_plogis(x)
+x <- my_qlogis(kh$Bedekking)
+bb <- my_plogis(x)
+bb
+all.equal(bb, kh$Bedekking)
+all.equal(bb*100, kh$Bedekking)
+mpred <- ggpredict(mfull, terms = c("Begrazing [my_plogis]",
+"Jaar [my_plogis]",
+"VegType [my_plogis]"))
+mpred <- ggpredict(mfull, terms = c("Bedekking [my_plogis]",
+"Begrazing",
+"Jaar",
+"VegType"))
+mpred <- ggpredict(mfull, "Bedekking [my_plogis]",
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+mfull <- lmer(my_qlogis(Bedekking) ~ Begrazing*Jaar*VegType +
+(1|LocatieID) + (1|LocatieID:plotID),
+data = kh %>%
+filter(Maand == 8))
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+# Chunk 1: setup
+# in deze chunk zet je alle R-packages die je nodig hebt
+library(knitr)
+# in onderstaande kan je chunk opties specifiëren die gelden voor alle chunks
+# in het document. Zie https://yihui.name/knitr/options/
+opts_chunk$set(echo = TRUE,
+fig.height = 100/25.4,
+fig.width = 150/25.4)
+library(tidyverse)
+library(lme4)
+library(ggeffects)
+# ontbrekende packages installeren met install.packages("package-name")
+# onderstaande is een functie om data vanuit een accessdatabank binnen te halen
+# vereist 32-bit R versie
+# Veranderen in Tools -> Global options -> Rversion: Change
+source("./src/connect_to_access_dbi.R")
+# bij inlezen van text wordt dit als character ipv factor variabele ingelezen met volgende optie
+options(stringsAsFactors = FALSE)
+# Chunk 2
+# naam van de databank toevoegen aan het path
+con <- connect_to_access_dbi(db_file_path = "./data/")
+# Chunk 3
+kh <- expand.grid(LocatieID = 1:6,
+plotID = 1:10,
+Jaar = 2011:2013,
+Maand = 6:9,
+VegType = c("Open", "Mos", "Strooisel","Pijpestrootje",
+"Fijn gras", "Heide", "Andere"),
+stringsAsFactors = FALSE) %>%
+mutate(Begrazing = ifelse(plotID <= 5, "begraasd", "niet begraasd"),
+Bedekking = rbinom(n = n(), size = 1, prob = 0.8) *
+rbeta(n = n(), shape1 = 2, shape2 = 2) * 100)
+# Chunk 4
+glimpse(kh)
+# Chunk 5
+kh <- kh %>%
+mutate(LocatieID = factor(LocatieID),
+plotID = factor(plotID),
+Jaar = factor(Jaar), # we beschouwen Jaar als factor in de analyses omdat er nog maar 3 jaren zijn
+Maand = factor(Maand))
+# Chunk 6
+# omzetten van lang formaat naar breed formaat
+kh_breed <- kh %>%
+spread(VegType, Bedekking)
+# Chunk 7
+glimpse(kh_breed)
+# Chunk 8
+kh %>%
+filter(Maand == 8) %>%
+ggplot(aes(x = VegType, y = Bedekking)) +
+geom_point(alpha = 0.3, position = position_dodge(width = 0.4)) +
+# gemiddelde +/- 95% bootstrap betrouwbaarheidsintervallen
+# voor elke locatie
+stat_summary(aes(group = LocatieID),
+fun.data = mean_cl_boot,
+position = position_dodge(width = 0.4),
+colour = "red") +
+facet_grid(Jaar~Begrazing) +
+theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+# Chunk 9
+kh %>%
+filter(Maand == 8) %>%
+ggplot(aes(x = Begrazing, y = Bedekking)) +
+geom_point(alpha = 0.3, position = position_dodge(width = 0.4)) +
+# gemiddelde +/- 95% bootstrap betrouwbaarheidsintervallen
+# voor elke locatie
+stat_summary(aes(group = LocatieID),
+fun.data = mean_cl_boot,
+position = position_dodge(width = 0.4),
+colour = "red") +
+facet_grid(Jaar~VegType)+
+theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+# Chunk 10
+kh %>%
+filter(Maand == 8) %>%
+ggplot(aes(x = Jaar, y = Bedekking)) +
+geom_point(alpha = 0.3, position = position_dodge(width = 0.4)) +
+# gemiddelde +/- 95% bootstrap betrouwbaarheidsintervallen
+# voor elke locatie
+stat_summary(aes(group = LocatieID),
+fun.data = mean_cl_boot,
+position = position_dodge(width = 0.4),
+colour = "red") +
+facet_grid(Begrazing~VegType)+
+theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+samplesize <- length(unique(kh$LocatieID:kh$plotID))
+# transformation
+my_qlogis <- function(x) {
+qlogis((x / 100 * (samplesize - 1) + 0.5) / samplesize)
+}
+# backtransformation
+my_plogis <- function(x) {
+x <- plogis(x)
+x <- (x * samplesize - 0.5) / (samplesize - 1)
+x # proportie, geen percentage
+}
+#x <- my_qlogis(kh$Bedekking)
+#bb <- my_plogis(x)
+#all.equal(bb*100, kh$Bedekking)
+mfull <- lmer(my_qlogis(Bedekking) ~ Begrazing*Jaar*VegType +
+(1|LocatieID) + (1|LocatieID:plotID),
+data = kh %>%
+filter(Maand == 8))
+mfull
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+kh <- kh %>%
+mutate(logitbedekking = my_qlogis(Bedekking))
+mfull <- lmer(logitbedekking ~ Begrazing*Jaar*VegType +
+(1|LocatieID) + (1|LocatieID:plotID),
+data = kh %>%
+filter(Maand == 8))
+summary(mfull)
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+plot(mpred, facet = TRUE)
+mpred
+mpred <- mpred %>%
+mutate_at(.vars = vars("predicted", "conf.low", "conf.high"),
+.funs = my_plogis)
+mpred
+plot(mpred, facet = TRUE)
+mpred
+warnings()
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+str(mpred)
+mpred <- mpred %>%
+mutate_at(.vars = vars("predicted", "conf.low", "conf.high"),
+.funs = my_plogis)
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+mpred <- mpred %>%
+mutate_at(.vars = vars("predicted", "conf.low", "conf.high"),
+.funs = my_plogis)
+mpred
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point() +
+facet_wrap(~facet)
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point() +
+facet_wrap(~facet) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point() +
+facet_wrap(~facet) +
+theme_classic()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point() +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high)) +
+facet_wrap(~facet) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group,
+position = position_dodge(width = 0.5))) +
+geom_point() +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high)) +
+facet_wrap(~facet) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5)) +
+facet_wrap(~facet) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+scale_y_continuous("Bedekking", labels = percent_format) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+scale_y_continuous("Bedekking", formatter = scales::percent) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+scale_y_continuous("Bedekking", format = scales::percent) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+scale_y_continuous("Bedekking", labels = scales::percent) +
+theme_light()
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"))
+mpred
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"),
+x.as.factor = TRUE)
+mpred
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+scale_y_continuous("Bedekking", labels = scales::percent) +
+theme_light()
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+scale_y_continuous("Bedekking", labels = scales::percent) +
+theme_light() +
+theme(axis.title.x = element_blank())
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"),
+x.as.factor = TRUE)
+mpred <- mpred %>%
+mutate(x = to_l)
+mpred <- ggpredict(mfull,
+terms = c("Begrazing",
+"Jaar",
+"VegType"),
+x.as.factor = TRUE)
+mpred <- mpred %>%
+mutate_at(.vars = vars("predicted", "conf.low", "conf.high"),
+.funs = my_plogis)
+ggplot(mpred,
+aes(x = x, y = predicted, colour = group)) +
+geom_point(position = position_dodge(width = 0.5)) +
+geom_errorbar(aes(ymin = conf.low, ymax =  conf.high),
+position = position_dodge(width = 0.5),
+width = 0.2) +
+facet_wrap(~facet) +
+scale_y_continuous("Bedekking", labels = scales::percent) +
+theme_light() +
+theme(axis.title.x = element_blank())
+plot(mfull)
+library(DBI)
+library(tidyverse)
+# path aangepast
+VEGCOM.KH <- read.csv2("data/VEGCOM.KH.csv",
+stringsAsFactors = FALSE)
+VEGCOM.KH
+str(VEGCOM.KH)
+VEGCOM.KH %>%
+group_by(BEH_TYP, M, VEG_TYP)
+VEGCOM.KH %>%
+group_by(BEH_TYP, M, VEG_TYP) %>%
+summarize(GEM_LIG_pct = mean(LIG_pct, na.rm = TRUE),
+MAX_LIG_pct = max(LIG_pct, na.rm = TRUE),
+MIN_LIG_pct = min(LIG_pct, na.rm = TRUE),
+GEM_CEL_pct = mean(CEL_pct, na.rm = TRUE),
+MAX_CEL_pct = max(CEL_pct, na.rm = TRUE),
+MIN_CEL_pct = min(CEL_pct, na.rm = TRUE),
+GEM_HEMCEL_pct = mean(HEMCEL_pct, na.rm = TRUE),
+MAX_HEMCEL_pct = max(HEMCEL_pct, na.rm = TRUE),
+MIN_HEMCEL_pct = min(HEMCEL_pct, na.rm = TRUE),
+GEM_N_DS_pct = mean(N_DS_pct, na.rm = TRUE),
+MAX_N_DS_pct = max(N_DS_pct, na.rm = TRUE),
+MIN_N_DS_pct = min(N_DS_pct, na.rm = TRUE),
+GEM_RE_NIR_DS_pct = mean(RE_NIR_DS_pct, na.rm = TRUE),
+MAX_RE_NIR_DS_pct = max(RE_NIR_DS_pct, na.rm = TRUE),
+MIN_RE_NIR_DS_pct = min(RE_NIR_DS_pct, na.rm = TRUE),
+GEM_RE_NATCHEM_DS_pct = mean(RE_NATCHEM_DS_pct, na.rm = TRUE),
+MAX_RE_NATCHEM_DS_pct = max(RE_NATCHEM_DS_pct, na.rm = TRUE),
+MIN_RE_NATCHEM_DS_pct = min(RE_NATCHEM_DS_pct, na.rm = TRUE))
+### Grafiek van de gemiddelde waarden per maand en per vegetatietype
+GEM_M_BEH_VEG_TYP <- VEGCOM.KH %>%
+group_by(BEH_TYP, M, VEG_TYP) %>%
+summarize(GEM_LIG_pct = mean(LIG_pct, na.rm = TRUE),
+MAX_LIG_pct = max(LIG_pct, na.rm = TRUE),
+MIN_LIG_pct = min(LIG_pct, na.rm = TRUE),
+GEM_CEL_pct = mean(CEL_pct, na.rm = TRUE),
+MAX_CEL_pct = max(CEL_pct, na.rm = TRUE),
+MIN_CEL_pct = min(CEL_pct, na.rm = TRUE),
+GEM_HEMCEL_pct = mean(HEMCEL_pct, na.rm = TRUE),
+MAX_HEMCEL_pct = max(HEMCEL_pct, na.rm = TRUE),
+MIN_HEMCEL_pct = min(HEMCEL_pct, na.rm = TRUE),
+GEM_N_DS_pct = mean(N_DS_pct, na.rm = TRUE),
+MAX_N_DS_pct = max(N_DS_pct, na.rm = TRUE),
+MIN_N_DS_pct = min(N_DS_pct, na.rm = TRUE),
+GEM_RE_NIR_DS_pct = mean(RE_NIR_DS_pct, na.rm = TRUE),
+MAX_RE_NIR_DS_pct = max(RE_NIR_DS_pct, na.rm = TRUE),
+MIN_RE_NIR_DS_pct = min(RE_NIR_DS_pct, na.rm = TRUE),
+GEM_RE_NATCHEM_DS_pct = mean(RE_NATCHEM_DS_pct, na.rm = TRUE),
+MAX_RE_NATCHEM_DS_pct = max(RE_NATCHEM_DS_pct, na.rm = TRUE),
+MIN_RE_NATCHEM_DS_pct = min(RE_NATCHEM_DS_pct, na.rm = TRUE))
+GEM_M_BEH_VEG_TYP
+GEM_M_BEH_VEG_TYP %>%
+filter(is.na(GEM_LIG_pct))
+VEGCOM.KH %>%
+group_by(BEH_TYP, M, VEG_TYP)
+GEM_M_BEH_VEG_TYP
+GEM_M_BEH_VEG_TYP %>%
+filter(is.na(GEM_LIG_pct))
+# deze groepen in detail bekijken welke ruwe data erin zitten
+probleemgevallen <- GEM_M_BEH_VEG_TYP %>%
+filter(is.na(GEM_LIG_pct)) %>%
+select(BEH_TYP, M, VEG_TYP)
+probleemgevallen
+# deze groepen in detail bekijken welke ruwe data erin zitten
+probleemgevallen <- GEM_M_BEH_VEG_TYP %>%
+filter(is.na(GEM_LIG_pct)) %>%
+select(BEH_TYP, M, VEG_TYP) %>%
+ungroup()
+VEGCOM.KH %>%
+semi_join(probleemgevallen)
+# er zijn vier van de 40 groepen waar je NA of -Inf hebt
+GEM_M_BEH_VEG_TYP %>%
+filter(is.na(GEM_LIG_pct)) %>%
+arrange(BEH_TYP, M, VEG_TYP)
+VEGCOM.KH %>%
+semi_join(probleemgevallen) %>%
+arrange(BEH_TYP, M, VEG_TYP)
+VEGCOM.KH %>%
+semi_join(probleemgevallen) %>%
+arrange(BEH_TYP, M, VEG_TYP)
+# er zijn vier van de 40 groepen waar je NA of -Inf hebt
+GEM_M_BEH_VEG_TYP %>%
+filter(is.na(GEM_LIG_pct)) %>%
+View()
+MEANS_KH_GROUP_MVEGBEH <- filter(GEM_M_BEH_VEG_TYP, GEM_LIG_pct != "NaN")
+##GEM_LIG_pct
+ggplot(data = MEANS_KH_GROUP_MVEGBEH,
+mapping = aes(x = M, y = GEM_LIG_pct, color = BEH_TYP)) +
+geom_line() +
+geom_errorbar(aes(ymin = MIN_LIG_pct, ymax = MAX_LIG_pct), width=.2,
+position=position_dodge(0.05)) +
+facet_wrap (~ VEG_TYP)
+MEANS_KH_GROUP_MVEGBEH
+VEGCOM.KH
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = GEM_LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE)
+VEGCOM.KH
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE)
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.05)) +
+facet_wrap (~ VEG_TYP)
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.05)) +
+facet_wrap (~ VEG_TYP)
+##GEM_LIG_pct
+ggplot(data = MEANS_KH_GROUP_MVEGBEH,
+mapping = aes(x = M, y = GEM_LIG_pct, color = BEH_TYP)) +
+geom_line() +
+geom_errorbar(aes(ymin = MIN_LIG_pct, ymax = MAX_LIG_pct), width=.2,
+position=position_dodge(0.05)) +
+facet_wrap (~ VEG_TYP)
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.2)) +
+facet_wrap (~ VEG_TYP)
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.2), geom = "errorbar") +
+facet_wrap (~ VEG_TYP)
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.2)) +
+facet_wrap (~ VEG_TYP)
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.2), geom = "crossbar") +
+facet_wrap (~ VEG_TYP)
+# of
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", na.rm = TRUE,
+position=position_dodge(0.2),
+geom = "point") +
+stat_summary(fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.2),
+geom = "errorbar", width = 0.2) +
+facet_wrap (~ VEG_TYP)
+# of
+VEGCOM.KH %>%
+ggplot(aes(x = M, y = LIG_pct, color = BEH_TYP)) +
+stat_summary(fun.y = "mean", na.rm = TRUE,
+position=position_dodge(0.2),
+geom = "line") +
+stat_summary(fun.y = "mean", na.rm = TRUE,
+position=position_dodge(0.2),
+geom = "point") +
+stat_summary(fun.ymax = "max", fun.ymin = "min", na.rm = TRUE,
+position=position_dodge(0.2),
+geom = "errorbar", width = 0.2) +
+facet_wrap (~ VEG_TYP)

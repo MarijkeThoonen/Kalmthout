@@ -1,0 +1,20 @@
+Kalmthout: monitoring herstel na brand 2011
+
+- Locaties (6-tal)
+  - begraasd, niet begraasd (exclosure)
+  - afgebrand, niet afgebrand
+
+- Jaren: 2011 - 2012 - 2013
+  - Maanden: Juni - Juli - Augustus - September
+  
+- Metingen
+  - 5-tal plots binnen de exclosure en 5 buiten de exclosure
+  - bedekkingen
+    - vegtype: Mos, strooisel, pijpestrootje, heide, fijn gras, open, andere
+  - 8 metingen van vegetatiehoogte: variantie = maat voor structuur
+  - verschillende analyses plant:
+    - ruw eiwit, ligninegehalte, ...
+
+
+
+
