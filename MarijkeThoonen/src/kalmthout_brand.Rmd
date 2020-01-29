@@ -12,8 +12,11 @@ library(knitr)
 # in het document. Zie https://yihui.name/knitr/options/
 opts_chunk$set(echo = TRUE,
                fig.height = 100/25.4,
-               fig.width = 150/25.4)
+               fig.width = 150/25.4
+               )
 
+install.packages("lme4")
+install.packages("ggeffects")
 library(DBI)
 library(lme4)
 library(ggeffects)
@@ -21,7 +24,7 @@ library(ggeffects)
 # onderstaande is een functie om data vanuit een accessdatabank binnen te halen
 # vereist 32-bit R versie
 # Veranderen in Tools -> Global options -> Rversion: Change
-source("./src/connect_to_access_dbi.R")
+source("connect_to_access_dbi.R")
 # bij inlezen van text wordt dit als character ipv factor variabele ingelezen met volgende optie
 options(stringsAsFactors = FALSE)
 library(tidyverse)
@@ -60,7 +63,7 @@ mijn_Rstudioprojectnaam.Rproj
 
 ```{r eval = FALSE}
 # naam van de databank toevoegen aan het path
-con <- connect_to_access_dbi(db_file_path = "./data/")
+con <- connect_to_access_dbi(db_file_path = "")
 
 # om een lijst van tabellen in de databank te tonen:
 dbListTables(con)
@@ -132,6 +135,8 @@ glimpse(kh_breed)
 vb1
 
 ```{r}
+library(ggplot2)
+library(Hmisc)
 kh %>%
   filter(Maand == 8) %>%
   ggplot(aes(x = VegType, y = Bedekking)) +
