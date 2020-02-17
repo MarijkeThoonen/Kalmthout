@@ -24,7 +24,10 @@ library(ggeffects)
 # onderstaande is een functie om data vanuit een accessdatabank binnen te halen
 # vereist 32-bit R versie
 # Veranderen in Tools -> Global options -> Rversion: Change
-source("connect_to_access_dbi.R")
+library(rprojroot)
+git_root <- find_root(is_git_root)
+
+source(file.path(git_root, "MarijkeThoonen", "src","connect_to_access_dbi.R"))
 # bij inlezen van text wordt dit als character ipv factor variabele ingelezen met volgende optie
 options(stringsAsFactors = FALSE)
 library(tidyverse)
@@ -63,7 +66,10 @@ mijn_Rstudioprojectnaam.Rproj
 
 ```{r eval = FALSE}
 # naam van de databank toevoegen aan het path
-con <- connect_to_access_dbi(db_file_path = "")
+con <- connect_to_access_dbi(
+  db_file_path = file.path(git_root, "MarijkeThoonen", "data", 
+                           "Heidebegrazing20112014.mdb")
+  )
 
 # om een lijst van tabellen in de databank te tonen:
 dbListTables(con)
@@ -80,6 +86,17 @@ dbFetch(res)
 # om de verbinding met de databank te verbreken:
 dbDisconnect(con)
 ```
+
+
+```{r}
+veg2011 <- r32_fetch_table(
+  db.path = file.path(git_root, "MarijkeThoonen", "data", "Heidebegrazing20112014.mdb"),
+  table.name = "Tbl_Vegetatie_2011"
+  )
+
+veg2011
+```
+
 
 
 Fictief voorbeelddatasetje
