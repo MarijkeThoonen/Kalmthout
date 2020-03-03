@@ -81,9 +81,16 @@ VEGCOM.KH <- VEGCOM.KH %>%
                       LIG_pct, CEL_pct, HEMCEL_pct, N_DS_pct, RE_NIR_DS_pct, 
                       RE_NATCHEM_DS_pct, Brand2011)
 
+#kolomnamen naar kleine letters
+install.packages("janitor")
+library(janitor)
+
+vegcom_kh <- VEGCOM.KH %>%
+  clean_names()
+
 # Wegschrijven van de dataset
 write.csv2(VEGCOM.KH, row.names = FALSE,
-           file = "Data/Afgeleide datasets/VEGCOM.KH.csv")
+           file = "Data/Afgeleide datasets/vegcom_kh.csv")
 
 
 ##########################################
