@@ -20,16 +20,6 @@ install.packages("ggeffects")
 library(DBI)
 library(lme4)
 library(ggeffects)
-# ontbrekende packages installeren met install.packages("package-name")
-# onderstaande is een functie om data vanuit een accessdatabank binnen te halen
-# vereist 32-bit R versie
-# Veranderen in Tools -> Global options -> Rversion: Change
-library(rprojroot)
-git_root <- find_root(is_git_root)
-
-source(file.path(git_root, "MarijkeThoonen", "src","connect_to_access_dbi.R"))
-# bij inlezen van text wordt dit als character ipv factor variabele ingelezen met volgende optie
-options(stringsAsFactors = FALSE)
 library(tidyverse)
 ```
 
@@ -66,25 +56,16 @@ mijn_Rstudioprojectnaam.Rproj
 
 ```{r eval = FALSE}
 # naam van de databank toevoegen aan het path
-con <- connect_to_access_dbi(
-  db_file_path = file.path(git_root, "MarijkeThoonen", "data", 
-                           "Heidebegrazing20112014.mdb")
+
+vegstr <- r32_fetch_table(
+  db.path = file.path(git_root, "MarijkeThoonen", "data", "Heidebegrazing20112014.mdb"),
+  table.name = "HTbl_Exclosure_opname_2011_2014"
   )
+vegstr
 
-# om een lijst van tabellen in de databank te tonen:
-dbListTables(con)
+#fetch_table staat op zichzelf, functies die beginnen met db hangen af van functie die connectie maakt met Accestabel, functie in appart script werkt niet
 # om de kolomnamen van een tabel te kennen:
-dbListFields(con, "tabelnaam")
 
-# om een tabel uit de databank te halen:
-tabelnaam <- dbReadTable(con, "tabelnaam")
-
-# Om een SQL query binnen te halen:
-res <- dbSendQuery(con, "SELECT * FROM tabelnaam WHERE kolomnaam = 4")
-dbFetch(res)
-
-# om de verbinding met de databank te verbreken:
-dbDisconnect(con)
 ```
 
 

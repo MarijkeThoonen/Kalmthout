@@ -10,18 +10,23 @@ library(plyr)
 
 #inlezen afgeleide dataset
 
-VEGCOM.KH <- read.csv2(file = "./Data/Afgeleide datasets/VEGCOM.KH.csv")
+vegcom_kh <- read.csv2(file = "./Data/Afgeleide datasets/vegcom_kh.csv")
+
+#aantal behandelingen waar een droogstaal van werd genomen
+vegcom_kh_opnames <- distinct(vegcom_kh, exc_id, beh_typ, y, m)
+write.csv2(vegcom_kh_opnames, row.names = FALSE, 
+           file = "Data/Afgeleide datasets/vegcom_kh_opnames.csv")
 
 #omzetten van jaartal in een discrete variabele: een factor
-VEGCOM.KH$Y <- as.factor(VEGCOM.KH$Y)
+vegcom_kh$Y <- as.factor(vegcom_kh$Y)
 
-#make boxplots for the dataframe VEGCOM.KH
+#make boxplots for the dataframe vegcom_kh
 
 #Plantenvariabelen per vegetatietype voor elk beheertype 
 ################################################################################
 #discrete X (BEH_TYP), continuous Y (N_DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = N_DS_PRT)) + 
@@ -39,7 +44,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = DS_PRT)) + 
@@ -57,7 +62,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (RE_NIR_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NIR_DS)) + 
@@ -75,7 +80,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (RE_NATCHEM_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NATCHEM_DS)) + 
@@ -93,7 +98,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (CEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = CEL)) + 
@@ -111,7 +116,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (HEMCEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = HEMCEL)) + 
@@ -128,7 +133,7 @@ graphs <- dlply(
   })
 #discrete X (BEH_TYP), continuous Y (LIG)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = LIG)) + 
@@ -147,7 +152,7 @@ graphs <- dlply(
 #plots per EXC_ID
 #discrete X (BEH_TYP), continuous Y (N_DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = N_DS_PRT)) + 
@@ -165,7 +170,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (RE_NIR_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NIR_DS)) + 
@@ -184,7 +189,7 @@ graphs <- dlply(
 #discrete X (BEH_TYP), continuous Y (RE_NATCHEM_DS)
 #discrete X (BEH_TYP), continuous Y (RE_NIR_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NATCHEM_DS)) + 
@@ -202,7 +207,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = DS_PRT)) + 
@@ -220,7 +225,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (CEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = CEL)) + 
@@ -238,7 +243,7 @@ graphs <- dlply(
 
 #discrete X (BEH_TYP), continuous Y (HEMCEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = HEMCEL)) + 
@@ -255,7 +260,7 @@ graphs <- dlply(
   })
 #discrete X (BEH_TYP), continuous Y (LIG)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = LIG)) + 
@@ -279,7 +284,7 @@ graphs <- dlply(
 #plots per jaar
 #per Y, discrete X (BEH_TYP), continuous Y (N_DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ Y,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = N_DS_PRT)) + 
@@ -297,7 +302,7 @@ graphs <- dlply(
 
 #per Y, discrete X (BEH_TYP), continuous Y (RE_NIR_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ Y,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NIR_DS)) + 
@@ -315,7 +320,7 @@ graphs <- dlply(
   
 #per Y, discrete X (BEH_TYP), continuous Y (RE_NATCHEM_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ Y,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NATCHEM_DS)) + 
@@ -333,7 +338,7 @@ graphs <- dlply(
 
 #per Y, discrete X (BEH_TYP), continuous Y (DS_105)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ Y,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = DS_PRT)) + 
@@ -353,7 +358,7 @@ graphs <- dlply(
 
 #per Y, discrete X (BEH_TYP), continuous Y (CEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ Y,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = CEL)) + 
@@ -371,7 +376,7 @@ graphs <- dlply(
 
 #per Y, discrete X (BEH_TYP), continuous Y (HEMCEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ Y,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = HEMCEL)) + 
@@ -389,7 +394,7 @@ graphs <- dlply(
 
 #per Y, discrete X (BEH_TYP), continuous Y (LIG)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ Y,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = LIG)) + 
@@ -413,7 +418,7 @@ graphs <- dlply(
 ################################################################################
 #discrete X (EXC_ID), continuous Y (N_DS_PRT)
 graphs <-  
-    print(ggplot(VEGCOM.KH,aes(x = EXC_ID, y = N_DS_PRT)) + 
+    print(ggplot(vegcom_kh,aes(x = EXC_ID, y = N_DS_PRT)) + 
             geom_boxplot() +
             scale_x_discrete("Locatie") +
             scale_y_continuous("Stikstof (%)", breaks = c(0,2.5,5,7.5,10)) +
@@ -427,7 +432,7 @@ graphs <-
     
 #discrete X (EXC_ID), continuous Y (RE_NIR_DS)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = EXC_ID, y = RE_NIR_DS)) + 
+      print(ggplot(vegcom_kh,aes(x = EXC_ID, y = RE_NIR_DS)) + 
               geom_boxplot() +
               scale_x_discrete("Locatie") +
               scale_y_continuous("Ruw eiwit NIR (%)", breaks = c(0,10,20,30,40,50,60)) +
@@ -441,7 +446,7 @@ graphs <-
     
 #discrete X (EXC_ID), continuous Y (RE_NATCHEM_DS)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = EXC_ID, y = RE_NATCHEM_DS)) + 
+      print(ggplot(vegcom_kh,aes(x = EXC_ID, y = RE_NATCHEM_DS)) + 
               geom_boxplot() +
               scale_x_discrete("Locatie") +
               scale_y_continuous("Ruw eiwit NATCHEM (%)", breaks = c(0,10,20,30,40,50,60)) +
@@ -455,7 +460,7 @@ graphs <-
     
 #discrete X (EXC_ID), continuous Y (CEL)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = EXC_ID, y = CEL)) + 
+      print(ggplot(vegcom_kh,aes(x = EXC_ID, y = CEL)) + 
               geom_boxplot() +
               scale_x_discrete("Locatie") +
               scale_y_continuous("Cellulose (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -469,7 +474,7 @@ graphs <-
     
 #discrete X (EXC_ID), continuous Y (HEMCEL)  
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = EXC_ID, y = HEMCEL)) + 
+      print(ggplot(vegcom_kh,aes(x = EXC_ID, y = HEMCEL)) + 
               geom_boxplot() +
               scale_x_discrete("Locatie") +
               scale_y_continuous("Hemicellulose (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -483,7 +488,7 @@ graphs <-
     
 #discrete X (EXC_ID), continuous Y (LIG)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = EXC_ID, y = LIG)) + 
+      print(ggplot(vegcom_kh,aes(x = EXC_ID, y = LIG)) + 
               geom_boxplot() +
               scale_x_discrete("Locatie") +
               scale_y_continuous("Lignine (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -501,7 +506,7 @@ graphs <-
 ################################################################################
 #discrete X (Y), continuous Y (N_DS_PRT)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = Y, y = N_DS_PRT)) + 
+      print(ggplot(vegcom_kh,aes(x = Y, y = N_DS_PRT)) + 
               geom_boxplot() +
               scale_x_discrete("Jaar") +
               scale_y_continuous("Stikstof (%)", breaks = c(0,2.5,5,7.5,7.5,10)) +
@@ -515,7 +520,7 @@ graphs <-
     
     #discrete X (Y), continuous Y (RE_NIR_DS)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = Y, y = RE_NIR_DS)) + 
+      print(ggplot(vegcom_kh,aes(x = Y, y = RE_NIR_DS)) + 
               geom_boxplot() +
               scale_x_discrete("Jaar") +
               scale_y_continuous("Ruw eiwit NIR (%)", breaks = c(0,10,20,30,40,50,60)) +
@@ -529,7 +534,7 @@ graphs <-
     
     #discrete X (Y), continuous Y (RE_NATCHEM_DS)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = Y, y = RE_NATCHEM_DS)) + 
+      print(ggplot(vegcom_kh,aes(x = Y, y = RE_NATCHEM_DS)) + 
               geom_boxplot() +
               scale_x_discrete("Jaar") +
               scale_y_continuous("Ruw eiwit NATCHEM (%)", breaks = c(0,10,20,30,40,50,60)) +
@@ -543,7 +548,7 @@ graphs <-
     
     #discrete X (Y), continuous Y (CEL)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = Y, y = CEL)) + 
+      print(ggplot(vegcom_kh,aes(x = Y, y = CEL)) + 
               geom_boxplot() +
               scale_x_discrete("Jaar") +
               scale_y_continuous("Cellulose (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -557,7 +562,7 @@ graphs <-
     
     #discrete X (Y), continuous Y (HEMCEL)  
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = Y, y = HEMCEL)) + 
+      print(ggplot(vegcom_kh,aes(x = Y, y = HEMCEL)) + 
               geom_boxplot() +
               scale_x_discrete("Jaar") +
               scale_y_continuous("Hemicellulose (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -571,7 +576,7 @@ graphs <-
     
     #discrete X (Y), continuous Y (LIG)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = Y, y = LIG)) + 
+      print(ggplot(vegcom_kh,aes(x = Y, y = LIG)) + 
               geom_boxplot() +
               scale_x_discrete("Jaar") +
               scale_y_continuous("Lignine (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -589,7 +594,7 @@ graphs <-
 ################################################################################
 #discrete X (VEG_TYP), continuous Y (N_DS_PRT)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = VEG_TYP, y = N_DS_PRT)) + 
+      print(ggplot(vegcom_kh,aes(x = VEG_TYP, y = N_DS_PRT)) + 
               geom_boxplot() +
               scale_x_discrete("Vegetatietype") +
               scale_y_continuous("Stikstof (%)", breaks = c(0,2.5,5,7.5,7.5,10)) +
@@ -603,7 +608,7 @@ graphs <-
     
     #discrete X (VEG_TYP), continuous Y (RE_NIR_DS)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = VEG_TYP, y = RE_NIR_DS)) + 
+      print(ggplot(vegcom_kh,aes(x = VEG_TYP, y = RE_NIR_DS)) + 
               geom_boxplot() +
               scale_x_discrete("Vegetatietype") +
               scale_y_continuous("Ruw eiwit NIR (%)", breaks = c(0,10,20,30,40,50,60)) +
@@ -617,7 +622,7 @@ graphs <-
     
     #discrete X (VEG_TYP), continuous Y (RE_NATCHEM_DS)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = VEG_TYP, y = RE_NATCHEM_DS)) + 
+      print(ggplot(vegcom_kh,aes(x = VEG_TYP, y = RE_NATCHEM_DS)) + 
               geom_boxplot() +
               scale_x_discrete("Vegetatietype") +
               scale_y_continuous("Ruw eiwit NATCHEM (%)", breaks = c(0,10,20,30,40,50,60)) +
@@ -631,7 +636,7 @@ graphs <-
     
     #discrete X (VEG_TYP), continuous Y (CEL)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = VEG_TYP, y = CEL)) + 
+      print(ggplot(vegcom_kh,aes(x = VEG_TYP, y = CEL)) + 
               geom_boxplot() +
               scale_x_discrete("Vegetatietype") +
               scale_y_continuous("Cellulose (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -645,7 +650,7 @@ graphs <-
     
     #discrete X (VEG_TYP), continuous Y (HEMCEL)  
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = VEG_TYP, y = HEMCEL)) + 
+      print(ggplot(vegcom_kh,aes(x = VEG_TYP, y = HEMCEL)) + 
               geom_boxplot() +
               scale_x_discrete("Vegetatietype") +
               scale_y_continuous("Hemicellulose (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -659,7 +664,7 @@ graphs <-
     
     #discrete X (VEG_TYP), continuous Y (LIG)
     graphs <-  
-      print(ggplot(VEGCOM.KH,aes(x = VEG_TYP, y = LIG)) + 
+      print(ggplot(vegcom_kh,aes(x = VEG_TYP, y = LIG)) + 
               geom_boxplot() +
               scale_x_discrete("Vegetatietype") +
               scale_y_continuous("Lignine (%)", breaks = c(0,10,20,30,40,50,60,70)) +
@@ -677,7 +682,7 @@ graphs <-
 ################################################################################
 #per EXC_ID, discrete X (BEH_TYP), continuous Y (N_DS_PRT)
     graphs <- dlply(
-      VEGCOM.KH,  
+      vegcom_kh,  
       ~ EXC_ID,
       function(deel){
         print(ggplot(deel,aes(x = BEH_TYP, y = N_DS_PRT)) + 
@@ -695,7 +700,7 @@ graphs <-
     
 #per EXC_ID, discrete X (BEH_TYP), continuous Y (RE_NIR_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NIR_DS)) + 
@@ -713,7 +718,7 @@ graphs <- dlply(
 
 #per EXC_ID, discrete X (BEH_TYP), continuous Y (RE_NATCHEM_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = RE_NATCHEM_DS)) + 
@@ -731,7 +736,7 @@ graphs <- dlply(
 
 #per EXC_ID, discrete X (BEH_TYP), continuous Y (DS_105)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = DS_PRT)) + 
@@ -751,7 +756,7 @@ graphs <- dlply(
 
 #per EXC_ID, discrete X (BEH_TYP), continuous Y (CEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = CEL)) + 
@@ -769,7 +774,7 @@ graphs <- dlply(
 
 #per EXC_ID, discrete X (BEH_TYP), continuous Y (HEMCEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = HEMCEL)) + 
@@ -787,7 +792,7 @@ graphs <- dlply(
 
 #per EXC_ID, discrete X (BEH_TYP), continuous Y (LIG)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = LIG)) + 
@@ -810,7 +815,7 @@ graphs <- dlply(
 
 #per month, discrete X (BEH_TYP), continuous Y (N_DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ M,
   function(deel){
     print(ggplot(deel,aes(x = BEH_TYP, y = N_DS_PRT)) + 
@@ -831,7 +836,7 @@ graphs <- dlply(
 ################################################################################
 #discrete X (Y), continuous Y (N_DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = N_DS_PRT)) + 
@@ -849,7 +854,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = DS_PRT)) + 
@@ -867,7 +872,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (RE_NIR_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = RE_NIR_DS)) + 
@@ -885,7 +890,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (RE_NATCHEM_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = RE_NATCHEM_DS)) + 
@@ -903,7 +908,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (CEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = CEL)) + 
@@ -921,7 +926,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (HEMCEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = HEMCEL)) + 
@@ -939,7 +944,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (LIG)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ VEG_TYP,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = LIG)) + 
@@ -960,7 +965,7 @@ graphs <- dlply(
 ################################################################################
 #discrete X (Y), continuous Y (N_DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = N_DS_PRT)) + 
@@ -978,7 +983,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (DS_PRT)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = DS_PRT)) + 
@@ -996,7 +1001,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (RE_NIR_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = RE_NIR_DS)) + 
@@ -1014,7 +1019,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (RE_NATCHEM_DS)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = RE_NATCHEM_DS)) + 
@@ -1032,7 +1037,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (CEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = CEL)) + 
@@ -1050,7 +1055,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (HEMCEL)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = HEMCEL)) + 
@@ -1068,7 +1073,7 @@ graphs <- dlply(
 
 #discrete X (Y), continuous Y (LIG)
 graphs <- dlply(
-  VEGCOM.KH,  
+  vegcom_kh,  
   ~ EXC_ID,
   function(deel){
     print(ggplot(deel,aes(x = Y, y = LIG)) + 
