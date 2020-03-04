@@ -35,13 +35,14 @@ vegbed_kh$beh_typ <- mapvalues(vegbed_kh$beh_typ, from = c("B", "NB"),
                                  to = c("BGR", "EXC"))
 
 #wegschrijven .csv met bedekking mos en kale bodem
-write.csv2(vegbed_kh, row.names = FALSE,
-           file = "./Data/Afgeleide datasets/vegbed_kh_lang.csv")
+vegbed_kh_lang <- vegbed_kh
+write.csv2(vegbed_kh_lang, row.names = FALSE,
+           file = "Data/Afgeleide datasets/vegbed_kh_lang.csv")
 
 #omzetten van lang naar breed formaat voor soort
-vegbed_kh_breed <- vegbed_kh %>% 
+vegbed_kh_breed <- vegbed_kh %>%
 spread(soort, bedekking_getal, fill = 0)
-vegbed_kh_breed <- clean_names(vegbed_kh)
+vegbed_kh_breed <- clean_names(vegbed_kh_breed)
 
 #verwijderen variabelen die dubbel zijn
 vegbed_kh_breed <- select(vegbed_kh_breed, -aant_bloeist_pijpenstro, -mos, -kale_bodem, -totale_bedekking, 
@@ -49,5 +50,5 @@ vegbed_kh_breed <- select(vegbed_kh_breed, -aant_bloeist_pijpenstro, -mos, -kale
 
 
 #wegschrijven .csv
-write.csv2(vegbed_kh, row.names = FALSE,
+write.csv2(vegbed_kh_breed, row.names = FALSE,
            file = "Data/Afgeleide datasets/vegbed_kh_breed.csv")

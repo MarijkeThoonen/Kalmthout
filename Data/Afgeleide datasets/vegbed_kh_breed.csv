@@ -1,1120 +1,905 @@
-"datum";"exc_id";"brand2011";"zone";"beh_typ";"soort";"bedekking_getal";"aant_bloeist_pijpenstro";"mos";"kale_bodem";"totale_bedekking";"staal_ingezameld"
-2011-08-09;"LV1";"ja";7;"BGR";"Pijpenstro";3;10;0;95;5;TRUE
-2011-08-09;"LV1";"ja";8;"BGR";"Pijpenstro";0,5;0;0;99;1;FALSE
-2011-08-09;"LV1";"ja";9;"BGR";"Pijpenstro";15;39;0;85;15;FALSE
-2011-08-09;"LV2";"nee";1;"EXC";"Heide";3;0;0;55;45;FALSE
-2011-08-09;"LV2";"nee";1;"EXC";"Pijpenstro";45;117;0;55;45;TRUE
-2011-08-09;"LV2";"nee";2;"EXC";"Pijpenstro";15;2;0;85;15;TRUE
-2011-08-09;"LV2";"nee";3;"EXC";"Pijpenstro";25;127;0,5;75;25;TRUE
-2011-08-09;"LV2";"nee";3;"EXC";"Heide";0,5;0;0,5;75;25;FALSE
-2011-08-09;"LV2";"nee";4;"EXC";"Pijpenstro";35;112;0;65;35;TRUE
-2011-08-09;"LV2";"nee";4;"EXC";"Heide";0,5;0;0;65;35;FALSE
-2011-08-09;"LV2";"nee";5;"EXC";"Pijpenstro";75;136;25;0,5;99,5;TRUE
-2011-08-09;"LV2";"nee";6;"BGR";"Pijpenstro";45;3;0;75;25;TRUE
-2011-08-09;"LV2";"nee";6;"BGR";"Heide";3;0;0;75;25;FALSE
-2011-08-09;"LV2";"nee";6;"BGR";"Andere";0,5;0;0;75;25;FALSE
-2011-08-09;"LV2";"nee";7;"BGR";"Pijpenstro";25;33;3;75;25;TRUE
-2011-08-09;"LV2";"nee";7;"BGR";"Heide";3;0;3;75;25;FALSE
-2011-08-09;"LV2";"nee";7;"BGR";"Andere";3;0;3;75;25;FALSE
-2011-08-09;"LV2";"nee";8;"BGR";"Pijpenstro";45;141;0;55;45;TRUE
-2011-08-09;"LV2";"nee";9;"BGR";"Pijpenstro";25;62;0;75;25;TRUE
-2011-09-26;"GB1";"nee";1;"EXC";"Andere";3;0;85;0;100;FALSE
-2011-09-26;"GB1";"nee";1;"EXC";"Fijne grassen";15;7;85;0;100;TRUE
-2011-09-26;"GB1";"nee";2;"EXC";"Andere";0,5;0;85;3;97;FALSE
-2011-09-26;"GB1";"nee";2;"EXC";"Fijne grassen";35;89;85;3;97;TRUE
-2011-09-26;"GB1";"nee";3;"EXC";"Andere";3;0;45;0,5;99,5;TRUE
-2011-09-26;"GB1";"nee";3;"EXC";"Fijne grassen";85;47;45;0,5;99,5;TRUE
-2011-06-27;"GB1";"nee";2;"EXC";"Fijne grassen";45;31;95;0,5;99,5;TRUE
-2011-06-27;"GB1";"nee";3;"EXC";"Andere";3;0;95;0,5;99,5;TRUE
-2011-06-27;"GB1";"nee";3;"EXC";"Fijne grassen";45;18;95;0,5;99,5;TRUE
-2011-06-27;"GB1";"nee";5;"EXC";"Fijne grassen";55;42;95;0,5;99,5;TRUE
-2011-06-27;"GB1";"nee";6;"BGR";"Fijne grassen";25;0;85;0,5;99,5;TRUE
-2011-06-27;"GB1";"nee";7;"BGR";"Fijne grassen";35;0;25;55;45;TRUE
-2011-06-27;"GB1";"nee";8;"BGR";"Andere";0,5;0;95;3;97;FALSE
-2011-06-27;"GB1";"nee";8;"BGR";"Fijne grassen";3;4;95;3;97;TRUE
-2011-06-27;"GB1";"nee";9;"BGR";"Fijne grassen";45;1;15;15;85;TRUE
-2011-06-27;"GB1";"nee";9;"BGR";"Andere";25;1;15;15;85;TRUE
-2011-06-27;"GB2";"nee";1;"EXC";"Fijne grassen";15;0;95;0;100;FALSE
-2011-06-27;"GB2";"nee";1;"EXC";"Pijpenstro";55;18;95;0;100;FALSE
-2011-06-27;"GB2";"nee";2;"EXC";"Andere";0,5;5;75;7;93;FALSE
-2011-06-27;"GB2";"nee";2;"EXC";"Pijpenstro";95;2;75;7;93;TRUE
-2011-06-27;"GB2";"nee";3;"EXC";"Pijpenstro";35;0;25;45;55;TRUE
-2011-06-27;"GB2";"nee";3;"EXC";"Fijne grassen";7;5;25;45;55;TRUE
-2011-06-27;"GB2";"nee";4;"EXC";"Pijpenstro";95;2;25;7;93;TRUE
-2011-06-27;"GB2";"nee";4;"EXC";"Fijne grassen";3;0;25;7;93;FALSE
-2011-06-27;"GB2";"nee";5;"EXC";"Pijpenstro";95;60;0,5;3;97;TRUE
-2011-06-27;"GB2";"nee";5;"EXC";"Fijne grassen";7;6;0,5;3;97;TRUE
-2011-06-27;"GB2";"nee";6;"BGR";"Pijpenstro";75;9;35;3;97;TRUE
-2011-06-27;"GB2";"nee";6;"BGR";"Fijne grassen";7;3;35;3;97;TRUE
-2011-06-27;"GB2";"nee";6;"BGR";"Andere";3;0;35;3;97;FALSE
-2011-06-27;"GB2";"nee";7;"BGR";"Fijne grassen";7;0;0,5;75;25;TRUE
-2011-06-27;"GB2";"nee";7;"BGR";"Pijpenstro";25;0;0,5;75;25;TRUE
-2011-06-27;"GB2";"nee";8;"BGR";"Pijpenstro";3;1;15;85;15;TRUE
-2011-06-27;"GB2";"nee";8;"BGR";"Fijne grassen";7;0;15;85;15;TRUE
-2011-06-27;"GB2";"nee";9;"BGR";"Pijpenstro";35;0;0,5;75;25;TRUE
-2011-06-27;"GB2";"nee";9;"BGR";"Fijne grassen";3;5;0,5;75;25;TRUE
-2011-06-27;"WD1";"ja";1;"EXC";"Pijpenstro";3;0;0;95;5;TRUE
-2011-06-27;"WD1";"ja";2;"EXC";"Pijpenstro";0,5;0;0;99;1;FALSE
-2011-06-27;"WD1";"ja";4;"EXC";"Pijpenstro";25;0;0;65;35;TRUE
-2011-06-27;"WD1";"ja";5;"EXC";"Pijpenstro";3;1;0;95;5;TRUE
-2011-06-27;"WD1";"ja";6;"BGR";"Pijpenstro";3;0;0;95;5;TRUE
-2011-06-27;"WD1";"ja";7;"BGR";"Pijpenstro";15;0;0;85;15;TRUE
-2011-06-27;"WD1";"ja";8;"BGR";"Pijpenstro";3;1;0;95;5;TRUE
-2011-06-27;"WD1";"ja";9;"BGR";"Pijpenstro";15;0;0;85;15;TRUE
-2011-06-27;"WD2";"ja";2;"EXC";"Pijpenstro";25;5;0;75;25;TRUE
-2011-06-28;"WD2";"ja";4;"EXC";"Pijpenstro";3;0;0;95;5;FALSE
-2011-06-28;"WD2";"ja";6;"BGR";"Andere";0,5;0;0;99;1;FALSE
-2011-06-28;"WD2";"ja";7;"BGR";"Pijpenstro";3;0;0;95;5;TRUE
-2011-06-28;"WD2";"ja";8;"BGR";"Pijpenstro";7;1;0;95;5;TRUE
-2011-06-28;"WD2";"ja";9;"BGR";"Pijpenstro";15;2;0;85;15;TRUE
-2011-06-28;"LV1";"ja";1;"EXC";"Pijpenstro";7;0;0;95;5;TRUE
-2011-06-28;"LV1";"ja";2;"EXC";"Pijpenstro";25;0;0;85;15;TRUE
-2011-06-28;"LV1";"ja";3;"EXC";"Pijpenstro";3;0;0;95;5;TRUE
-2011-06-28;"LV1";"ja";6;"BGR";"Pijpenstro";25;0;0;85;15;TRUE
-2011-06-28;"LV1";"ja";7;"BGR";"Pijpenstro";15;4;0;85;15;FALSE
-2011-06-28;"LV1";"ja";8;"BGR";"Pijpenstro";15;0;0;95;5;TRUE
-2011-06-28;"LV2";"nee";1;"EXC";"Pijpenstro";35;1;0;75;25;TRUE
-2011-06-28;"LV2";"nee";2;"EXC";"Pijpenstro";15;0;0;85;15;TRUE
-2011-06-28;"LV2";"nee";3;"EXC";"Pijpenstro";35;0;0;65;35;TRUE
-2011-06-28;"LV2";"nee";4;"EXC";"Pijpenstro";45;0;0;65;35;TRUE
-2011-06-28;"LV2";"nee";5;"EXC";"Pijpenstro";7;0;0;95;5;TRUE
-2011-06-28;"LV2";"nee";6;"BGR";"Pijpenstro";15;1;0;85;15;TRUE
-2011-06-28;"LV2";"nee";7;"BGR";"Pijpenstro";15;8;0;85;15;TRUE
-2011-06-28;"LV2";"nee";8;"BGR";"Pijpenstro";45;0;0;65;35;TRUE
-2011-06-28;"LV2";"nee";9;"BGR";"Pijpenstro";0,5;0;0;95;5;FALSE
-2011-06-27;"GB1";"nee";1;"EXC";"Fijne grassen";25;1;55;25;75;TRUE
-2011-06-27;"GB1";"nee";1;"EXC";"Andere";7;0;55;25;75;TRUE
-2011-06-27;"GB1";"nee";4;"EXC";"Fijne grassen";25;0;85;0;100;TRUE
-2011-07-26;"GB1";"nee";4;"EXC";"Andere";0,5;0;85;0;100;FALSE
-2011-08-08;"GB1";"nee";1;"EXC";"Andere";15;0;55;7;93;TRUE
-2011-08-08;"GB1";"nee";1;"EXC";"Fijne grassen";25;29;55;7;93;TRUE
-2011-08-08;"GB1";"nee";2;"EXC";"Fijne grassen";25;58;65;7;93;TRUE
-2011-08-08;"GB1";"nee";2;"EXC";"Andere";7;0;65;7;93;TRUE
-2011-08-08;"GB1";"nee";3;"EXC";"Andere";7;0;15;7;93;TRUE
-2011-08-08;"GB1";"nee";3;"EXC";"Fijne grassen";55;51;15;7;93;TRUE
-2011-08-08;"GB1";"nee";4;"EXC";"Fijne grassen";85;12;15;0;100;TRUE
-2011-08-08;"GB1";"nee";5;"EXC";"Fijne grassen";25;62;85;0,5;99,5;TRUE
-2011-08-08;"GB1";"nee";6;"BGR";"Fijne grassen";25;15;75;3;97;TRUE
-2011-08-08;"GB1";"nee";7;"BGR";"Fijne grassen";15;0;75;3;97;TRUE
-2011-08-08;"GB1";"nee";8;"BGR";"Fijne grassen";45;5;25;3;97;TRUE
-2011-08-08;"GB1";"nee";8;"BGR";"Andere";7;0;25;3;97;TRUE
-2011-08-08;"GB1";"nee";9;"BGR";"Fijne grassen";25;0;75;7;93;TRUE
-2011-08-08;"GB1";"nee";9;"BGR";"Andere";0,5;0;75;7;93;FALSE
-2011-08-08;"GB2";"nee";1;"EXC";"Fijne grassen";15;1;65;3;97;TRUE
-2011-08-08;"GB2";"nee";1;"EXC";"Pijpenstro";35;71;65;3;97;TRUE
-2011-08-08;"GB2";"nee";2;"EXC";"Fijne grassen";7;2;25;3;97;TRUE
-2011-08-08;"GB2";"nee";2;"EXC";"Pijpenstro";25;15;25;3;97;TRUE
-2011-08-08;"GB2";"nee";3;"EXC";"Pijpenstro";45;65;7;55;45;TRUE
-2011-08-08;"GB2";"nee";3;"EXC";"Fijne grassen";0,5;0;7;55;45;FALSE
-2011-08-08;"GB2";"nee";4;"EXC";"Pijpenstro";25;56;45;3;97;TRUE
-2011-08-08;"GB2";"nee";4;"EXC";"Fijne grassen";15;6;45;3;97;TRUE
-2011-08-08;"GB2";"nee";5;"EXC";"Pijpenstro";85;42;25;15;85;TRUE
-2011-08-08;"GB2";"nee";5;"EXC";"Fijne grassen";3;0;25;15;85;TRUE
-2011-08-08;"GB2";"nee";6;"BGR";"Fijne grassen";7;0;35;3;97;TRUE
-2011-08-08;"GB2";"nee";6;"BGR";"Pijpenstro";55;43;35;3;97;TRUE
-2011-08-08;"GB2";"nee";7;"BGR";"Andere";7;0;15;3;97;TRUE
-2011-08-08;"GB2";"nee";7;"BGR";"Pijpenstro";25;27;15;3;97;TRUE
-2011-08-08;"GB2";"nee";7;"BGR";"Fijne grassen";15;1;15;3;97;TRUE
-2011-08-08;"GB2";"nee";8;"BGR";"Pijpenstro";25;8;35;15;85;TRUE
-2011-08-08;"GB2";"nee";8;"BGR";"Fijne grassen";7;1;35;15;85;TRUE
-2011-08-08;"GB2";"nee";9;"BGR";"Pijpenstro";25;0;45;7;93;FALSE
-2011-08-08;"GB2";"nee";9;"BGR";"Fijne grassen";3;0;45;7;93;FALSE
-2011-08-08;"WD1";"ja";1;"EXC";"Heide";0,5;0;3;95;5;FALSE
-2011-08-08;"WD1";"ja";2;"EXC";"Andere";3;0;3;95;5;FALSE
-2011-08-08;"WD1";"ja";3;"EXC";"Pijpenstro";3;0;0;95;5;FALSE
-2011-08-08;"WD1";"ja";4;"EXC";"Heide";0,5;0;7;75;25;FALSE
-2011-08-08;"WD1";"ja";4;"EXC";"Pijpenstro";15;29;7;75;25;TRUE
-2011-08-08;"WD1";"ja";5;"EXC";"Pijpenstro";25;77;0;75;25;TRUE
-2011-08-08;"WD1";"ja";6;"BGR";"Pijpenstro";15;5;0;85;15;TRUE
-2011-08-08;"WD1";"ja";7;"BGR";"Pijpenstro";7;36;0,5;95;5;TRUE
-2011-08-08;"WD1";"ja";7;"BGR";"Heide";0,5;0;0,5;95;5;FALSE
-2011-08-08;"WD1";"ja";8;"BGR";"Heide";0,5;0;3;95;5;FALSE
-2011-08-08;"WD1";"ja";8;"BGR";"Pijpenstro";7;33;3;95;5;TRUE
-2011-08-08;"WD1";"ja";9;"BGR";"Pijpenstro";3;3;0;95;5;FALSE
-2011-08-08;"WD2";"ja";1;"EXC";"Andere";0,5;0;0;99;1;FALSE
-2011-08-08;"WD2";"ja";2;"EXC";"Pijpenstro";7;9;0,5;95;5;TRUE
-2011-08-08;"WD2";"ja";3;"EXC";"Pijpenstro";7;19;0;95;5;FALSE
-2011-08-08;"WD2";"ja";4;"EXC";"Andere";0,5;0;0;99;1;FALSE
-2011-08-08;"WD2";"ja";4;"EXC";"Pijpenstro";0,5;0;0;99;1;FALSE
-2011-08-08;"WD2";"ja";5;"EXC";"Pijpenstro";3;9;0;95;5;TRUE
-2011-08-08;"WD2";"ja";6;"BGR";"Pijpenstro";0,5;0;0;99;1;FALSE
-2011-08-08;"WD2";"ja";6;"BGR";"Heide";0,5;0;0;99;1;FALSE
-2011-08-08;"WD2";"ja";7;"BGR";"Pijpenstro";15;12;0;85;15;TRUE
-2011-08-08;"WD2";"ja";8;"BGR";"Andere";0,5;0;0,5;95;5;FALSE
-2011-08-09;"LV1";"ja";1;"EXC";"Heide";0,5;0;0;85;15;FALSE
-2011-08-09;"LV1";"ja";1;"EXC";"Pijpenstro";15;31;0;85;15;TRUE
-2011-08-09;"LV1";"ja";2;"EXC";"Pijpenstro";15;63;0;85;15;TRUE
-2011-08-09;"LV1";"ja";2;"EXC";"Heide";0,5;0;0;85;15;FALSE
-2011-08-09;"LV1";"ja";3;"EXC";"Pijpenstro";15;57;0;85;15;TRUE
-2011-08-09;"LV1";"ja";4;"EXC";"Pijpenstro";0,5;3;0;99;1;FALSE
-2011-08-09;"LV1";"ja";6;"BGR";"Pijpenstro";7;15;0;95;5;TRUE
-2011-09-26;"GB1";"nee";4;"EXC";"Fijne grassen";55;73;85;3;97;TRUE
-2011-09-26;"GB1";"nee";5;"EXC";"Fijne grassen";55;4;45;3;97;TRUE
-2011-09-26;"GB1";"nee";5;"EXC";"Andere";25;0;45;3;97;FALSE
-2011-09-26;"GB1";"nee";6;"BGR";"Fijne grassen";55;1;75;3;97;TRUE
-2011-09-26;"GB1";"nee";7;"BGR";"Fijne grassen";45;4;25;3;97;TRUE
-2011-09-26;"GB1";"nee";7;"BGR";"Andere";7;0;25;3;97;TRUE
-2011-09-26;"GB1";"nee";8;"BGR";"Andere";3;0;95;3;97;FALSE
-2011-09-26;"GB1";"nee";8;"BGR";"Fijne grassen";25;6;95;3;97;FALSE
-2011-09-26;"GB1";"nee";9;"BGR";"Andere";3;0;85;3;97;TRUE
-2011-09-26;"GB1";"nee";9;"BGR";"Fijne grassen";55;11;85;3;97;TRUE
-2011-09-26;"GB2";"nee";1;"EXC";"Fijne grassen";15;0;95;0;100;TRUE
-2011-09-26;"GB2";"nee";1;"EXC";"Pijpenstro";55;7;95;0;100;TRUE
-2011-09-26;"GB2";"nee";2;"EXC";"Fijne grassen";3;0;7;7;93;TRUE
-2011-09-26;"GB2";"nee";2;"EXC";"Pijpenstro";75;46;7;7;93;TRUE
-2011-09-26;"GB2";"nee";3;"EXC";"Fijne grassen";3;0;85;3;97;TRUE
-2011-09-26;"GB2";"nee";3;"EXC";"Pijpenstro";7;39;85;3;97;TRUE
-2011-09-26;"GB2";"nee";4;"EXC";"Pijpenstro";7;11;45;25;75;TRUE
-2011-09-26;"GB2";"nee";4;"EXC";"Fijne grassen";3;0;45;25;75;TRUE
-2011-09-26;"GB2";"nee";5;"EXC";"Pijpenstro";55;30;25;7;93;TRUE
-2011-09-26;"GB2";"nee";5;"EXC";"Fijne grassen";15;0;25;7;93;TRUE
-2011-09-26;"GB2";"nee";6;"BGR";"Fijne grassen";7;1;45;3;97;TRUE
-2011-09-26;"GB2";"nee";6;"BGR";"Andere";3;0;45;3;97;TRUE
-2011-09-26;"GB2";"nee";6;"BGR";"Pijpenstro";65;3;45;3;97;TRUE
-2011-09-26;"GB2";"nee";7;"BGR";"Pijpenstro";35;17;15;25;75;TRUE
-2011-09-26;"GB2";"nee";7;"BGR";"Fijne grassen";7;0;15;25;75;TRUE
-2011-09-26;"GB2";"nee";8;"BGR";"Fijne grassen";25;0;0;55;45;TRUE
-2011-09-26;"GB2";"nee";8;"BGR";"Andere";3;0;0;55;45;FALSE
-2011-09-26;"GB2";"nee";8;"BGR";"Pijpenstro";15;6;0;55;45;TRUE
-2011-09-26;"GB2";"nee";9;"BGR";"Fijne grassen";15;0;25;35;65;TRUE
-2011-09-26;"GB2";"nee";9;"BGR";"Pijpenstro";3;2;25;35;65;TRUE
-2011-09-26;"GB2";"nee";9;"BGR";"Heide";7;0;25;35;65;TRUE
-2011-09-26;"WD1";"ja";1;"EXC";"Heide";0,5;0;3;95;5;FALSE
-2011-09-26;"WD1";"ja";1;"EXC";"Andere";0,5;0;3;95;5;FALSE
-2011-09-26;"WD1";"ja";3;"EXC";"Andere";3;0;3;95;5;FALSE
-2011-09-26;"WD1";"ja";3;"EXC";"Heide";3;0;3;95;5;FALSE
-2011-09-26;"WD1";"ja";4;"EXC";"Heide";3;0;15;25;75;FALSE
-2011-09-26;"WD1";"ja";4;"EXC";"Pijpenstro";55;214;15;25;75;TRUE
-2011-09-26;"WD1";"ja";5;"EXC";"Pijpenstro";3;14;7;95;5;TRUE
-2011-09-26;"WD1";"ja";5;"EXC";"Heide";0,5;0;7;95;5;FALSE
-2011-09-26;"WD1";"ja";5;"EXC";"Andere";0,5;0;7;95;5;FALSE
-2011-09-26;"WD1";"ja";5;"EXC";"Heide";3;0;7;85;15;FALSE
-2011-09-26;"WD1";"ja";5;"EXC";"Pijpenstro";3;10;7;85;15;TRUE
-2011-09-26;"WD1";"ja";6;"BGR";"Andere";3;0;3;55;45;FALSE
-2011-09-26;"WD1";"ja";6;"BGR";"Pijpenstro";45;39;3;55;45;TRUE
-2011-09-26;"WD1";"ja";7;"BGR";"Heide";3;0;0;45;55;FALSE
-2011-09-26;"WD1";"ja";7;"BGR";"Andere";3;0;0;45;55;FALSE
-2011-09-26;"WD1";"ja";7;"BGR";"Pijpenstro";45;58;0;45;55;FALSE
-2011-09-26;"WD1";"ja";8;"BGR";"Andere";0,5;0;0;95;5;FALSE
-2011-09-26;"WD1";"ja";8;"BGR";"Pijpenstro";3;7;0;95;5;TRUE
-2011-09-26;"WD1";"ja";8;"BGR";"Heide";0,5;0;0;95;5;FALSE
-2011-09-27;"WD2";"ja";1;"EXC";"Andere";0,5;0;0;99;1;FALSE
-2011-09-27;"WD2";"ja";2;"EXC";"Pijpenstro";7;19;7;85;15;TRUE
-2011-09-27;"WD2";"ja";2;"EXC";"Heide";0,5;0;7;85;15;FALSE
-2011-09-27;"WD2";"ja";2;"EXC";"Andere";0,5;0;7;85;15;FALSE
-2011-09-27;"WD2";"ja";3;"EXC";"Pijpenstro";25;69;0;65;35;TRUE
-2011-09-27;"WD2";"ja";5;"EXC";"Pijpenstro";3;13;3;95;5;TRUE
-2011-09-27;"WD2";"ja";5;"EXC";"Heide";0,5;0;3;95;5;FALSE
-2011-09-27;"WD2";"ja";6;"BGR";"Pijpenstro";0,5;0;3;95;5;FALSE
-2011-09-27;"WD2";"ja";6;"BGR";"Heide";0,5;0;3;95;5;FALSE
-2011-09-27;"WD2";"ja";6;"BGR";"Andere";0,5;0;3;95;5;FALSE
-2011-09-27;"WD2";"ja";8;"BGR";"Pijpenstro";3;0;0;95;5;FALSE
-2011-09-27;"LV1";"ja";1;"EXC";"Andere";0,5;0;0;85;15;FALSE
-2011-09-27;"LV1";"ja";1;"EXC";"Pijpenstro";15;22;0;85;15;TRUE
-2011-09-27;"LV1";"ja";2;"EXC";"Pijpenstro";15;56;7;75;25;TRUE
-2011-09-27;"LV1";"ja";2;"EXC";"Heide";0,5;0;7;75;25;FALSE
-2011-09-27;"LV1";"ja";3;"EXC";"Pijpenstro";7;27;0;95;5;TRUE
-2011-09-27;"LV1";"ja";3;"EXC";"Andere";0,5;0;0;95;5;FALSE
-2011-09-27;"LV1";"ja";4;"EXC";"Heide";0,5;0;0;95;5;FALSE
-2011-09-27;"LV1";"ja";5;"EXC";"Andere";0,5;0;0;99;1;FALSE
-2011-09-27;"LV1";"ja";6;"BGR";"Pijpenstro";25;108;7;75;25;TRUE
-2011-09-27;"LV1";"ja";7;"BGR";"Pijpenstro";7;52;0,5;95;5;TRUE
-2011-09-27;"LV1";"ja";8;"BGR";"Fijne grassen";25;0;3;75;25;TRUE
-2011-09-27;"LV1";"ja";9;"BGR";"Pijpenstro";25;216;15;75;25;TRUE
-2011-09-27;"LV1";"ja";9;"BGR";"Heide";0,5;0;15;75;25;FALSE
-2011-09-27;"LV2";"nee";1;"EXC";"Pijpenstro";25;26;15;65;35;TRUE
-2011-09-27;"LV2";"nee";1;"EXC";"Heide";0,5;0;15;65;35;FALSE
-2011-09-27;"LV2";"nee";2;"EXC";"Heide";0,5;0;3;85;15;FALSE
-2011-09-27;"LV2";"nee";2;"EXC";"Pijpenstro";15;9;3;85;15;TRUE
-2011-09-27;"LV2";"nee";3;"EXC";"Pijpenstro";25;98;15;65;35;TRUE
-2011-09-27;"LV2";"nee";4;"EXC";"Heide";0,5;0;3;45;55;FALSE
-2011-09-27;"LV2";"nee";4;"EXC";"Pijpenstro";55;136;3;45;55;TRUE
-2011-09-27;"LV2";"nee";5;"EXC";"Pijpenstro";25;10;3;75;25;TRUE
-2011-09-27;"LV2";"nee";5;"EXC";"Heide";3;0;3;75;25;FALSE
-2011-09-27;"LV2";"nee";6;"BGR";"Heide";0,5;0;3;75;25;FALSE
-2011-09-27;"LV2";"nee";6;"BGR";"Pijpenstro";25;94;3;75;25;TRUE
-2011-09-27;"LV2";"nee";7;"BGR";"Pijpenstro";25;10;3;75;25;FALSE
-2011-09-27;"LV2";"nee";7;"BGR";"Andere";0,5;0;3;75;25;FALSE
-2011-09-27;"LV2";"nee";8;"BGR";"Pijpenstro";35;43;0,5;0;100;TRUE
-2011-09-27;"LV2";"nee";8;"BGR";"Heide";0,5;0;0,5;0;100;FALSE
-2011-09-27;"LV2";"nee";8;"BGR";"Andere";0,5;0;0,5;0;100;FALSE
-2011-09-27;"LV2";"nee";9;"BGR";"Pijpenstro";45;189;7;55;45;TRUE
-2011-09-27;"LV2";"nee";9;"BGR";"Heide";3;0;7;55;45;FALSE
-2011-09-27;"LV2";"nee";9;"BGR";"Andere";0,5;0;7;55;45;FALSE
-2012-06-07;"GB1";"nee";1;"EXC";"Fijne grassen";15;85;99;0;100;TRUE
-2012-06-07;"GB1";"nee";1;"EXC";"Andere";3;0;99;0;100;TRUE
-2012-06-07;"GB1";"nee";2;"EXC";"Fijne grassen";7;130;95;0;100;TRUE
-2012-06-07;"GB1";"nee";2;"EXC";"Andere";7;0;95;0;100;TRUE
-2012-06-07;"GB1";"nee";3;"EXC";"Andere";7;0;85;0;100;TRUE
-2012-06-07;"GB1";"nee";3;"EXC";"Fijne grassen";15;130;85;0;100;TRUE
-2012-06-07;"GB1";"nee";4;"EXC";"Fijne grassen";25;132;95;0;100;TRUE
-2012-06-07;"GB1";"nee";5;"EXC";"Fijne grassen";15;119;95;0;100;TRUE
-2012-06-07;"GB1";"nee";5;"EXC";"Andere";0,5;0;95;0;100;FALSE
-2012-06-07;"GB1";"nee";6;"BGR";"Fijne grassen";15;26;95;0;100;TRUE
-2012-06-07;"GB1";"nee";6;"BGR";"Andere";7;0;95;0;100;TRUE
-2012-06-07;"GB1";"nee";7;"BGR";"Fijne grassen";15;11;95;0;100;TRUE
-2012-07-03;"WD1";"ja";3;"EXC";"Fijne grassen";15;0;65;0;100;FALSE
-2012-07-03;"WD1";"ja";4;"EXC";"Heide";7;0;65;0;100;FALSE
-2012-07-03;"WD1";"ja";4;"EXC";"Pijpenstro";55;104;65;0;100;FALSE
-2012-07-03;"WD1";"ja";4;"EXC";"Fijne grassen";15;0;65;0;100;FALSE
-2012-07-03;"WD1";"ja";5;"EXC";"Pijpenstro";3;2;65;25;75;FALSE
-2012-07-03;"WD1";"ja";5;"EXC";"Heide";3;0;65;25;75;FALSE
-2012-07-03;"WD1";"ja";5;"EXC";"Fijne grassen";7;0;65;25;75;FALSE
-2012-07-03;"WD1";"ja";6;"BGR";"Heide";3;0;3;15;85;FALSE
-2012-07-03;"WD1";"ja";6;"BGR";"Andere";0,5;0;3;15;85;FALSE
-2012-07-03;"WD1";"ja";6;"BGR";"Pijpenstro";25;8;3;15;85;FALSE
-2012-07-03;"WD1";"ja";7;"BGR";"Pijpenstro";3;0;75;15;85;FALSE
-2012-07-03;"WD1";"ja";7;"BGR";"Andere";7;0;75;15;85;FALSE
-2012-07-03;"WD1";"ja";8;"BGR";"Pijpenstro";15;19;35;65;35;FALSE
-2012-07-03;"WD1";"ja";8;"BGR";"Fijne grassen";3;0;35;65;35;FALSE
-2012-07-03;"WD1";"ja";8;"BGR";"Heide";3;0;35;65;35;FALSE
-2012-07-03;"WD1";"ja";9;"BGR";"Pijpenstro";15;26;75;15;85;FALSE
-2012-07-03;"WD1";"ja";9;"BGR";"Andere";3;0;75;15;85;FALSE
-2012-07-03;"WD1";"ja";9;"BGR";"Heide";3;0;75;15;85;FALSE
-2012-07-03;"WD2";"ja";1;"EXC";"Heide";3;0;15;85;15;FALSE
-2012-07-03;"WD2";"ja";1;"EXC";"Pijpenstro";3;0;15;85;15;FALSE
-2012-07-03;"WD2";"ja";1;"EXC";"Andere";0,5;0;15;85;15;FALSE
-2012-07-03;"WD2";"ja";2;"EXC";"Pijpenstro";3;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";2;"EXC";"Andere";7;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";2;"EXC";"Heide";7;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";3;"EXC";"Pijpenstro";3;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";3;"EXC";"Andere";0,5;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";3;"EXC";"Heide";15;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";5;"EXC";"Heide";7;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";5;"EXC";"Pijpenstro";7;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";5;"EXC";"Andere";25;0;25;65;35;FALSE
-2012-07-03;"WD2";"ja";6;"BGR";"Heide";7;0;75;25;75;FALSE
-2012-07-03;"WD2";"ja";7;"BGR";"Heide";3;0;15;85;15;FALSE
-2012-07-03;"WD2";"ja";7;"BGR";"Pijpenstro";7;0;15;85;15;FALSE
-2012-07-03;"WD2";"ja";8;"BGR";"Heide";15;0;75;15;85;FALSE
-2012-07-03;"WD2";"ja";9;"BGR";"Heide";3;0;45;45;55;FALSE
-2012-07-03;"WD2";"ja";9;"BGR";"Pijpenstro";3;0;45;45;55;FALSE
-2012-07-30;"GB1";"nee";1;"EXC";"Andere";3;0;95;0;100;FALSE
-2012-07-30;"GB1";"nee";1;"EXC";"Fijne grassen";7;0;95;0;100;TRUE
-2012-07-30;"GB1";"nee";2;"EXC";"Andere";0,5;0;95;3;97;FALSE
-2012-07-30;"GB1";"nee";2;"EXC";"Fijne grassen";15;124;95;3;97;TRUE
-2012-07-30;"GB1";"nee";3;"EXC";"Fijne grassen";45;129;95;3;97;TRUE
-2012-07-30;"GB1";"nee";3;"EXC";"Andere";0,5;3;95;3;97;FALSE
-2012-07-30;"GB1";"nee";4;"EXC";"Fijne grassen";25;86;95;3;97;TRUE
-2012-07-30;"GB1";"nee";5;"EXC";"Fijne grassen";55;143;95;0;100;TRUE
-2012-07-30;"GB1";"nee";5;"EXC";"Andere";0,5;0;95;0;100;FALSE
-2012-07-30;"GB1";"nee";6;"BGR";"Fijne grassen";25;52;35;25;75;FALSE
-2012-06-07;"GB1";"nee";8;"BGR";"Fijne grassen";15;75;95;0;100;TRUE
-2012-06-07;"GB1";"nee";8;"BGR";"Andere";0,5;0;95;0;100;FALSE
-2012-06-07;"GB1";"nee";9;"BGR";"Fijne grassen";15;36;85;0;100;TRUE
-2012-06-07;"GB1";"nee";9;"BGR";"Andere";0,5;0;85;0;100;FALSE
-2012-06-07;"GB2";"nee";1;"EXC";"Fijne grassen";3;28;95;0,5;100;TRUE
-2012-06-07;"GB2";"nee";1;"EXC";"Pijpenstro";25;0;95;0,5;100;TRUE
-2012-06-07;"GB2";"nee";2;"EXC";"Fijne grassen";3;23;95;0,5;100;TRUE
-2012-06-07;"GB2";"nee";2;"EXC";"Pijpenstro";45;0;95;0,5;100;TRUE
-2012-06-07;"GB2";"nee";3;"EXC";"Pijpenstro";35;0;75;0,5;100;TRUE
-2012-06-07;"GB2";"nee";3;"EXC";"Fijne grassen";7;45;75;0,5;100;TRUE
-2012-06-07;"GB2";"nee";4;"EXC";"Pijpenstro";45;0;45;7;93;TRUE
-2012-06-07;"GB2";"nee";4;"EXC";"Fijne grassen";3;0;45;7;93;FALSE
-2012-06-07;"GB2";"nee";5;"EXC";"Fijne grassen";7;44;65;0,5;100;TRUE
-2012-06-07;"GB2";"nee";5;"EXC";"Pijpenstro";65;0;65;0,5;100;TRUE
-2012-06-07;"GB2";"nee";6;"BGR";"Fijne grassen";0,5;2;45;0,5;100;FALSE
-2012-06-07;"GB2";"nee";6;"BGR";"Pijpenstro";65;0;45;0,5;100;TRUE
-2012-06-07;"GB2";"nee";7;"BGR";"Andere";25;0;0;75;25;TRUE
-2012-06-07;"GB2";"nee";7;"BGR";"Fijne grassen";3;0;0;75;25;FALSE
-2012-06-07;"GB2";"nee";8;"BGR";"Fijne grassen";7;2;45;0,5;100;TRUE
-2012-06-07;"GB2";"nee";8;"BGR";"Andere";3;0;45;0,5;100;TRUE
-2012-06-07;"GB2";"nee";8;"BGR";"Pijpenstro";85;0;45;0,5;100;TRUE
-2012-06-07;"GB2";"nee";9;"BGR";"Pijpenstro";25;0;25;25;75;TRUE
-2012-06-07;"GB2";"nee";9;"BGR";"Andere";35;0;25;25;75;TRUE
-2012-06-07;"LV1";"ja";1;"EXC";"Heide";3;0;65;0,5;100;TRUE
-2012-06-07;"LV1";"ja";1;"EXC";"Pijpenstro";35;0;65;0,5;100;TRUE
-2012-06-07;"LV1";"ja";2;"EXC";"Heide";3;0;7;85;15;TRUE
-2012-06-07;"LV1";"ja";2;"EXC";"Andere";3;0;7;85;15;TRUE
-2012-06-07;"LV1";"ja";2;"EXC";"Pijpenstro";3;0;7;85;15;TRUE
-2012-06-07;"LV1";"ja";3;"EXC";"Pijpenstro";7;12;0,5;95;5;TRUE
-2012-06-07;"LV1";"ja";4;"EXC";"Pijpenstro";15;0;95;NA;NA;TRUE
-2012-06-07;"LV1";"ja";4;"EXC";"Heide";3;0;95;NA;NA;FALSE
-2012-06-07;"LV1";"ja";4;"EXC";"Andere";3;0;95;NA;NA;TRUE
-2012-06-07;"LV1";"ja";5;"EXC";"Andere";3;0;95;NA;NA;TRUE
-2012-06-07;"LV1";"ja";5;"EXC";"Pijpenstro";25;24;95;NA;NA;TRUE
-2012-06-07;"LV1";"ja";5;"EXC";"Heide";0,5;0;95;NA;NA;FALSE
-2012-06-07;"LV1";"ja";7;"BGR";"Andere";0,5;0;3;95;5;FALSE
-2012-06-07;"LV1";"ja";7;"BGR";"Heide";0,5;0;3;95;5;FALSE
-2012-06-07;"LV1";"ja";7;"BGR";"Pijpenstro";0,5;0;3;95;5;FALSE
-2012-06-07;"LV1";"ja";8;"BGR";"Pijpenstro";25;0;55;25;75;TRUE
-2012-06-07;"LV1";"ja";8;"BGR";"Heide";0,5;0;55;25;75;FALSE
-2012-06-07;"LV1";"ja";9;"BGR";"Pijpenstro";15;1;25;65;35;TRUE
-2012-06-07;"LV1";"ja";9;"BGR";"Heide";0,5;0;25;65;35;FALSE
-2012-06-07;"LV2";"nee";1;"EXC";"Pijpenstro";65;0;55;0,5;100;TRUE
-2012-06-07;"LV2";"nee";1;"EXC";"Heide";3;0;55;0,5;100;FALSE
-2012-06-07;"LV2";"nee";2;"EXC";"Pijpenstro";75;0;35;3;97;TRUE
-2012-06-07;"LV2";"nee";2;"EXC";"Heide";3;0;35;3;97;FALSE
-2012-06-07;"LV2";"nee";3;"EXC";"Pijpenstro";65;0;25;0,5;100;TRUE
-2012-06-07;"LV2";"nee";3;"EXC";"Heide";3;0;25;0,5;100;TRUE
-2012-06-07;"LV2";"nee";4;"EXC";"Heide";3;0;45;3;97;TRUE
-2012-06-07;"LV2";"nee";4;"EXC";"Pijpenstro";65;0;45;3;97;TRUE
-2012-06-07;"LV2";"nee";5;"EXC";"Heide";0,5;0;55;3;97;FALSE
-2012-06-07;"LV2";"nee";5;"EXC";"Pijpenstro";15;0;55;3;97;TRUE
-2012-06-07;"LV2";"nee";6;"BGR";"Heide";0,5;0;35;35;65;FALSE
-2012-06-07;"LV2";"nee";6;"BGR";"Pijpenstro";25;0;35;35;65;TRUE
-2012-06-07;"LV2";"nee";7;"BGR";"Heide";3;0;25;15;85;FALSE
-2012-06-07;"LV2";"nee";7;"BGR";"Pijpenstro";55;0;25;15;85;TRUE
-2012-06-07;"LV2";"nee";8;"BGR";"Pijpenstro";15;0;35;45;55;TRUE
-2012-06-07;"LV2";"nee";9;"BGR";"Pijpenstro";65;0;35;0,5;100;TRUE
-2012-06-07;"LV2";"nee";9;"BGR";"Andere";0,5;0;35;0,5;100;FALSE
-2012-06-07;"LV2";"nee";9;"BGR";"Heide";3;0;35;0,5;100;TRUE
-2012-06-07;"WD1";"ja";1;"EXC";"Heide";3;0;85;7;93;TRUE
-2012-06-07;"WD1";"ja";1;"EXC";"Pijpenstro";7;10;85;7;93;TRUE
-2012-06-07;"WD1";"ja";1;"EXC";"Andere";3;0;85;7;93;FALSE
-2012-06-07;"WD1";"ja";2;"EXC";"Andere";3;0;3;95;5;FALSE
-2012-06-07;"WD1";"ja";2;"EXC";"Pijpenstro";0,5;0;3;95;5;FALSE
-2012-06-07;"WD1";"ja";3;"EXC";"Heide";3;0;65;35;65;TRUE
-2012-06-07;"WD1";"ja";3;"EXC";"Pijpenstro";3;0;65;35;65;FALSE
-2012-06-07;"WD1";"ja";3;"EXC";"Andere";0,5;0;65;35;65;FALSE
-2013-10-01;"GB1";"nee";4;"EXC";"Fijne grassen";85;47;95;0;100;FALSE
-2013-06-17;"GB1";"nee";4;"EXC";"Fijne grassen";25;24;99;0;100;FALSE
-2013-08-28;"GB1";"nee";4;"EXC";"Andere";3;0;99;0;100;FALSE
-2013-07-30;"GB1";"nee";5;NA;"Fijne grassen";25;74;99;0,5;99,5;FALSE
-2013-10-01;"GB1";"nee";5;"EXC";"Fijne grassen";45;8;99;0;100;FALSE
-2013-06-17;"GB1";"nee";5;"EXC";"Andere";3;7;99;0;100;FALSE
-2013-08-28;"GB1";"nee";5;"EXC";"Andere";0,5;0;99;0;100;FALSE
-2013-08-28;"GB1";"nee";5;"EXC";"Fijne grassen";25;8;99;0;100;FALSE
-2013-06-17;"GB1";"nee";5;"EXC";"Fijne grassen";25;4;99;0;100;FALSE
-2013-07-30;"GB1";"nee";6;"BGR";"Fijne grassen";3;20;99;0;100;FALSE
-2013-06-17;"GB1";"nee";6;"BGR";"Fijne grassen";25;41;95;0;100;FALSE
-2013-06-17;"GB1";"nee";6;"BGR";"Andere";3;0;95;0;100;FALSE
-2013-10-01;"GB1";"nee";6;"BGR";"Fijne grassen";3;23;99;0;100;FALSE
-2013-08-28;"GB1";"nee";6;"BGR";"Fijne grassen";25;25;99;0;100;FALSE
-2013-08-28;"GB1";"nee";6;"BGR";"Andere";0,5;0;99;0;100;FALSE
-2013-07-30;"GB1";"nee";7;"BGR";"Fijne grassen";15;29;95;0;100;FALSE
-2013-06-17;"GB1";"nee";7;"BGR";"Fijne grassen";55;16;65;0;100;FALSE
-2013-10-01;"GB1";"nee";7;"BGR";"Andere";3;0;99;0;100;FALSE
-2013-10-01;"GB1";"nee";7;"BGR";"Fijne grassen";75;9;99;0;100;FALSE
-2013-08-28;"GB1";"nee";7;"BGR";"Fijne grassen";25;16;99;0;100;FALSE
-2013-07-30;"GB1";"nee";8;"BGR";"Fijne grassen";15;49;95;0;100;FALSE
-2013-10-01;"GB1";"nee";8;"BGR";"Fijne grassen";25;33;99;0;100;FALSE
-2013-08-28;"GB1";"nee";8;"BGR";"Andere";0,5;0;99;0;100;FALSE
-2013-06-17;"GB1";"nee";8;"BGR";"Fijne grassen";55;19;55;0;100;FALSE
-2013-06-17;"GB1";"nee";8;"BGR";"Andere";3;0;55;0;100;FALSE
-2013-08-28;"GB1";"nee";8;"BGR";"Fijne grassen";25;31;99;0;100;FALSE
-2013-10-01;"GB1";"nee";8;"BGR";"Andere";3;0;99;0;100;FALSE
-2013-08-28;"GB1";"nee";9;"BGR";"Andere";3;0;99;0;100;FALSE
-2013-07-30;"GB1";"nee";9;"BGR";"Andere";0,5;0;85;0;100;FALSE
-2013-07-30;"GB1";"nee";9;"BGR";"Fijne grassen";15;25;85;0;100;FALSE
-2013-06-17;"GB1";"nee";9;"BGR";"Andere";3;2;95;0;100;FALSE
-2013-10-01;"GB1";"nee";9;"BGR";"Fijne grassen";15;28;99;0;100;FALSE
-2013-06-17;"GB1";"nee";9;"BGR";"Fijne grassen";7;4;95;0;100;FALSE
-2013-08-28;"GB1";"nee";9;"BGR";"Fijne grassen";7;1;99;0;100;FALSE
-2013-08-28;"GB2";"nee";1;"EXC";"Pijpenstro";0,5;0;99;0,5;99,5;FALSE
-2013-10-01;"GB2";"nee";1;"EXC";"Pijpenstro";0,5;0;99;0;100;FALSE
-2013-10-01;"GB2";"nee";1;"EXC";"Fijne grassen";0,5;0;99;0;100;FALSE
-2013-07-30;"GB2";"nee";1;"EXC";"Fijne grassen";3;0;99;0;100;FALSE
-2013-06-17;"GB2";"nee";1;"EXC";"Pijpenstro";7;1;99;0;100;FALSE
-2013-08-28;"GB2";"nee";1;"EXC";"Fijne grassen";0,5;0;99;0,5;99,5;FALSE
-2013-06-17;"GB2";"nee";1;"EXC";"Fijne grassen";3;0;99;0;100;FALSE
-2013-07-30;"GB2";"nee";1;"EXC";"Pijpenstro";3;0;99;0;100;FALSE
-2013-06-17;"GB2";"nee";2;"EXC";"Fijne grassen";3;0;15;0;100;FALSE
-2013-06-17;"GB2";"nee";2;"EXC";"Pijpenstro";95;0;15;0;100;FALSE
-2013-07-30;"GB2";"nee";2;"EXC";"Fijne grassen";0,5;0;35;7;93;FALSE
-2013-10-01;"GB2";"nee";2;"EXC";"Pijpenstro";99;9;85;0,5;99,5;FALSE
-2013-08-28;"GB2";"nee";2;"EXC";"Pijpenstro";85;8;85;0;100;FALSE
-2013-07-30;"GB2";"nee";2;"EXC";"Pijpenstro";85;48;35;7;93;FALSE
-2013-10-01;"GB2";"nee";2;"EXC";"Fijne grassen";0,5;0;85;0,5;99,5;FALSE
-2013-06-17;"GB2";"nee";3;"EXC";"Fijne grassen";7;16;95;0;100;FALSE
-2013-08-28;"GB2";"nee";3;"EXC";"Pijpenstro";75;13;85;0;100;FALSE
-2013-07-30;"GB2";"nee";3;"EXC";"Pijpenstro";95;6;7;65;35;FALSE
-2013-08-28;"GB2";"nee";3;"EXC";"Fijne grassen";3;0;85;0;100;FALSE
-2013-07-30;"GB2";"nee";3;"EXC";"Fijne grassen";3;0;7;65;35;FALSE
-2013-06-17;"GB2";"nee";3;"EXC";"Pijpenstro";7;0;95;0;100;FALSE
-2013-07-30;"GB2";"nee";4;"EXC";"Pijpenstro";95;3;85;0;100;FALSE
-2013-10-01;"GB2";"nee";4;"EXC";"Fijne grassen";3;0;75;0,5;99,5;FALSE
-2013-07-30;"GB2";"nee";4;"EXC";"Fijne grassen";3;0;85;0;100;FALSE
-2013-08-28;"GB2";"nee";4;"EXC";"Pijpenstro";65;27;95;0;100;FALSE
-2013-10-01;"GB2";"nee";4;"EXC";"Pijpenstro";95;14;75;0,5;99,5;FALSE
-2013-06-17;"GB2";"nee";4;"EXC";"Fijne grassen";3;1;95;0;100;FALSE
-2013-06-17;"GB2";"nee";4;"EXC";"Pijpenstro";35;1;95;0;100;FALSE
-2013-08-28;"GB2";"nee";4;"EXC";"Fijne grassen";3;1;95;0;100;FALSE
-2013-07-30;"GB2";"nee";5;"EXC";"Pijpenstro";95;0;25;0;100;FALSE
-2013-08-28;"GB2";"nee";5;"EXC";"Fijne grassen";3;0;95;0;100;FALSE
-2013-07-30;"GB2";"nee";5;"EXC";"Fijne grassen";0,5;0;25;0;100;FALSE
-2013-08-28;"GB2";"nee";5;"EXC";"Pijpenstro";85;24;95;0;100;FALSE
-2013-06-17;"GB2";"nee";5;"EXC";"Pijpenstro";35;2;95;0;100;FALSE
-2013-06-17;"GB2";"nee";5;"EXC";"Fijne grassen";3;0;95;0;100;FALSE
-2013-10-01;"GB2";"nee";5;"EXC";"Fijne grassen";0,5;0;75;0;100;FALSE
-2013-10-01;"GB2";"nee";5;"EXC";"Pijpenstro";95;3;75;0;100;FALSE
-2013-08-28;"GB2";"nee";6;"BGR";"Pijpenstro";7;0;99;0;100;FALSE
-2013-10-01;"GB2";"nee";6;"BGR";"Pijpenstro";3;0;99;0;100;FALSE
-2013-07-30;"GB2";"nee";6;"BGR";"Fijne grassen";3;7;95;0;100;FALSE
-2013-06-17;"GB2";"nee";6;"BGR";"Fijne grassen";55;5;85;0,5;99,5;FALSE
-2013-10-01;"GB2";"nee";6;"BGR";"Fijne grassen";3;1;99;0;100;FALSE
-2013-07-30;"GB2";"nee";6;"BGR";"Pijpenstro";15;0;95;0;100;FALSE
-2013-08-28;"GB2";"nee";6;"BGR";"Fijne grassen";3;0;99;0;100;FALSE
-2013-08-28;"GB2";"nee";7;"BGR";"Pijpenstro";95;179;25;0;100;FALSE
-2013-06-17;"GB2";"nee";7;"BGR";"Andere";3;0;35;0;100;FALSE
-2013-07-30;"GB2";"nee";7;"BGR";"Andere";3;0;15;45;55;FALSE
-2013-06-17;"GB2";"nee";7;"BGR";"Fijne grassen";7;4;35;0;100;FALSE
-2013-10-01;"GB2";"nee";7;"BGR";"Pijpenstro";15;2;95;0;100;FALSE
-2013-10-01;"GB2";"nee";7;"BGR";"Andere";3;0;95;0;100;FALSE
-2013-07-30;"GB2";"nee";7;"BGR";"Fijne grassen";0,5;0;15;45;55;FALSE
-2013-06-17;"GB2";"nee";7;"BGR";"Pijpenstro";75;0;35;0;100;FALSE
-2013-10-01;"GB2";"nee";7;"BGR";"Fijne grassen";3;0;95;0;100;FALSE
-2013-07-30;"GB2";"nee";7;"BGR";"Pijpenstro";35;0;15;45;55;FALSE
-2013-08-28;"GB2";"nee";7;"BGR";"Fijne grassen";0,5;0;25;0;100;FALSE
-2013-06-17;"GB2";"nee";8;"BGR";"Pijpenstro";25;0;75;0;100;FALSE
-2013-08-28;"GB2";"nee";8;"BGR";"Andere";15;0;85;7;93;FALSE
-2013-06-17;"GB2";"nee";8;"BGR";"Andere";7;0;75;0;100;FALSE
-2013-07-30;"GB2";"nee";8;"BGR";"Andere";3;0;15;45;55;FALSE
-2013-07-30;"GB2";"nee";8;"BGR";"Fijne grassen";3;12;15;45;55;FALSE
-2013-08-28;"GB2";"nee";8;"BGR";"Pijpenstro";7;0;85;7;93;FALSE
-2013-07-30;"GB2";"nee";8;"BGR";"Pijpenstro";35;0;15;45;55;FALSE
-2013-10-01;"GB2";"nee";8;"BGR";"Pijpenstro";3;3;95;0;100;FALSE
-2013-06-17;"GB2";"nee";8;"BGR";"Fijne grassen";3;11;75;0;100;FALSE
-2013-10-01;"GB2";"nee";8;"BGR";"Fijne grassen";35;12;95;0;100;FALSE
-2013-08-28;"GB2";"nee";8;"BGR";"Fijne grassen";3;0;85;7;93;FALSE
-2013-08-28;"GB2";"nee";9;"BGR";"Andere";7;0;75;15;85;FALSE
-2013-10-01;"GB2";"nee";9;"BGR";"Andere";3;0;75;0;100;FALSE
-2013-08-28;"GB2";"nee";9;"BGR";"Pijpenstro";15;5;75;15;85;FALSE
-2013-07-30;"GB2";"nee";9;"BGR";"Fijne grassen";3;0;55;0;100;FALSE
-2013-10-01;"GB2";"nee";9;"BGR";"Pijpenstro";25;5;75;0;100;FALSE
-2013-06-17;"GB2";"nee";9;"BGR";"Fijne grassen";3;5;25;25;75;FALSE
-2013-10-01;"GB2";"nee";9;"BGR";"Fijne grassen";0,5;0;75;0;100;FALSE
-2013-06-17;"GB2";"nee";9;"BGR";"Pijpenstro";45;0;25;25;75;FALSE
-2013-07-30;"GB2";"nee";9;"BGR";"Pijpenstro";45;16;55;0;100;FALSE
-2013-06-17;"GB2";"nee";9;"BGR";"Andere";3;3;25;25;75;FALSE
-2013-08-28;"GB2";"nee";9;"BGR";"Fijne grassen";0,5;0;75;15;85;FALSE
-2013-08-28;"LV1";"ja";1;"EXC";"Pijpenstro";3;1;99;0;100;FALSE
-2013-10-01;"LV1";"ja";1;"EXC";"Pijpenstro";0,5;0;95;0;100;FALSE
-2013-07-30;"LV1";"ja";1;"EXC";"Heide";3;0;95;0;100;FALSE
-2013-06-17;"LV1";"ja";1;"EXC";"Pijpenstro";7;0;95;0;100;FALSE
-2013-07-30;"LV1";"ja";1;"EXC";"Pijpenstro";7;0;95;0;100;FALSE
-2013-06-17;"LV1";"ja";1;"EXC";"Heide";7;0;95;0;100;FALSE
-2013-08-28;"LV1";"ja";1;"EXC";"Heide";0,5;0;99;0;100;FALSE
-2013-06-17;"LV1";"ja";2;"EXC";"Pijpenstro";15;0;85;7;93;FALSE
-2013-06-17;"LV1";"ja";2;"EXC";"Andere";3;0;85;7;93;FALSE
-2013-06-17;"LV1";"ja";2;"EXC";"Heide";3;0;85;7;93;FALSE
-2013-08-28;"LV1";"ja";2;"EXC";"Heide";0,5;0;95;3;97;FALSE
-2013-10-01;"LV1";"ja";2;"EXC";"Andere";3;0;95;3;97;FALSE
-2013-10-01;"LV1";"ja";2;"EXC";"Heide";7;18;95;3;97;FALSE
-2013-07-30;"LV1";"ja";2;"EXC";"Pijpenstro";0,5;0;95;0;100;FALSE
-2013-10-01;"LV1";"ja";2;"EXC";"Pijpenstro";15;24;95;3;97;FALSE
-2013-07-30;"LV1";"ja";3;"EXC";"Pijpenstro";25;71;75;0;100;FALSE
-2013-10-01;"LV1";"ja";3;"EXC";"Pijpenstro";15;41;95;3;97;FALSE
-2013-06-17;"LV1";"ja";3;"EXC";"Pijpenstro";55;0;55;3;97;FALSE
-2013-06-17;"LV1";"ja";3;"EXC";"Heide";3;0;55;3;97;FALSE
-2013-08-28;"LV1";"ja";3;"EXC";"Heide";0,5;0;45;55;45;FALSE
-2013-06-17;"LV1";"ja";3;"EXC";"Andere";15;0;55;3;97;FALSE
-2013-07-30;"LV1";"ja";3;"EXC";"Andere";0,5;0;75;0;100;FALSE
-2013-08-28;"LV1";"ja";4;"EXC";"Pijpenstro";75;9;85;0;100;FALSE
-2013-10-01;"LV1";"ja";4;"EXC";"Pijpenstro";99;13;15;45;55;FALSE
-2013-06-17;"LV1";"ja";4;"EXC";"Heide";0,5;0;65;0;100;FALSE
-2013-06-17;"LV1";"ja";4;"EXC";"Pijpenstro";75;0;65;0;100;FALSE
-2013-07-30;"LV1";"ja";4;"EXC";"Pijpenstro";95;1;45;3;97;FALSE
-2012-06-07;"WD1";"ja";4;"EXC";"Pijpenstro";7;0;35;NA;NA;TRUE
-2012-06-07;"WD1";"ja";4;"EXC";"Heide";3;0;35;NA;NA;TRUE
-2012-06-07;"WD1";"ja";5;"EXC";"Andere";0,5;0;3;95;5;FALSE
-2012-06-07;"WD1";"ja";5;"EXC";"Heide";0,5;0;3;95;5;FALSE
-2012-06-07;"WD1";"ja";5;"EXC";"Pijpenstro";7;0;3;95;5;TRUE
-2012-06-07;"WD1";"ja";6;"BGR";"Heide";7;0;65;35;65;TRUE
-2012-06-07;"WD1";"ja";6;"BGR";"Pijpenstro";0,5;0;65;35;65;FALSE
-2012-06-07;"WD1";"ja";6;"BGR";"Andere";3;0;65;35;65;FALSE
-2012-06-07;"WD1";"ja";7;"BGR";"Pijpenstro";35;4;55;NA;NA;TRUE
-2012-06-07;"WD1";"ja";7;"BGR";"Andere";0,5;0;55;NA;NA;FALSE
-2012-06-07;"WD1";"ja";8;"BGR";"Heide";3;0;7;65;35;FALSE
-2012-06-07;"WD1";"ja";8;"BGR";"Andere";0,5;0;7;65;35;FALSE
-2012-06-07;"WD1";"ja";8;"BGR";"Pijpenstro";35;1;7;65;35;TRUE
-2012-06-07;"WD1";"ja";9;"BGR";"Heide";3;0;65;3;97;FALSE
-2012-06-07;"WD1";"ja";9;"BGR";"Pijpenstro";35;11;65;3;97;TRUE
-2012-06-07;"WD1";"ja";9;"BGR";"Andere";0,5;0;65;3;97;FALSE
-2012-06-07;"WD2";"ja";1;"EXC";"Andere";0,5;0;3;95;5;FALSE
-2012-06-07;"WD2";"ja";1;"EXC";"Pijpenstro";0,5;0;3;95;5;FALSE
-2012-06-07;"WD2";"ja";2;"EXC";"Pijpenstro";25;49;7;65;35;TRUE
-2012-06-07;"WD2";"ja";2;"EXC";"Andere";3;0;7;65;35;TRUE
-2012-06-07;"WD2";"ja";2;"EXC";"Heide";7;0;7;65;35;TRUE
-2012-06-07;"WD2";"ja";3;"EXC";"Heide";0,5;0;3;95;5;FALSE
-2012-06-07;"WD2";"ja";3;"EXC";"Andere";0,5;0;3;95;5;FALSE
-2012-06-07;"WD2";"ja";3;"EXC";"Pijpenstro";3;0;3;95;5;FALSE
-2012-06-07;"WD2";"ja";4;"EXC";"Andere";3;0;3;NA;NA;TRUE
-2012-06-07;"WD2";"ja";5;"EXC";"Pijpenstro";0,5;0;3;NA;NA;FALSE
-2012-06-07;"WD2";"ja";5;"EXC";"Andere";0,5;0;3;NA;NA;FALSE
-2012-06-07;"WD2";"ja";6;"BGR";"Andere";3;0;15;85;15;FALSE
-2012-06-07;"WD2";"ja";6;"BGR";"Heide";3;0;15;85;15;FALSE
-2012-06-07;"WD2";"ja";7;"BGR";"Heide";0,5;0;7;95;5;FALSE
-2012-06-07;"WD2";"ja";8;"BGR";"Heide";3;0;65;35;65;FALSE
-2012-06-07;"WD2";"ja";8;"BGR";"Pijpenstro";3;0;65;35;65;FALSE
-2012-06-07;"WD2";"ja";9;"BGR";"Heide";3;0;75;25;75;FALSE
-2012-06-07;"WD2";"ja";9;"BGR";"Pijpenstro";3;0;75;25;75;FALSE
-2012-07-03;"GB1";"nee";1;"EXC";"Andere";0,5;0;95;0;100;FALSE
-2012-07-03;"GB1";"nee";1;"EXC";"Fijne grassen";15;0;95;0;100;FALSE
-2012-07-03;"GB1";"nee";2;"EXC";"Fijne grassen";45;198;95;0;100;FALSE
-2012-07-03;"GB1";"nee";2;"EXC";"Andere";7;0;95;0;100;FALSE
-2012-07-03;"GB1";"nee";3;"EXC";"Fijne grassen";45;205;95;0;100;FALSE
-2012-07-03;"GB1";"nee";3;"EXC";"Andere";7;0;95;0;100;FALSE
-2012-07-03;"GB1";"nee";4;"EXC";"Andere";35;0;85;0;100;FALSE
-2012-07-03;"GB1";"nee";4;"EXC";"Fijne grassen";25;103;85;0;100;FALSE
-2012-07-03;"GB1";"nee";5;"EXC";"Fijne grassen";75;217;95;0;100;FALSE
-2012-07-03;"GB1";"nee";5;"EXC";"Andere";35;0;95;0;100;FALSE
-2012-07-03;"GB1";"nee";6;"BGR";"Fijne grassen";35;99;75;0,5;100;FALSE
-2012-07-03;"GB1";"nee";6;"BGR";"Andere";7;0;75;0,5;100;FALSE
-2012-07-03;"GB1";"nee";7;"BGR";"Fijne grassen";55;176;55;0;100;FALSE
-2012-07-03;"GB1";"nee";7;"BGR";"Andere";7;0;55;0;100;FALSE
-2012-07-03;"GB1";"nee";8;"BGR";"Andere";7;0;85;3;97;FALSE
-2012-07-03;"GB1";"nee";8;"BGR";"Fijne grassen";35;67;85;3;97;FALSE
-2012-07-03;"GB1";"nee";9;"BGR";"Fijne grassen";45;72;95;0;100;FALSE
-2012-07-03;"GB1";"nee";9;"BGR";"Andere";7;0;95;0;100;FALSE
-2012-07-03;"GB2";"nee";1;"EXC";"Pijpenstro";25;3;95;0,5;100;FALSE
-2012-07-03;"GB2";"nee";1;"EXC";"Fijne grassen";15;27;95;0,5;100;FALSE
-2012-07-03;"GB2";"nee";2;"EXC";"Fijne grassen";15;15;85;0,5;100;FALSE
-2012-07-03;"GB2";"nee";2;"EXC";"Pijpenstro";55;1;85;0,5;100;FALSE
-2012-07-03;"GB2";"nee";3;"EXC";"Fijne grassen";25;31;85;0,5;100;FALSE
-2012-07-03;"GB2";"nee";3;"EXC";"Pijpenstro";65;12;85;0,5;100;FALSE
-2012-07-03;"GB2";"nee";4;"EXC";"Fijne grassen";25;8;65;0;100;FALSE
-2012-07-03;"GB2";"nee";4;"EXC";"Pijpenstro";65;10;65;0;100;FALSE
-2012-07-03;"GB2";"nee";5;"EXC";"Fijne grassen";7;9;55;0;100;FALSE
-2012-07-03;"GB2";"nee";5;"EXC";"Pijpenstro";45;15;55;0;100;FALSE
-2012-07-03;"GB2";"nee";6;"BGR";"Fijne grassen";15;78;45;0,5;100;FALSE
-2012-07-03;"GB2";"nee";6;"BGR";"Pijpenstro";75;6;45;0,5;100;FALSE
-2012-07-03;"GB2";"nee";7;"BGR";"Fijne grassen";3;0;85;0,5;100;FALSE
-2012-07-03;"GB2";"nee";7;"BGR";"Pijpenstro";7;0;85;0,5;100;FALSE
-2012-07-03;"GB2";"nee";8;"BGR";"Fijne grassen";15;0;15;0,5;100;FALSE
-2012-07-03;"GB2";"nee";8;"BGR";"Pijpenstro";75;3;15;0,5;100;FALSE
-2012-07-03;"GB2";"nee";9;"BGR";"Pijpenstro";25;1;15;0,5;100;FALSE
-2012-07-03;"GB2";"nee";9;"BGR";"Fijne grassen";55;159;15;0,5;100;FALSE
-2012-07-03;"LV1";"ja";1;"EXC";"Heide";3;0;85;15;85;FALSE
-2012-07-03;"LV1";"ja";1;"EXC";"Pijpenstro";25;17;85;15;85;FALSE
-2012-07-03;"LV1";"ja";3;"EXC";"Fijne grassen";7;0;0;95;5;FALSE
-2012-07-03;"LV1";"ja";4;"EXC";"Heide";7;0;75;3;97;FALSE
-2012-07-03;"LV1";"ja";4;"EXC";"Pijpenstro";75;105;75;3;97;FALSE
-2012-07-03;"LV1";"ja";4;"EXC";"Fijne grassen";3;0;75;3;97;FALSE
-2012-07-03;"LV1";"ja";5;"EXC";"Heide";3;0;85;3;97;FALSE
-2012-07-03;"LV1";"ja";5;"EXC";"Pijpenstro";25;0;85;3;97;FALSE
-2012-07-03;"LV1";"ja";6;"BGR";"Heide";0,5;0;0;99;1;FALSE
-2012-07-03;"LV1";"ja";7;"BGR";"Fijne grassen";3;0;45;0,5;100;FALSE
-2012-07-03;"LV1";"ja";7;"BGR";"Heide";3;0;45;0,5;100;FALSE
-2012-07-03;"LV1";"ja";7;"BGR";"Pijpenstro";75;25;45;0,5;100;FALSE
-2012-07-03;"LV1";"ja";8;"BGR";"Fijne grassen";3;0;85;0;100;FALSE
-2012-07-03;"LV1";"ja";8;"BGR";"Pijpenstro";25;3;85;0;100;FALSE
-2012-07-03;"LV1";"ja";8;"BGR";"Heide";7;0;85;0;100;FALSE
-2012-07-03;"LV1";"ja";9;"BGR";"Heide";3;0;15;45;55;FALSE
-2012-07-03;"LV1";"ja";9;"BGR";"Pijpenstro";25;0;15;45;55;FALSE
-2012-07-03;"LV2";"nee";1;"EXC";"Heide";3;0;95;0,5;100;FALSE
-2012-07-03;"LV2";"nee";1;"EXC";"Pijpenstro";45;7;95;0,5;100;FALSE
-2012-07-03;"LV2";"nee";1;"EXC";"Fijne grassen";25;0;95;0,5;100;FALSE
-2012-07-03;"LV2";"nee";2;"EXC";"Heide";3;0;95;0,5;100;FALSE
-2012-07-03;"LV2";"nee";2;"EXC";"Pijpenstro";25;24;95;0,5;100;FALSE
-2012-07-03;"LV2";"nee";3;"EXC";"Fijne grassen";3;0;65;0;100;FALSE
-2012-07-03;"LV2";"nee";3;"EXC";"Pijpenstro";55;0;65;0;100;FALSE
-2012-07-03;"LV2";"nee";3;"EXC";"Heide";3;0;65;0;100;FALSE
-2012-07-03;"LV2";"nee";4;"EXC";"Heide";3;0;55;15;85;FALSE
-2012-07-03;"LV2";"nee";4;"EXC";"Pijpenstro";7;0;55;15;85;FALSE
-2012-07-03;"LV2";"nee";5;"EXC";"Pijpenstro";85;24;55;0;100;FALSE
-2012-07-03;"LV2";"nee";5;"EXC";"Fijne grassen";7;0;55;0;100;FALSE
-2012-07-03;"LV2";"nee";5;"EXC";"Heide";7;0;55;0;100;FALSE
-2012-07-03;"LV2";"nee";6;"BGR";"Fijne grassen";3;0;75;0;100;FALSE
-2012-07-03;"LV2";"nee";6;"BGR";"Heide";3;0;75;0;100;FALSE
-2012-07-03;"LV2";"nee";6;"BGR";"Pijpenstro";25;19;75;0;100;FALSE
-2012-07-03;"LV2";"nee";7;"BGR";"Fijne grassen";3;0;85;0;100;FALSE
-2012-07-03;"LV2";"nee";7;"BGR";"Pijpenstro";35;30;85;0;100;FALSE
-2012-07-03;"LV2";"nee";8;"BGR";"Pijpenstro";45;29;65;0;100;FALSE
-2012-07-03;"LV2";"nee";8;"BGR";"Heide";3;0;65;0;100;FALSE
-2012-07-03;"LV2";"nee";9;"BGR";"Heide";3;0;75;0;100;FALSE
-2012-07-03;"LV2";"nee";9;"BGR";"Pijpenstro";45;36;75;0;100;FALSE
-2012-07-03;"WD1";"ja";1;"EXC";"Heide";15;0;95;3;97;FALSE
-2012-07-03;"WD1";"ja";1;"EXC";"Pijpenstro";3;9;95;3;97;FALSE
-2012-07-03;"WD1";"ja";1;"EXC";"Andere";3;0;95;3;97;FALSE
-2012-07-03;"WD1";"ja";1;"EXC";"Fijne grassen";7;0;95;3;97;FALSE
-2012-07-03;"WD1";"ja";2;"EXC";"Pijpenstro";3;0;45;45;55;FALSE
-2012-07-03;"WD1";"ja";2;"EXC";"Heide";3;0;45;45;55;FALSE
-2012-07-03;"WD1";"ja";3;"EXC";"Heide";3;0;65;0;100;FALSE
-2012-07-03;"WD1";"ja";3;"EXC";"Pijpenstro";65;105;65;0;100;FALSE
-2012-07-30;"GB1";"nee";6;"BGR";"Andere";7;3;35;25;75;FALSE
-2012-07-30;"GB1";"nee";7;"BGR";"Fijne grassen";25;62;95;0,5;100;FALSE
-2012-07-30;"GB1";"nee";7;"BGR";"Andere";7;4;95;0,5;100;FALSE
-2012-07-30;"GB1";"nee";8;"BGR";"Andere";3;1;85;0;100;FALSE
-2012-07-30;"GB1";"nee";8;"BGR";"Fijne grassen";45;38;85;0;100;FALSE
-2012-07-30;"GB1";"nee";9;"BGR";"Andere";3;0;85;7;93;FALSE
-2012-07-30;"GB1";"nee";9;"BGR";"Fijne grassen";25;43;85;7;93;TRUE
-2012-07-30;"GB2";"nee";1;"EXC";"Pijpenstro";7;13;95;0,5;100;TRUE
-2012-07-30;"GB2";"nee";1;"EXC";"Fijne grassen";3;2;95;0,5;100;FALSE
-2012-07-30;"GB2";"nee";2;"EXC";"Pijpenstro";75;25;25;0,5;100;TRUE
-2012-07-30;"GB2";"nee";3;"EXC";"Pijpenstro";85;37;15;0;100;TRUE
-2012-07-30;"GB2";"nee";3;"EXC";"Fijne grassen";0,5;0;15;0;100;FALSE
-2012-07-30;"GB2";"nee";4;"EXC";"Pijpenstro";35;115;65;0;100;TRUE
-2012-07-30;"GB2";"nee";4;"EXC";"Fijne grassen";3;0;65;0;100;FALSE
-2012-07-30;"GB2";"nee";5;"EXC";"Fijne grassen";3;0;3;3;97;FALSE
-2012-07-30;"GB2";"nee";5;"EXC";"Pijpenstro";95;42;3;3;97;TRUE
-2012-07-30;"GB2";"nee";6;"BGR";"Andere";3;0;85;NA;NA;FALSE
-2012-07-30;"GB2";"nee";6;"BGR";"Pijpenstro";15;7;85;NA;NA;TRUE
-2012-07-30;"GB2";"nee";6;"BGR";"Fijne grassen";7;1;85;NA;NA;TRUE
-2012-07-30;"GB2";"nee";7;"BGR";"Fijne grassen";3;3;35;55;45;FALSE
-2012-07-30;"GB2";"nee";7;"BGR";"Pijpenstro";25;5;35;55;45;TRUE
-2012-07-30;"GB2";"nee";8;"BGR";"Pijpenstro";45;1;25;7;93;TRUE
-2012-07-30;"GB2";"nee";8;"BGR";"Andere";15;0;25;7;93;FALSE
-2012-07-30;"GB2";"nee";8;"BGR";"Fijne grassen";3;0;25;7;93;TRUE
-2012-07-30;"GB2";"nee";9;"BGR";"Pijpenstro";65;2;7;7;93;TRUE
-2012-07-30;"GB2";"nee";9;"BGR";"Andere";7;0;7;7;93;TRUE
-2012-07-30;"GB2";"nee";9;"BGR";"Fijne grassen";7;1;7;7;93;TRUE
-2012-07-30;"LV1";"ja";1;"EXC";"Heide";3;0;95;3;97;FALSE
-2012-07-30;"LV1";"ja";1;"EXC";"Pijpenstro";15;9;95;3;97;TRUE
-2012-07-30;"LV1";"ja";2;"EXC";"Pijpenstro";0,5;0;3;95;5;FALSE
-2012-07-30;"LV1";"ja";2;"EXC";"Fijne grassen";3;1;3;95;5;TRUE
-2012-07-30;"LV1";"ja";4;"EXC";"Heide";3;0;25;3;97;FALSE
-2012-07-30;"LV1";"ja";4;"EXC";"Pijpenstro";85;25;25;3;97;TRUE
-2012-07-30;"LV1";"ja";5;"EXC";"Andere";15;0;95;0,5;100;FALSE
-2012-07-30;"LV1";"ja";5;"EXC";"Pijpenstro";15;21;95;0,5;100;TRUE
-2012-07-30;"LV1";"ja";6;"BGR";"Heide";3;0;35;3;97;FALSE
-2012-07-30;"LV1";"ja";6;"BGR";"Pijpenstro";35;12;35;3;97;TRUE
-2012-07-30;"LV1";"ja";6;"BGR";"Fijne grassen";15;19;35;3;97;FALSE
-2012-07-30;"LV1";"ja";7;"BGR";"Heide";0,5;0;3;95;5;FALSE
-2012-07-30;"LV1";"ja";8;"BGR";"Fijne grassen";3;0;65;0;100;FALSE
-2012-07-30;"LV1";"ja";8;"BGR";"Heide";3;0;65;0;100;FALSE
-2012-07-30;"LV1";"ja";8;"BGR";"Pijpenstro";35;23;65;0;100;TRUE
-2012-07-30;"LV1";"ja";9;"BGR";"Pijpenstro";3;0;3;95;5;FALSE
-2012-07-30;"LV1";"ja";9;"BGR";"Heide";3;0;3;95;5;FALSE
-2012-07-30;"LV2";"nee";1;"EXC";"Pijpenstro";45;6;65;0;100;TRUE
-2012-07-30;"LV2";"nee";1;"EXC";"Heide";0,5;0;65;0;100;FALSE
-2012-07-30;"LV2";"nee";2;"EXC";"Heide";3;2;95;0;100;FALSE
-2012-07-30;"LV2";"nee";2;"EXC";"Pijpenstro";3;3;95;0;100;FALSE
-2012-07-30;"LV2";"nee";3;"EXC";"Pijpenstro";95;41;15;0;100;TRUE
-2012-07-30;"LV2";"nee";4;"EXC";"Pijpenstro";45;34;55;0;100;TRUE
-2012-07-30;"LV2";"nee";4;"EXC";"Heide";3;5;55;0;100;TRUE
-2012-07-30;"LV2";"nee";5;"EXC";"Pijpenstro";35;16;45;3;97;TRUE
-2012-07-30;"LV2";"nee";5;"EXC";"Heide";25;17;45;3;97;TRUE
-2012-07-30;"LV2";"nee";6;"BGR";"Heide";3;0;95;0;100;FALSE
-2012-07-30;"LV2";"nee";6;"BGR";"Pijpenstro";7;1;95;0;100;FALSE
-2012-07-30;"LV2";"nee";7;"BGR";"Heide";0,5;0;45;25;75;FALSE
-2012-07-30;"LV2";"nee";7;"BGR";"Pijpenstro";25;18;45;25;75;TRUE
-2012-07-30;"LV2";"nee";8;"BGR";"Pijpenstro";75;25;35;0;100;TRUE
-2012-07-30;"LV2";"nee";8;"BGR";"Heide";3;0;35;0;100;FALSE
-2012-07-30;"LV2";"nee";9;"BGR";"Pijpenstro";25;71;85;NA;NA;TRUE
-2012-07-30;"LV2";"nee";9;"BGR";"Heide";3;0;85;NA;NA;FALSE
-2012-07-30;"WD1";"ja";1;"EXC";"Andere";3;0;95;0,5;100;FALSE
-2012-07-30;"WD1";"ja";1;"EXC";"Pijpenstro";3;0;95;0,5;100;FALSE
-2012-07-30;"WD1";"ja";1;"EXC";"Heide";3;0;95;0,5;100;FALSE
-2012-07-30;"WD1";"ja";2;"EXC";"Pijpenstro";7;6;7;85;15;FALSE
-2012-07-30;"WD1";"ja";2;"EXC";"Andere";7;0;7;85;15;FALSE
-2012-07-30;"WD1";"ja";3;"EXC";"Pijpenstro";55;37;35;3;97;FALSE
-2012-07-30;"WD1";"ja";3;"EXC";"Heide";7;3;35;3;97;FALSE
-2012-07-30;"WD1";"ja";4;"EXC";"Heide";7;2;95;0;100;FALSE
-2012-07-30;"WD1";"ja";4;"EXC";"Pijpenstro";15;32;95;0;100;FALSE
-2012-07-30;"WD1";"ja";5;"EXC";"Pijpenstro";7;7;95;0;100;TRUE
-2012-07-30;"WD1";"ja";5;"EXC";"Heide";15;11;95;0;100;TRUE
-2012-07-30;"WD1";"ja";5;"EXC";"Andere";3;0;95;0;100;FALSE
-2012-07-30;"WD1";"ja";6;"BGR";"Heide";0,5;0;45;35;65;FALSE
-2012-07-30;"WD1";"ja";6;"BGR";"Pijpenstro";35;28;45;35;65;TRUE
-2012-07-30;"WD1";"ja";7;"BGR";"Pijpenstro";45;54;35;15;85;FALSE
-2012-07-30;"WD1";"ja";7;"BGR";"Heide";0,5;0;35;15;85;FALSE
-2012-07-30;"WD1";"ja";7;"BGR";"Andere";0,5;0;35;15;85;FALSE
-2012-07-30;"WD1";"ja";8;"BGR";"Heide";0,5;0;15;7;93;FALSE
-2012-07-30;"WD1";"ja";8;"BGR";"Pijpenstro";85;33;15;7;93;FALSE
-2012-07-30;"WD1";"ja";9;"BGR";"Pijpenstro";7;0;95;3;97;FALSE
-2012-07-30;"WD1";"ja";9;"BGR";"Heide";0,5;0;95;3;97;FALSE
-2012-07-30;"WD2";"ja";1;"EXC";"Heide";3;0;3;95;5;FALSE
-2012-07-30;"WD2";"ja";1;"EXC";"Andere";0,5;0;3;95;5;FALSE
-2012-07-30;"WD2";"ja";1;"EXC";"Pijpenstro";3;0;3;95;5;FALSE
-2012-07-30;"WD2";"ja";2;"EXC";"Pijpenstro";3;0;95;0;100;FALSE
-2012-07-30;"WD2";"ja";2;"EXC";"Heide";15;0;95;0;100;FALSE
-2012-07-30;"WD2";"ja";2;"EXC";"Andere";0,5;0;95;0;100;FALSE
-2012-07-30;"WD2";"ja";4;"EXC";"Pijpenstro";3;0;3;95;5;FALSE
-2012-07-30;"WD2";"ja";5;"EXC";"Pijpenstro";7;0;75;25;75;FALSE
-2012-07-30;"WD2";"ja";5;"EXC";"Andere";3;0;75;25;75;FALSE
-2012-07-30;"WD2";"ja";6;"BGR";"Andere";3;0;25;45;55;FALSE
-2012-07-30;"WD2";"ja";6;"BGR";"Heide";25;0;25;45;55;FALSE
-2012-07-30;"WD2";"ja";6;"BGR";"Fijne grassen";3;0;25;45;55;FALSE
-2012-07-30;"WD2";"ja";7;"BGR";"Heide";0,5;0;0;99;1;FALSE
-2012-07-30;"WD2";"ja";8;"BGR";"Heide";3;0;25;75;25;FALSE
-2012-07-30;"WD2";"ja";8;"BGR";"Andere";3;0;25;75;25;FALSE
-2012-07-30;"WD2";"ja";8;"BGR";"Pijpenstro";3;0;25;75;25;FALSE
-2012-07-30;"WD2";"ja";9;"BGR";"Pijpenstro";55;28;25;35;65;TRUE
-2012-07-30;"WD2";"ja";9;"BGR";"Heide";3;0;25;35;65;FALSE
-2012-09-04;"GB1";"nee";1;"EXC";"Pijpenstro";3;1;95;3;97;TRUE
-2012-09-04;"GB1";"nee";1;"EXC";"Fijne grassen";3;0;95;3;97;FALSE
-2012-09-04;"GB1";"nee";2;"EXC";"Pijpenstro";75;10;85;0,5;100;TRUE
-2012-09-04;"GB1";"nee";3;"EXC";"Pijpenstro";85;32;75;0;100;TRUE
-2012-09-04;"GB1";"nee";3;"EXC";"Fijne grassen";0,5;0;75;0;100;FALSE
-2012-09-04;"GB1";"nee";4;"EXC";"Fijne grassen";3;0;35;0;100;FALSE
-2012-09-04;"GB1";"nee";4;"EXC";"Pijpenstro";95;21;35;0;100;TRUE
-2012-09-04;"GB1";"nee";5;"EXC";"Fijne grassen";0,5;0;45;0;100;FALSE
-2012-09-04;"GB1";"nee";5;"EXC";"Pijpenstro";85;49;45;0;100;TRUE
-2012-09-04;"GB1";"nee";6;"BGR";"Fijne grassen";15;41;85;0,5;100;FALSE
-2012-09-04;"GB1";"nee";6;"BGR";"Pijpenstro";15;0;85;0,5;100;FALSE
-2012-09-04;"GB1";"nee";7;"BGR";"Fijne grassen";0,5;0;65;0,5;100;FALSE
-2012-09-04;"GB1";"nee";7;"BGR";"Pijpenstro";25;15;65;0,5;100;FALSE
-2012-09-04;"GB1";"nee";8;"BGR";"Pijpenstro";55;4;35;0;100;FALSE
-2012-09-04;"GB1";"nee";8;"BGR";"Andere";7;0;35;0;100;FALSE
-2012-09-04;"GB1";"nee";9;"BGR";"Andere";3;0;45;0;100;FALSE
-2012-09-04;"GB1";"nee";9;"BGR";"Fijne grassen";3;0;45;0;100;FALSE
-2012-09-04;"GB1";"nee";9;"BGR";"Pijpenstro";55;52;45;0;100;FALSE
-2012-09-04;"GB2";"nee";1;"EXC";"Fijne grassen";3;0;95;0;100;FALSE
-2012-09-04;"GB2";"nee";2;"EXC";"Fijne grassen";15;63;95;0;100;FALSE
-2012-09-04;"GB2";"nee";2;"EXC";"Andere";0,5;0;95;0;100;FALSE
-2012-09-04;"GB2";"nee";3;"EXC";"Andere";3;0;95;0;100;FALSE
-2012-09-04;"GB2";"nee";3;"EXC";"Fijne grassen";35;76;95;0;100;FALSE
-2012-09-04;"GB2";"nee";4;"EXC";"Fijne grassen";35;75;85;0;100;FALSE
-2012-09-04;"GB2";"nee";5;"EXC";"Andere";0,5;0;95;0;100;FALSE
-2012-09-04;"GB2";"nee";5;"EXC";"Fijne grassen";55;86;95;0;100;FALSE
-2012-09-04;"GB2";"nee";6;"BGR";"Fijne grassen";35;8;35;25;75;FALSE
-2012-09-04;"GB2";"nee";6;"BGR";"Andere";0,5;0;35;25;75;FALSE
-2012-09-04;"GB2";"nee";7;"BGR";"Fijne grassen";75;58;25;0,5;100;FALSE
-2012-09-04;"GB2";"nee";7;"BGR";"Andere";0,5;0;25;0,5;100;FALSE
-2012-09-04;"GB2";"nee";8;"BGR";"Andere";0,5;0;75;0,5;100;FALSE
-2012-09-04;"GB2";"nee";8;"BGR";"Fijne grassen";75;12;75;0,5;100;FALSE
-2012-09-04;"GB2";"nee";9;"BGR";"Fijne grassen";35;13;55;3;97;FALSE
-2012-09-04;"GB2";"nee";9;"BGR";"Andere";0,5;0;55;3;97;FALSE
-2012-09-04;"LV1";"ja";1;"EXC";"Pijpenstro";25;2;85;0,5;100;FALSE
-2012-09-04;"LV1";"ja";1;"EXC";"Heide";0,5;0;85;0,5;100;FALSE
-2012-09-04;"LV1";"ja";2;"EXC";"Pijpenstro";45;115;55;3;97;FALSE
-2012-09-04;"LV1";"ja";2;"EXC";"Heide";7;2;55;3;97;FALSE
-2012-09-04;"LV1";"ja";3;"EXC";"Heide";0,5;0;3;0,5;100;FALSE
-2012-09-04;"LV1";"ja";3;"EXC";"Pijpenstro";95;19;3;0,5;100;FALSE
-2012-09-04;"LV1";"ja";4;"EXC";"Pijpenstro";75;25;25;3;97;FALSE
-2012-09-04;"LV1";"ja";4;"EXC";"Heide";0,5;0;25;3;97;FALSE
-2012-09-04;"LV1";"ja";5;"EXC";"Pijpenstro";85;21;3;3;97;FALSE
-2012-09-04;"LV1";"ja";5;"EXC";"Heide";3;3;3;3;97;FALSE
-2012-09-04;"LV1";"ja";6;"BGR";"Pijpenstro";55;42;65;3;97;FALSE
-2012-09-04;"LV1";"ja";6;"BGR";"Heide";0,5;0;65;3;97;FALSE
-2012-09-04;"LV1";"ja";7;"BGR";"Pijpenstro";7;3;85;3;97;FALSE
-2012-09-04;"LV1";"ja";7;"BGR";"Heide";3;0;85;3;97;FALSE
-2012-09-04;"LV1";"ja";8;"BGR";"Heide";3;1;65;3;97;FALSE
-2012-09-04;"LV1";"ja";8;"BGR";"Pijpenstro";25;42;65;3;97;FALSE
-2012-09-04;"LV1";"ja";9;"BGR";"Pijpenstro";15;18;75;7;93;FALSE
-2012-09-04;"LV1";"ja";9;"BGR";"Heide";7;0;75;7;93;FALSE
-2012-09-04;"LV2";"nee";1;"EXC";"Heide";7;0;85;3;97;FALSE
-2012-09-04;"LV2";"nee";1;"EXC";"Pijpenstro";15;2;85;3;97;FALSE
-2012-09-04;"LV2";"nee";3;"EXC";"Pijpenstro";3;0;0,5;95;5;FALSE
-2012-09-04;"LV2";"nee";4;"EXC";"Pijpenstro";65;25;25;7;93;FALSE
-2012-09-04;"LV2";"nee";4;"EXC";"Heide";0,5;0;25;7;93;FALSE
-2012-09-04;"LV2";"nee";5;"EXC";"Pijpenstro";45;32;65;3;97;FALSE
-2012-09-04;"LV2";"nee";5;"EXC";"Heide";7;4;65;3;97;FALSE
-2012-09-04;"LV2";"nee";6;"BGR";"Heide";3;0;0;95;5;FALSE
-2012-09-04;"LV2";"nee";7;"BGR";"Heide";0,5;0;0,5;95;5;FALSE
-2012-09-04;"LV2";"nee";7;"BGR";"Pijpenstro";0,5;0;0,5;95;5;FALSE
-2012-09-04;"LV2";"nee";8;"BGR";"Pijpenstro";7;11;85;15;85;FALSE
-2012-09-04;"LV2";"nee";8;"BGR";"Heide";3;0;85;15;85;FALSE
-2012-09-04;"LV2";"nee";9;"BGR";"Pijpenstro";3;0;0;95;5;FALSE
-2012-09-04;"WD1";"ja";1;"EXC";"Heide";7;1;95;0,5;100;FALSE
-2012-09-04;"WD1";"ja";1;"EXC";"Andere";3;0;95;0,5;100;FALSE
-2012-09-04;"WD1";"ja";2;"EXC";"Andere";0,5;0;0,5;95;5;FALSE
-2012-09-04;"WD1";"ja";2;"EXC";"Heide";3;1;0,5;95;5;FALSE
-2012-09-04;"WD1";"ja";2;"EXC";"Pijpenstro";3;3;0,5;95;5;FALSE
-2012-09-04;"WD1";"ja";3;"EXC";"Pijpenstro";65;68;45;0;100;FALSE
-2012-09-04;"WD1";"ja";3;"EXC";"Heide";3;1;45;0;100;FALSE
-2012-09-04;"WD1";"ja";4;"EXC";"Pijpenstro";95;63;15;0,5;100;FALSE
-2012-09-04;"WD1";"ja";4;"EXC";"Heide";3;0;15;0,5;100;FALSE
-2012-09-04;"WD1";"ja";5;"EXC";"Pijpenstro";35;0;95;3;97;FALSE
-2012-09-04;"WD1";"ja";5;"EXC";"Heide";7;1;95;3;97;FALSE
-2012-09-04;"WD1";"ja";6;"BGR";"Heide";0,5;0;65;35;65;FALSE
-2012-09-04;"WD1";"ja";6;"BGR";"Andere";3;0;65;35;65;FALSE
-2012-09-04;"WD1";"ja";7;"BGR";"Andere";0,5;0;55;45;55;FALSE
-2012-09-04;"WD1";"ja";7;"BGR";"Heide";3;0;55;45;55;FALSE
-2012-09-04;"WD1";"ja";7;"BGR";"Pijpenstro";7;13;55;45;55;FALSE
-2012-09-04;"WD1";"ja";8;"BGR";"Pijpenstro";35;27;35;25;75;FALSE
-2012-09-04;"WD1";"ja";8;"BGR";"Andere";0,5;0;35;25;75;FALSE
-2012-09-04;"WD1";"ja";8;"BGR";"Heide";3;0;35;25;75;FALSE
-2012-09-04;"WD1";"ja";9;"BGR";"Heide";3;0;35;55;45;FALSE
-2012-09-04;"WD1";"ja";9;"BGR";"Andere";0,5;0;35;55;45;FALSE
-2012-09-04;"WD1";"ja";9;"BGR";"Pijpenstro";3;7;35;55;45;FALSE
-2012-09-04;"WD2";"ja";1;"EXC";"Pijpenstro";3;0;3;95;5;FALSE
-2012-09-04;"WD2";"ja";1;"EXC";"Heide";3;0;3;95;5;FALSE
-2012-09-04;"WD2";"ja";2;"EXC";"Pijpenstro";15;69;15;65;35;FALSE
-2012-09-04;"WD2";"ja";2;"EXC";"Heide";3;0;15;65;35;FALSE
-2012-09-04;"WD2";"ja";3;"EXC";"Andere";3;0;65;3;97;FALSE
-2012-09-04;"WD2";"ja";3;"EXC";"Pijpenstro";3;5;65;3;97;FALSE
-2012-09-04;"WD2";"ja";3;"EXC";"Heide";35;31;65;3;97;FALSE
-2012-09-04;"WD2";"ja";4;"EXC";"Andere";0,5;0;3;75;25;FALSE
-2012-09-04;"WD2";"ja";4;"EXC";"Heide";25;28;3;75;25;FALSE
-2012-09-04;"WD2";"ja";4;"EXC";"Pijpenstro";15;37;3;75;25;FALSE
-2012-09-04;"WD2";"ja";5;"EXC";"Pijpenstro";15;17;3;95;5;FALSE
-2012-09-04;"WD2";"ja";6;"BGR";"Heide";3;0;25;75;25;FALSE
-2012-09-04;"WD2";"ja";7;"BGR";"Pijpenstro";3;5;7;95;5;FALSE
-2012-09-04;"WD2";"ja";8;"BGR";"Andere";0,5;0;15;85;15;FALSE
-2012-09-04;"WD2";"ja";8;"BGR";"Heide";15;0;15;85;15;FALSE
-2012-09-04;"WD2";"ja";8;"BGR";"Pijpenstro";0,5;0;15;85;15;FALSE
-2012-09-04;"WD2";"ja";9;"BGR";"Pijpenstro";35;21;15;15;85;FALSE
-2012-09-04;"WD2";"ja";9;"BGR";"Heide";7;4;15;15;85;FALSE
-2013-08-28;"WD2";"ja";5;"EXC";"Andere";3;0;65;3;97;FALSE
-2013-10-01;"GB2";"nee";3;"EXC";"Pijpenstro";95;21;45;0;100;FALSE
-2013-10-01;"GB2";"nee";3;"EXC";"Fijne grassen";0,5;0;45;0;100;FALSE
-2013-10-01;"GB1";"nee";1;"EXC";"Pijpenstro";3;0;99;0;100;FALSE
-2013-08-28;"GB1";"nee";1;"EXC";"Fijne grassen";0,5;0;99;0;100;FALSE
-2013-08-28;"GB1";"nee";1;"EXC";"Pijpenstro";3;0;99;0;100;FALSE
-2013-06-17;"GB1";"nee";1;"EXC";"Fijne grassen";15;16;99;0;100;FALSE
-2013-07-30;"GB1";"nee";1;"EXC";"Fijne grassen";3;1;99;0;100;FALSE
-2013-10-01;"GB1";"nee";1;"EXC";"Fijne grassen";3;0;99;0;100;FALSE
-2013-06-17;"GB1";"nee";1;"EXC";"Andere";0,5;0;99;0;100;FALSE
-2013-06-17;"GB1";"nee";2;"EXC";"Fijne grassen";15;62;99;0;100;FALSE
-2013-10-01;"GB1";"nee";2;"EXC";"Fijne grassen";75;73;99;0;100;FALSE
-2013-08-28;"GB1";"nee";2;"EXC";"Pijpenstro";0,5;0;99;0;100;FALSE
-2013-10-01;"GB1";"nee";2;"EXC";"Andere";0,5;0;99;0;100;FALSE
-2013-07-30;"GB1";"nee";2;"EXC";"Fijne grassen";15;84;99;0;100;FALSE
-2013-08-28;"GB1";"nee";2;"EXC";"Fijne grassen";7;36;99;0;100;FALSE
-2013-08-28;"GB1";"nee";3;"EXC";"Pijpenstro";0,5;2;99;0;100;FALSE
-2013-06-17;"GB1";"nee";3;"EXC";"Fijne grassen";7;7;99;0;100;FALSE
-2013-07-30;"GB1";"nee";3;"EXC";"Andere";0,5;0;99;0;100;FALSE
-2013-06-17;"GB1";"nee";3;"EXC";"Andere";0,5;0;99;0;100;FALSE
-2013-10-01;"GB1";"nee";3;"EXC";"Fijne grassen";75;14;95;0;100;FALSE
-2013-07-30;"GB1";"nee";3;"EXC";"Fijne grassen";25;32;99;0;100;FALSE
-2013-08-28;"GB1";"nee";3;"EXC";"Andere";3;0;99;0;100;FALSE
-2013-08-28;"GB1";"nee";3;"EXC";"Fijne grassen";25;146;99;0;100;FALSE
-2013-07-30;"GB1";"nee";4;"EXC";"Fijne grassen";85;7;65;0;100;FALSE
-2013-08-28;"GB1";"nee";4;"EXC";"Fijne grassen";75;43;99;0;100;FALSE
-2013-08-28;"LV1";"ja";4;"EXC";"Heide";0,5;1;85;0;100;FALSE
-2013-08-28;"LV1";"ja";5;"EXC";"Pijpenstro";95;12;45;0;100;FALSE
-2013-07-30;"LV1";"ja";5;"EXC";"Heide";3;0;55;3;97;FALSE
-2013-06-17;"LV1";"ja";5;"EXC";"Pijpenstro";75;0;85;0;100;FALSE
-2013-07-30;"LV1";"ja";5;"EXC";"Pijpenstro";95;3;55;3;97;FALSE
-2013-06-17;"LV1";"ja";5;"EXC";"Heide";3;0;85;0;100;FALSE
-2013-10-01;"LV1";"ja";5;"EXC";"Pijpenstro";99;2;95;0,5;99,5;FALSE
-2013-07-30;"LV1";"ja";6;"BGR";"Heide";7;0;25;7;93;FALSE
-2013-07-30;"LV1";"ja";6;"BGR";"Pijpenstro";55;3;25;7;93;FALSE
-2013-10-01;"LV1";"ja";6;"BGR";"Heide";0,5;0;65;35;65;FALSE
-2013-06-17;"LV1";"ja";6;"BGR";"Heide";15;0;45;35;65;FALSE
-2013-08-28;"LV1";"ja";6;"BGR";"Heide";3;0;15;85;15;FALSE
-2013-06-17;"LV1";"ja";6;"BGR";"Pijpenstro";15;0;45;35;65;FALSE
-2013-06-17;"LV1";"ja";7;"BGR";"Fijne grassen";7;0;45;3;97;FALSE
-2013-07-30;"LV1";"ja";7;"BGR";"Pijpenstro";7;0;75;15;85;FALSE
-2013-10-01;"LV1";"ja";7;"BGR";"Pijpenstro";15;5;75;3;97;FALSE
-2013-08-28;"LV1";"ja";7;"BGR";"Pijpenstro";3;0;85;7;93;FALSE
-2013-07-30;"LV1";"ja";7;"BGR";"Heide";3;2;75;15;85;FALSE
-2013-06-17;"LV1";"ja";7;"BGR";"Heide";3;0;45;3;97;FALSE
-2013-06-17;"LV1";"ja";7;"BGR";"Pijpenstro";45;0;45;3;97;FALSE
-2013-08-28;"LV1";"ja";7;"BGR";"Heide";3;0;85;7;93;FALSE
-2013-10-01;"LV1";"ja";7;"BGR";"Andere";0,5;0;75;3;97;FALSE
-2013-06-17;"LV1";"ja";8;"BGR";"Andere";7;0;55;35;65;FALSE
-2013-07-30;"LV1";"ja";8;"BGR";"Andere";3;0;75;0;100;FALSE
-2013-08-28;"LV1";"ja";8;"BGR";"Heide";3;0;45;3;97;FALSE
-2013-07-30;"LV1";"ja";8;"BGR";"Heide";7;0;75;0;100;FALSE
-2013-06-17;"LV1";"ja";8;"BGR";"Pijpenstro";15;0;55;35;65;FALSE
-2013-06-17;"LV1";"ja";8;"BGR";"Heide";7;0;55;35;65;FALSE
-2013-10-01;"LV1";"ja";8;"BGR";"Heide";25;0;65;3;97;FALSE
-2013-08-28;"LV1";"ja";8;"BGR";"Pijpenstro";65;9;45;3;97;FALSE
-2013-07-30;"LV1";"ja";8;"BGR";"Pijpenstro";25;1;75;0;100;FALSE
-2013-10-01;"LV1";"ja";8;"BGR";"Pijpenstro";7;0;65;3;97;FALSE
-2013-08-28;"LV1";"ja";9;"BGR";"Heide";3;0;95;3;97;FALSE
-2013-10-01;"LV1";"ja";9;"BGR";"Pijpenstro";35;0;65;0;100;FALSE
-2013-06-17;"LV1";"ja";9;"BGR";"Pijpenstro";45;0;65;7;93;FALSE
-2013-06-17;"LV1";"ja";9;"BGR";"Heide";15;0;65;7;93;FALSE
-2013-07-30;"LV1";"ja";9;"BGR";"Pijpenstro";3;0;35;65;35;FALSE
-2013-06-17;"LV1";"ja";9;"BGR";"Fijne grassen";0,5;0;65;7;93;FALSE
-2013-06-17;"LV2";"nee";1;"EXC";"Heide";7;0;15;65;35;FALSE
-2013-08-28;"LV2";"nee";1;"EXC";"Heide";3;0;85;3;97;FALSE
-2013-10-01;"LV2";"nee";1;"EXC";"Heide";3;0;65;0,5;99,5;FALSE
-2013-08-28;"LV2";"nee";1;"EXC";"Pijpenstro";15;0;85;3;97;FALSE
-2013-06-17;"LV2";"nee";1;"EXC";"Fijne grassen";15;0;15;65;35;FALSE
-2013-07-30;"LV2";"nee";1;"EXC";"Pijpenstro";35;0;25;15;85;FALSE
-2013-06-17;"LV2";"nee";1;"EXC";"Pijpenstro";7;0;15;65;35;FALSE
-2013-07-30;"LV2";"nee";1;"EXC";"Heide";3;1;25;15;85;FALSE
-2013-10-01;"LV2";"nee";1;"EXC";"Pijpenstro";25;0;65;0,5;99,5;FALSE
-2013-08-28;"LV2";"nee";2;"EXC";"Pijpenstro";7;0;99;0;100;FALSE
-2013-07-30;"LV2";"nee";2;"EXC";"Heide";35;0;85;3;97;FALSE
-2013-06-17;"LV2";"nee";2;"EXC";"Heide";3;0;7;3;97;FALSE
-2013-10-01;"LV2";"nee";2;"EXC";"Heide";55;45;85;0,5;99,5;FALSE
-2013-08-28;"LV2";"nee";2;"EXC";"Heide";7;0;99;0;100;FALSE
-2013-06-17;"LV2";"nee";2;"EXC";"Pijpenstro";85;0;7;3;97;FALSE
-2013-07-30;"LV2";"nee";2;"EXC";"Pijpenstro";25;0;85;3;97;FALSE
-2013-06-17;"LV2";"nee";2;"EXC";"Fijne grassen";3;0;7;3;97;FALSE
-2013-10-01;"LV2";"nee";3;"EXC";"Pijpenstro";85;31;7;45;55;FALSE
-2013-06-17;"LV2";"nee";3;"EXC";"Heide";3;0;55;0,5;99,5;FALSE
-2013-06-17;"LV2";"nee";3;"EXC";"Pijpenstro";75;0;55;0,5;99,5;FALSE
-2013-06-17;"LV2";"nee";3;"EXC";"Fijne grassen";3;0;55;0,5;99,5;FALSE
-2013-08-28;"LV2";"nee";3;"EXC";"Pijpenstro";65;32;99;0;100;FALSE
-2013-08-28;"LV2";"nee";3;"EXC";"Heide";3;1;99;0;100;FALSE
-2013-07-30;"LV2";"nee";3;"EXC";"Pijpenstro";95;6;0,5;7;93;FALSE
-2013-07-30;"LV2";"nee";3;"EXC";"Heide";0,5;0;0,5;7;93;FALSE
-2013-10-01;"LV2";"nee";4;"EXC";"Pijpenstro";85;3;35;3;97;FALSE
-2013-08-28;"LV2";"nee";4;"EXC";"Heide";3;3;85;7;93;FALSE
-2013-06-17;"LV2";"nee";4;"EXC";"Pijpenstro";55;0;55;0;100;FALSE
-2013-07-30;"LV2";"nee";4;"EXC";"Pijpenstro";45;1;35;0,5;99,5;FALSE
-2013-08-28;"LV2";"nee";4;"EXC";"Pijpenstro";85;7;85;7;93;FALSE
-2013-07-30;"LV2";"nee";4;"EXC";"Heide";7;7;35;0,5;99,5;FALSE
-2013-06-17;"LV2";"nee";4;"EXC";"Heide";3;0;55;0;100;FALSE
-2013-10-01;"LV2";"nee";4;"EXC";"Heide";3;6;35;3;97;FALSE
-2013-08-28;"LV2";"nee";5;"EXC";"Heide";3;1;85;0;100;FALSE
-2013-10-01;"LV2";"nee";5;"EXC";"Heide";3;2;45;7;93;FALSE
-2013-06-17;"LV2";"nee";5;"EXC";"Pijpenstro";55;0;85;0;100;FALSE
-2013-06-17;"LV2";"nee";5;"EXC";"Fijne grassen";3;0;85;0;100;FALSE
-2013-07-30;"LV2";"nee";5;"EXC";"Heide";3;3;15;0;100;FALSE
-2013-07-30;"LV2";"nee";5;"EXC";"Pijpenstro";85;1;15;0;100;FALSE
-2013-10-01;"LV2";"nee";5;"EXC";"Pijpenstro";65;8;45;7;93;FALSE
-2013-06-17;"LV2";"nee";5;"EXC";"Heide";15;0;85;0;100;FALSE
-2013-08-28;"LV2";"nee";5;"EXC";"Pijpenstro";65;6;85;0;100;FALSE
-2013-06-17;"LV2";"nee";6;"BGR";"Pijpenstro";15;0;65;0;100;FALSE
-2013-06-17;"LV2";"nee";6;"BGR";"Andere";3;0;65;0;100;FALSE
-2013-10-01;"LV2";"nee";6;"BGR";"Pijpenstro";75;18;65;0;100;FALSE
-2013-07-30;"LV2";"nee";6;"BGR";"Pijpenstro";75;9;15;3;97;FALSE
-2013-06-17;"LV2";"nee";6;"BGR";"Heide";0,5;0;65;0;100;FALSE
-2013-07-30;"LV2";"nee";6;"BGR";"Heide";7;0;15;3;97;FALSE
-2013-10-01;"LV2";"nee";6;"BGR";"Heide";3;1;65;0;100;FALSE
-2013-08-28;"LV2";"nee";6;"BGR";"Heide";3;0;95;0;100;FALSE
-2013-08-28;"LV2";"nee";6;"BGR";"Pijpenstro";25;31;95;0;100;FALSE
-2013-07-30;"LV2";"nee";7;"BGR";"Heide";7;0;55;3;97;FALSE
-2013-08-28;"LV2";"nee";7;"BGR";"Heide";3;4;65;7;93;FALSE
-2013-06-17;"LV2";"nee";7;"BGR";"Pijpenstro";15;0;75;0;100;FALSE
-2013-08-28;"LV2";"nee";7;"BGR";"Pijpenstro";55;2;65;7;93;FALSE
-2013-08-28;"LV2";"nee";7;"BGR";"Andere";25;0;65;7;93;FALSE
-2013-06-17;"LV2";"nee";7;"BGR";"Andere";7;0;75;0;100;FALSE
-2013-10-01;"LV2";"nee";7;"BGR";"Heide";3;0;65;3;97;FALSE
-2013-06-17;"LV2";"nee";7;"BGR";"Heide";0,5;0;75;0;100;FALSE
-2013-07-30;"LV2";"nee";7;"BGR";"Pijpenstro";35;2;55;3;97;FALSE
-2013-10-01;"LV2";"nee";7;"BGR";"Pijpenstro";35;5;65;3;97;FALSE
-2013-07-30;"LV2";"nee";8;"BGR";"Pijpenstro";35;0;25;25;75;FALSE
-2013-06-17;"LV2";"nee";8;"BGR";"Heide";3;0;65;3;97;FALSE
-2013-08-28;"LV2";"nee";8;"BGR";"Heide";0,5;0;55;3;97;FALSE
-2013-10-01;"LV2";"nee";8;"BGR";"Heide";0,5;1;65;7;93;FALSE
-2013-06-17;"LV2";"nee";8;"BGR";"Fijne grassen";15;0;65;3;97;FALSE
-2013-10-01;"LV2";"nee";8;"BGR";"Pijpenstro";25;17;65;7;93;FALSE
-2013-06-17;"LV2";"nee";8;"BGR";"Pijpenstro";25;0;65;3;97;FALSE
-2013-08-28;"LV2";"nee";8;"BGR";"Pijpenstro";55;13;55;3;97;FALSE
-2013-07-30;"LV2";"nee";8;"BGR";"Heide";7;0;25;25;75;FALSE
-2013-10-01;"LV2";"nee";8;"BGR";"Andere";0,5;0;65;7;93;FALSE
-2013-07-30;"LV2";"nee";9;"BGR";"Andere";3;0;55;0;100;FALSE
-2013-08-28;"LV2";"nee";9;"BGR";"Heide";45;0;85;3;97;FALSE
-2013-07-30;"LV2";"nee";9;"BGR";"Heide";3;6;55;0;100;FALSE
-2013-10-01;"LV2";"nee";9;"BGR";"Heide";3;1;55;0;100;FALSE
-2013-06-17;"LV2";"nee";9;"BGR";"Andere";7;0;85;0;100;FALSE
-2013-06-17;"LV2";"nee";9;"BGR";"Pijpenstro";15;0;85;0;100;FALSE
-2013-07-30;"LV2";"nee";9;"BGR";"Pijpenstro";45;2;55;0;100;FALSE
-2013-10-01;"LV2";"nee";9;"BGR";"Pijpenstro";35;16;55;0;100;FALSE
-2013-06-17;"LV2";"nee";9;"BGR";"Heide";0,5;0;85;0;100;FALSE
-2013-06-17;"WD1";"ja";1;"EXC";"Andere";0,5;0;85;3;97;FALSE
-2013-08-28;"WD1";"ja";1;"EXC";"Andere";3;0;99;0;100;FALSE
-2013-08-28;"WD1";"ja";1;"EXC";"Heide";3;0;99;0;100;FALSE
-2013-10-01;"WD1";"ja";1;"EXC";"Andere";3;0;99;0;100;FALSE
-2013-08-28;"WD1";"ja";1;"EXC";"Pijpenstro";3;0;99;0;100;FALSE
-2013-10-01;"WD1";"ja";1;"EXC";"Pijpenstro";3;0;99;0;100;FALSE
-2013-10-01;"WD1";"ja";1;"EXC";"Heide";3;0;99;0;100;FALSE
-2013-07-30;"WD1";"ja";1;"EXC";"Pijpenstro";3;0;99;0;100;FALSE
-2013-07-30;"WD1";"ja";1;"EXC";"Heide";3;0;99;0;100;FALSE
-2013-07-30;"WD1";"ja";1;"EXC";"Andere";3;0;99;0;100;FALSE
-2013-06-17;"WD1";"ja";1;"EXC";"Heide";7;0;85;3;97;FALSE
-2013-06-17;"WD1";"ja";1;"EXC";"Pijpenstro";3;0;85;3;97;FALSE
-2013-06-17;"WD1";"ja";2;"EXC";"Heide";0,5;0;55;35;65;FALSE
-2013-06-17;"WD1";"ja";2;"EXC";"Pijpenstro";7;3;55;35;65;FALSE
-2013-10-01;"WD1";"ja";2;"EXC";"Heide";25;31;85;3;97;FALSE
-2013-08-28;"WD1";"ja";2;"EXC";"Heide";55;94;15;45;55;FALSE
-2013-10-01;"WD1";"ja";2;"EXC";"Andere";25;0;85;3;97;FALSE
-2013-06-17;"WD1";"ja";2;"EXC";"Andere";15;0;55;35;65;FALSE
-2013-06-17;"WD1";"ja";3;"EXC";"Pijpenstro";75;0;75;3;97;FALSE
-2013-08-28;"WD1";"ja";3;"EXC";"Pijpenstro";0,5;0;45;25;75;FALSE
-2013-10-01;"WD1";"ja";3;"EXC";"Andere";0,5;0;95;0;100;FALSE
-2013-06-17;"WD1";"ja";3;"EXC";"Andere";3;0;75;3;97;FALSE
-2013-07-30;"WD1";"ja";3;"EXC";"Pijpenstro";25;2;95;0;100;FALSE
-2013-10-01;"WD1";"ja";3;"EXC";"Pijpenstro";25;0;95;0;100;FALSE
-2013-08-28;"WD1";"ja";3;"EXC";"Heide";35;3;45;25;75;FALSE
-2013-10-01;"WD1";"ja";3;"EXC";"Heide";3;0;95;0;100;FALSE
-2013-08-28;"WD1";"ja";3;"EXC";"Andere";3;0;45;25;75;FALSE
-2013-06-17;"WD1";"ja";3;"EXC";"Heide";7;0;75;3;97;FALSE
-2013-07-30;"WD1";"ja";3;"EXC";"Heide";3;0;95;0;100;FALSE
-2013-07-30;"WD1";"ja";3;"EXC";"Andere";3;0;95;0;100;FALSE
-2013-08-28;"WD1";"ja";4;"EXC";"Pijpenstro";35;0;95;3;97;FALSE
-2013-07-30;"WD1";"ja";4;"EXC";"Pijpenstro";15;3;95;0;100;FALSE
-2013-06-17;"WD1";"ja";4;"EXC";"Pijpenstro";15;0;85;0;100;FALSE
-2013-10-01;"WD1";"ja";4;"EXC";"Pijpenstro";35;0;95;0;100;FALSE
-2013-07-30;"WD1";"ja";4;"EXC";"Andere";3;0;95;0;100;FALSE
-2013-07-30;"WD1";"ja";4;"EXC";"Heide";0,5;0;95;0;100;FALSE
-2013-06-17;"WD1";"ja";4;"EXC";"Heide";0,5;0;85;0;100;FALSE
-2013-07-30;"WD1";"ja";5;"EXC";"Pijpenstro";25;6;95;0;100;FALSE
-2013-07-30;"WD1";"ja";5;"EXC";"Andere";3;0;95;0;100;FALSE
-2013-10-01;"WD1";"ja";5;"EXC";"Pijpenstro";7;8;95;0;100;FALSE
-2013-10-01;"WD1";"ja";5;"EXC";"Andere";7;0;95;0;100;FALSE
-2013-06-17;"WD1";"ja";5;"EXC";"Heide";7;0;85;0,5;99,5;FALSE
-2013-06-17;"WD1";"ja";5;"EXC";"Pijpenstro";3;0;85;0,5;99,5;FALSE
-2013-07-30;"WD1";"ja";5;"EXC";"Heide";7;4;95;0;100;FALSE
-2013-10-01;"WD1";"ja";5;"EXC";"Heide";15;3;95;0;100;FALSE
-2013-08-28;"WD1";"ja";5;"EXC";"Pijpenstro";35;9;95;0;100;FALSE
-2013-08-28;"WD1";"ja";5;"EXC";"Andere";3;0;95;0;100;FALSE
-2013-08-28;"WD1";"ja";5;"EXC";"Heide";3;4;95;0;100;FALSE
-2013-07-30;"WD1";"ja";6;"BGR";"Heide";7;0;35;45;55;FALSE
-2013-10-01;"WD1";"ja";6;"BGR";"Pijpenstro";3;0;95;0;100;FALSE
-2013-06-17;"WD1";"ja";6;"BGR";"Heide";15;0;55;15;85;FALSE
-2013-06-17;"WD1";"ja";6;"BGR";"Pijpenstro";15;0;55;15;85;FALSE
-2013-06-17;"WD1";"ja";6;"BGR";"Andere";3;0;55;15;85;FALSE
-2013-08-28;"WD1";"ja";6;"BGR";"Heide";7;0;55;45;55;FALSE
-2013-08-28;"WD1";"ja";6;"BGR";"Pijpenstro";3;0;55;45;55;FALSE
-2013-07-30;"WD1";"ja";6;"BGR";"Pijpenstro";3;0;35;45;55;FALSE
-2013-10-01;"WD1";"ja";6;"BGR";"Heide";15;0;95;0;100;FALSE
-2013-06-17;"WD1";"ja";7;"BGR";"Heide";3;0;25;55;45;FALSE
-2013-06-17;"WD1";"ja";7;"BGR";"Andere";15;0;25;55;45;FALSE
-2013-07-30;"WD1";"ja";7;"BGR";"Heide";3;0;25;35;65;FALSE
-2013-10-01;"WD1";"ja";7;"BGR";"Andere";0,5;0;99;0;100;FALSE
-2013-07-30;"WD1";"ja";7;"BGR";"Pijpenstro";35;15;25;35;65;FALSE
-2013-10-01;"WD1";"ja";7;"BGR";"Pijpenstro";25;44;99;0;100;FALSE
-2013-08-28;"WD1";"ja";7;"BGR";"Pijpenstro";75;4;65;0;100;FALSE
-2013-08-28;"WD1";"ja";7;"BGR";"Heide";3;0;65;0;100;FALSE
-2013-07-30;"WD1";"ja";8;"BGR";"Heide";3;1;15;7;93;FALSE
-2013-06-17;"WD1";"ja";8;"BGR";"Pijpenstro";15;0;15;75;25;FALSE
-2013-10-01;"WD1";"ja";8;"BGR";"Pijpenstro";45;28;95;3;97;FALSE
-2013-06-17;"WD1";"ja";8;"BGR";"Heide";3;0;15;75;25;FALSE
-2013-07-30;"WD1";"ja";8;"BGR";"Pijpenstro";75;10;15;7;93;FALSE
-2013-10-01;"WD1";"ja";8;"BGR";"Heide";3;2;95;3;97;FALSE
-2013-08-28;"WD1";"ja";8;"BGR";"Heide";0,5;0;75;3;97;FALSE
-2013-08-28;"WD1";"ja";8;"BGR";"Pijpenstro";65;7;75;3;97;FALSE
-2013-10-01;"WD1";"ja";9;"BGR";"Pijpenstro";3;0;55;35;65;FALSE
-2013-10-01;"WD1";"ja";9;"BGR";"Heide";3;0;55;35;65;FALSE
-2013-10-01;"WD1";"ja";9;"BGR";"Andere";3;0;55;35;65;FALSE
-2013-07-30;"WD1";"ja";9;"BGR";"Pijpenstro";7;0;75;25;75;FALSE
-2013-08-28;"WD1";"ja";9;"BGR";"Pijpenstro";7;0;45;55;45;FALSE
-2013-08-28;"WD1";"ja";9;"BGR";"Heide";3;0;45;55;45;FALSE
-2013-07-30;"WD1";"ja";9;"BGR";"Heide";3;0;75;25;75;FALSE
-2013-06-17;"WD1";"ja";9;"BGR";"Pijpenstro";25;0;85;3;97;FALSE
-2013-06-17;"WD1";"ja";9;"BGR";"Heide";3;0;85;3;97;FALSE
-2013-07-30;"WD2";"ja";1;"EXC";"Pijpenstro";0,5;0;85;7;93;FALSE
-2013-08-28;"WD2";"ja";1;"EXC";"Pijpenstro";3;0;45;55;45;FALSE
-2013-06-17;"WD2";"ja";1;"EXC";"Heide";3;0;55;35;65;FALSE
-2013-06-17;"WD2";"ja";1;"EXC";"Pijpenstro";3;0;55;35;65;FALSE
-2013-08-28;"WD2";"ja";1;"EXC";"Heide";0,5;0;45;55;45;FALSE
-2013-10-01;"WD2";"ja";1;"EXC";"Pijpenstro";0,5;0;65;35;65;FALSE
-2013-06-17;"WD2";"ja";2;"EXC";"Heide";3;0;65;25;75;FALSE
-2013-06-17;"WD2";"ja";2;"EXC";"Pijpenstro";3;0;65;25;75;FALSE
-2013-10-01;"WD2";"ja";2;"EXC";"Pijpenstro";99;6;65;0,5;99,5;FALSE
-2013-06-17;"WD2";"ja";2;"EXC";"Andere";3;0;65;25;75;FALSE
-2013-07-30;"WD2";"ja";2;"EXC";"Andere";7;0;65;3;97;FALSE
-2013-08-28;"WD2";"ja";2;"EXC";"Pijpenstro";35;3;75;0;100;FALSE
-2013-10-01;"WD2";"ja";2;"EXC";"Andere";3;0;65;0,5;99,5;FALSE
-2013-08-28;"WD2";"ja";2;"EXC";"Heide";15;0;75;0;100;FALSE
-2013-07-30;"WD2";"ja";2;"EXC";"Pijpenstro";35;31;65;3;97;FALSE
-2013-07-30;"WD2";"ja";2;"EXC";"Heide";7;9;65;3;97;FALSE
-2013-08-28;"WD2";"ja";2;"EXC";"Andere";3;0;75;0;100;FALSE
-2013-06-17;"WD2";"ja";3;"EXC";"Pijpenstro";7;0;75;7;93;FALSE
-2013-06-17;"WD2";"ja";3;"EXC";"Andere";7;0;75;7;93;FALSE
-2013-06-17;"WD2";"ja";3;"EXC";"Heide";35;0;75;7;93;FALSE
-2013-07-30;"WD2";"ja";3;"EXC";"Pijpenstro";3;7;65;35;65;FALSE
-2013-06-17;"WD2";"ja";4;"EXC";"Heide";0,5;0;15;75;25;FALSE
-2013-07-30;"WD2";"ja";4;"EXC";"Pijpenstro";25;28;75;3;97;FALSE
-2013-07-30;"WD2";"ja";4;"EXC";"Heide";7;0;75;3;97;FALSE
-2013-06-17;"WD2";"ja";5;"EXC";"Andere";3;0;95;3;97;FALSE
-2013-06-17;"WD2";"ja";5;"EXC";"Pijpenstro";3;0;95;3;97;FALSE
-2013-10-01;"WD2";"ja";5;"EXC";"Andere";3;0;65;3;97;FALSE
-2013-10-01;"WD2";"ja";5;"EXC";"Pijpenstro";15;6;65;3;97;FALSE
-2013-06-17;"WD2";"ja";5;"EXC";"Heide";7;0;95;3;97;FALSE
-2013-07-30;"WD2";"ja";5;"EXC";"Andere";3;0;65;3;97;FALSE
-2013-08-28;"WD2";"ja";5;"EXC";"Heide";25;49;65;3;97;FALSE
-2013-08-28;"WD2";"ja";5;"EXC";"Pijpenstro";7;0;65;3;97;FALSE
-2013-07-30;"WD2";"ja";5;"EXC";"Heide";25;0;65;3;97;FALSE
-2013-10-01;"WD2";"ja";5;"EXC";"Heide";7;2;65;3;97;FALSE
-2013-07-30;"WD2";"ja";5;"EXC";"Pijpenstro";7;0;65;3;97;FALSE
-2013-07-30;"WD2";"ja";6;"BGR";"Andere";0,5;0;55;45;55;FALSE
-2013-08-28;"WD2";"ja";6;"BGR";"Heide";15;0;65;15;85;FALSE
-2013-10-01;"WD2";"ja";6;"BGR";"Andere";3;0;95;0;100;FALSE
-2013-10-01;"WD2";"ja";6;"BGR";"Pijpenstro";0,5;0;95;0;100;FALSE
-2013-10-01;"WD2";"ja";6;"BGR";"Heide";15;0;95;0;100;FALSE
-2013-06-17;"WD2";"ja";7;"BGR";"Heide";3;0;45;45;55;FALSE
-2013-08-28;"WD2";"ja";7;"BGR";"Heide";3;0;75;25;75;FALSE
-2013-06-17;"WD2";"ja";7;"BGR";"Pijpenstro";7;0;45;45;55;FALSE
-2013-10-01;"WD2";"ja";7;"BGR";"Heide";3;0;95;0;100;FALSE
-2013-07-30;"WD2";"ja";7;"BGR";"Pijpenstro";0,5;0;35;55;45;FALSE
-2013-08-28;"WD2";"ja";7;"BGR";"Pijpenstro";0,5;0;75;25;75;FALSE
-2013-10-01;"WD2";"ja";8;"BGR";"Heide";0,5;0;95;0;100;FALSE
-2013-08-28;"WD2";"ja";8;"BGR";"Pijpenstro";15;0;45;15;85;FALSE
-2013-10-01;"WD2";"ja";8;"BGR";"Andere";0,5;0;95;0;100;FALSE
-2013-10-01;"WD2";"ja";8;"BGR";"Pijpenstro";0,5;0;95;0;100;FALSE
-2013-07-30;"WD2";"ja";8;"BGR";"Heide";0,5;0;45;55;45;FALSE
-2013-06-17;"WD2";"ja";8;"BGR";"Heide";7;0;45;35;65;FALSE
-2013-06-17;"WD2";"ja";8;"BGR";"Pijpenstro";15;0;45;35;65;FALSE
-2013-08-28;"WD2";"ja";8;"BGR";"Heide";25;0;45;15;85;FALSE
-2013-10-01;"WD2";"ja";9;"BGR";"Heide";0,5;0;75;25;75;FALSE
-2013-10-01;"WD2";"ja";9;"BGR";"Andere";0,5;0;75;25;75;FALSE
-2013-06-17;"WD2";"ja";9;"BGR";"Pijpenstro";45;0;35;3;97;FALSE
-2013-10-01;"WD2";"ja";9;"BGR";"Pijpenstro";3;0;75;25;75;FALSE
-2013-07-30;"WD2";"ja";9;"BGR";"Fijne grassen";35;22;45;3;97;FALSE
-2013-06-17;"WD2";"ja";9;"BGR";"Heide";15;0;35;3;97;FALSE
-2013-08-28;"WD2";"ja";9;"BGR";"Heide";35;0;65;3;97;FALSE
-2013-08-28;"WD2";"ja";9;"BGR";"Fijne grassen";3;0;65;3;97;FALSE
-2013-08-28;"WD2";"ja";9;"BGR";"Pijpenstro";3;0;65;3;97;FALSE
-NA;NA;"nee";NA;"BGR";"Pijpenstro";55;4;85;3;97;FALSE
-2013-08-28;"LV2";"nee";9;"BGR";"Pijpenstro";55;4;85;3;97;FALSE
+"datum";"exc_id";"brand2011";"zone";"beh_typ";"andere";"fijne_grassen";"heide";"pijpenstro"
+2011-08-09;"LV1";"ja";7;"BGR";0;0;0;3
+2011-08-09;"LV1";"ja";8;"BGR";0;0;0;0,5
+2011-08-09;"LV1";"ja";9;"BGR";0;0;0;15
+2011-08-09;"LV2";"nee";1;"EXC";0;0;3;0
+2011-08-09;"LV2";"nee";1;"EXC";0;0;0;45
+2011-08-09;"LV2";"nee";2;"EXC";0;0;0;15
+2011-08-09;"LV2";"nee";3;"EXC";0;0;0;25
+2011-08-09;"LV2";"nee";3;"EXC";0;0;0,5;0
+2011-08-09;"LV2";"nee";4;"EXC";0;0;0;35
+2011-08-09;"LV2";"nee";4;"EXC";0;0;0,5;0
+2011-08-09;"LV2";"nee";5;"EXC";0;0;0;75
+2011-08-09;"LV2";"nee";6;"BGR";0;0;0;45
+2011-08-09;"LV2";"nee";6;"BGR";0,5;0;3;0
+2011-08-09;"LV2";"nee";7;"BGR";0;0;0;25
+2011-08-09;"LV2";"nee";7;"BGR";3;0;3;0
+2011-08-09;"LV2";"nee";8;"BGR";0;0;0;45
+2011-08-09;"LV2";"nee";9;"BGR";0;0;0;25
+2011-09-26;"GB1";"nee";1;"EXC";3;0;0;0
+2011-09-26;"GB1";"nee";1;"EXC";0;15;0;0
+2011-09-26;"GB1";"nee";2;"EXC";0,5;0;0;0
+2011-09-26;"GB1";"nee";2;"EXC";0;35;0;0
+2011-09-26;"GB1";"nee";3;"EXC";3;0;0;0
+2011-09-26;"GB1";"nee";3;"EXC";0;85;0;0
+2011-06-27;"GB1";"nee";2;"EXC";0;45;0;0
+2011-06-27;"GB1";"nee";3;"EXC";3;0;0;0
+2011-06-27;"GB1";"nee";3;"EXC";0;45;0;0
+2011-06-27;"GB1";"nee";5;"EXC";0;55;0;0
+2011-06-27;"GB1";"nee";6;"BGR";0;25;0;0
+2011-06-27;"GB1";"nee";7;"BGR";0;35;0;0
+2011-06-27;"GB1";"nee";8;"BGR";0,5;0;0;0
+2011-06-27;"GB1";"nee";8;"BGR";0;3;0;0
+2011-06-27;"GB1";"nee";9;"BGR";25;45;0;0
+2011-06-27;"GB2";"nee";1;"EXC";0;15;0;0
+2011-06-27;"GB2";"nee";1;"EXC";0;0;0;55
+2011-06-27;"GB2";"nee";2;"EXC";0,5;0;0;0
+2011-06-27;"GB2";"nee";2;"EXC";0;0;0;95
+2011-06-27;"GB2";"nee";3;"EXC";0;0;0;35
+2011-06-27;"GB2";"nee";3;"EXC";0;7;0;0
+2011-06-27;"GB2";"nee";4;"EXC";0;0;0;95
+2011-06-27;"GB2";"nee";4;"EXC";0;3;0;0
+2011-06-27;"GB2";"nee";5;"EXC";0;0;0;95
+2011-06-27;"GB2";"nee";5;"EXC";0;7;0;0
+2011-06-27;"GB2";"nee";6;"BGR";0;0;0;75
+2011-06-27;"GB2";"nee";6;"BGR";0;7;0;0
+2011-06-27;"GB2";"nee";6;"BGR";3;0;0;0
+2011-06-27;"GB2";"nee";7;"BGR";0;7;0;25
+2011-06-27;"GB2";"nee";8;"BGR";0;0;0;3
+2011-06-27;"GB2";"nee";8;"BGR";0;7;0;0
+2011-06-27;"GB2";"nee";9;"BGR";0;0;0;35
+2011-06-27;"GB2";"nee";9;"BGR";0;3;0;0
+2011-06-27;"WD1";"ja";1;"EXC";0;0;0;3
+2011-06-27;"WD1";"ja";2;"EXC";0;0;0;0,5
+2011-06-27;"WD1";"ja";4;"EXC";0;0;0;25
+2011-06-27;"WD1";"ja";5;"EXC";0;0;0;3
+2011-06-27;"WD1";"ja";6;"BGR";0;0;0;3
+2011-06-27;"WD1";"ja";7;"BGR";0;0;0;15
+2011-06-27;"WD1";"ja";8;"BGR";0;0;0;3
+2011-06-27;"WD1";"ja";9;"BGR";0;0;0;15
+2011-06-27;"WD2";"ja";2;"EXC";0;0;0;25
+2011-06-28;"WD2";"ja";4;"EXC";0;0;0;3
+2011-06-28;"WD2";"ja";6;"BGR";0,5;0;0;0
+2011-06-28;"WD2";"ja";7;"BGR";0;0;0;3
+2011-06-28;"WD2";"ja";8;"BGR";0;0;0;7
+2011-06-28;"WD2";"ja";9;"BGR";0;0;0;15
+2011-06-28;"LV1";"ja";1;"EXC";0;0;0;7
+2011-06-28;"LV1";"ja";2;"EXC";0;0;0;25
+2011-06-28;"LV1";"ja";3;"EXC";0;0;0;3
+2011-06-28;"LV1";"ja";6;"BGR";0;0;0;25
+2011-06-28;"LV1";"ja";7;"BGR";0;0;0;15
+2011-06-28;"LV1";"ja";8;"BGR";0;0;0;15
+2011-06-28;"LV2";"nee";1;"EXC";0;0;0;35
+2011-06-28;"LV2";"nee";2;"EXC";0;0;0;15
+2011-06-28;"LV2";"nee";3;"EXC";0;0;0;35
+2011-06-28;"LV2";"nee";4;"EXC";0;0;0;45
+2011-06-28;"LV2";"nee";5;"EXC";0;0;0;7
+2011-06-28;"LV2";"nee";6;"BGR";0;0;0;15
+2011-06-28;"LV2";"nee";7;"BGR";0;0;0;15
+2011-06-28;"LV2";"nee";8;"BGR";0;0;0;45
+2011-06-28;"LV2";"nee";9;"BGR";0;0;0;0,5
+2011-06-27;"GB1";"nee";1;"EXC";0;25;0;0
+2011-06-27;"GB1";"nee";1;"EXC";7;0;0;0
+2011-06-27;"GB1";"nee";4;"EXC";0;25;0;0
+2011-07-26;"GB1";"nee";4;"EXC";0,5;0;0;0
+2011-08-08;"GB1";"nee";1;"EXC";15;0;0;0
+2011-08-08;"GB1";"nee";1;"EXC";0;25;0;0
+2011-08-08;"GB1";"nee";2;"EXC";0;25;0;0
+2011-08-08;"GB1";"nee";2;"EXC";7;0;0;0
+2011-08-08;"GB1";"nee";3;"EXC";7;0;0;0
+2011-08-08;"GB1";"nee";3;"EXC";0;55;0;0
+2011-08-08;"GB1";"nee";4;"EXC";0;85;0;0
+2011-08-08;"GB1";"nee";5;"EXC";0;25;0;0
+2011-08-08;"GB1";"nee";6;"BGR";0;25;0;0
+2011-08-08;"GB1";"nee";7;"BGR";0;15;0;0
+2011-08-08;"GB1";"nee";8;"BGR";0;45;0;0
+2011-08-08;"GB1";"nee";8;"BGR";7;0;0;0
+2011-08-08;"GB1";"nee";9;"BGR";0;25;0;0
+2011-08-08;"GB1";"nee";9;"BGR";0,5;0;0;0
+2011-08-08;"GB2";"nee";1;"EXC";0;15;0;0
+2011-08-08;"GB2";"nee";1;"EXC";0;0;0;35
+2011-08-08;"GB2";"nee";2;"EXC";0;7;0;0
+2011-08-08;"GB2";"nee";2;"EXC";0;0;0;25
+2011-08-08;"GB2";"nee";3;"EXC";0;0;0;45
+2011-08-08;"GB2";"nee";3;"EXC";0;0,5;0;0
+2011-08-08;"GB2";"nee";4;"EXC";0;0;0;25
+2011-08-08;"GB2";"nee";4;"EXC";0;15;0;0
+2011-08-08;"GB2";"nee";5;"EXC";0;0;0;85
+2011-08-08;"GB2";"nee";5;"EXC";0;3;0;0
+2011-08-08;"GB2";"nee";6;"BGR";0;7;0;0
+2011-08-08;"GB2";"nee";6;"BGR";0;0;0;55
+2011-08-08;"GB2";"nee";7;"BGR";7;0;0;0
+2011-08-08;"GB2";"nee";7;"BGR";0;0;0;25
+2011-08-08;"GB2";"nee";7;"BGR";0;15;0;0
+2011-08-08;"GB2";"nee";8;"BGR";0;0;0;25
+2011-08-08;"GB2";"nee";8;"BGR";0;7;0;0
+2011-08-08;"GB2";"nee";9;"BGR";0;3;0;25
+2011-08-08;"WD1";"ja";1;"EXC";0;0;0,5;0
+2011-08-08;"WD1";"ja";2;"EXC";3;0;0;0
+2011-08-08;"WD1";"ja";3;"EXC";0;0;0;3
+2011-08-08;"WD1";"ja";4;"EXC";0;0;0,5;0
+2011-08-08;"WD1";"ja";4;"EXC";0;0;0;15
+2011-08-08;"WD1";"ja";5;"EXC";0;0;0;25
+2011-08-08;"WD1";"ja";6;"BGR";0;0;0;15
+2011-08-08;"WD1";"ja";7;"BGR";0;0;0;7
+2011-08-08;"WD1";"ja";7;"BGR";0;0;0,5;0
+2011-08-08;"WD1";"ja";8;"BGR";0;0;0,5;0
+2011-08-08;"WD1";"ja";8;"BGR";0;0;0;7
+2011-08-08;"WD1";"ja";9;"BGR";0;0;0;3
+2011-08-08;"WD2";"ja";1;"EXC";0,5;0;0;0
+2011-08-08;"WD2";"ja";2;"EXC";0;0;0;7
+2011-08-08;"WD2";"ja";3;"EXC";0;0;0;7
+2011-08-08;"WD2";"ja";4;"EXC";0,5;0;0;0,5
+2011-08-08;"WD2";"ja";5;"EXC";0;0;0;3
+2011-08-08;"WD2";"ja";6;"BGR";0;0;0,5;0,5
+2011-08-08;"WD2";"ja";7;"BGR";0;0;0;15
+2011-08-08;"WD2";"ja";8;"BGR";0,5;0;0;0
+2011-08-09;"LV1";"ja";1;"EXC";0;0;0,5;0
+2011-08-09;"LV1";"ja";1;"EXC";0;0;0;15
+2011-08-09;"LV1";"ja";2;"EXC";0;0;0;15
+2011-08-09;"LV1";"ja";2;"EXC";0;0;0,5;0
+2011-08-09;"LV1";"ja";3;"EXC";0;0;0;15
+2011-08-09;"LV1";"ja";4;"EXC";0;0;0;0,5
+2011-08-09;"LV1";"ja";6;"BGR";0;0;0;7
+2011-09-26;"GB1";"nee";4;"EXC";0;55;0;0
+2011-09-26;"GB1";"nee";5;"EXC";0;55;0;0
+2011-09-26;"GB1";"nee";5;"EXC";25;0;0;0
+2011-09-26;"GB1";"nee";6;"BGR";0;55;0;0
+2011-09-26;"GB1";"nee";7;"BGR";0;45;0;0
+2011-09-26;"GB1";"nee";7;"BGR";7;0;0;0
+2011-09-26;"GB1";"nee";8;"BGR";3;0;0;0
+2011-09-26;"GB1";"nee";8;"BGR";0;25;0;0
+2011-09-26;"GB1";"nee";9;"BGR";3;0;0;0
+2011-09-26;"GB1";"nee";9;"BGR";0;55;0;0
+2011-09-26;"GB2";"nee";1;"EXC";0;15;0;0
+2011-09-26;"GB2";"nee";1;"EXC";0;0;0;55
+2011-09-26;"GB2";"nee";2;"EXC";0;3;0;0
+2011-09-26;"GB2";"nee";2;"EXC";0;0;0;75
+2011-09-26;"GB2";"nee";3;"EXC";0;3;0;0
+2011-09-26;"GB2";"nee";3;"EXC";0;0;0;7
+2011-09-26;"GB2";"nee";4;"EXC";0;0;0;7
+2011-09-26;"GB2";"nee";4;"EXC";0;3;0;0
+2011-09-26;"GB2";"nee";5;"EXC";0;0;0;55
+2011-09-26;"GB2";"nee";5;"EXC";0;15;0;0
+2011-09-26;"GB2";"nee";6;"BGR";0;7;0;0
+2011-09-26;"GB2";"nee";6;"BGR";3;0;0;0
+2011-09-26;"GB2";"nee";6;"BGR";0;0;0;65
+2011-09-26;"GB2";"nee";7;"BGR";0;0;0;35
+2011-09-26;"GB2";"nee";7;"BGR";0;7;0;0
+2011-09-26;"GB2";"nee";8;"BGR";0;25;0;0
+2011-09-26;"GB2";"nee";8;"BGR";3;0;0;0
+2011-09-26;"GB2";"nee";8;"BGR";0;0;0;15
+2011-09-26;"GB2";"nee";9;"BGR";0;15;7;0
+2011-09-26;"GB2";"nee";9;"BGR";0;0;0;3
+2011-09-26;"WD1";"ja";1;"EXC";0,5;0;0,5;0
+2011-09-26;"WD1";"ja";3;"EXC";3;0;3;0
+2011-09-26;"WD1";"ja";4;"EXC";0;0;3;0
+2011-09-26;"WD1";"ja";4;"EXC";0;0;0;55
+2011-09-26;"WD1";"ja";5;"EXC";0;0;0;3
+2011-09-26;"WD1";"ja";5;"EXC";0,5;0;0,5;0
+2011-09-26;"WD1";"ja";5;"EXC";0;0;3;0
+2011-09-26;"WD1";"ja";5;"EXC";0;0;0;3
+2011-09-26;"WD1";"ja";6;"BGR";3;0;0;0
+2011-09-26;"WD1";"ja";6;"BGR";0;0;0;45
+2011-09-26;"WD1";"ja";7;"BGR";3;0;3;0
+2011-09-26;"WD1";"ja";7;"BGR";0;0;0;45
+2011-09-26;"WD1";"ja";8;"BGR";0,5;0;0,5;0
+2011-09-26;"WD1";"ja";8;"BGR";0;0;0;3
+2011-09-27;"WD2";"ja";1;"EXC";0,5;0;0;0
+2011-09-27;"WD2";"ja";2;"EXC";0;0;0;7
+2011-09-27;"WD2";"ja";2;"EXC";0,5;0;0,5;0
+2011-09-27;"WD2";"ja";3;"EXC";0;0;0;25
+2011-09-27;"WD2";"ja";5;"EXC";0;0;0;3
+2011-09-27;"WD2";"ja";5;"EXC";0;0;0,5;0
+2011-09-27;"WD2";"ja";6;"BGR";0,5;0;0,5;0,5
+2011-09-27;"WD2";"ja";8;"BGR";0;0;0;3
+2011-09-27;"LV1";"ja";1;"EXC";0,5;0;0;0
+2011-09-27;"LV1";"ja";1;"EXC";0;0;0;15
+2011-09-27;"LV1";"ja";2;"EXC";0;0;0;15
+2011-09-27;"LV1";"ja";2;"EXC";0;0;0,5;0
+2011-09-27;"LV1";"ja";3;"EXC";0;0;0;7
+2011-09-27;"LV1";"ja";3;"EXC";0,5;0;0;0
+2011-09-27;"LV1";"ja";4;"EXC";0;0;0,5;0
+2011-09-27;"LV1";"ja";5;"EXC";0,5;0;0;0
+2011-09-27;"LV1";"ja";6;"BGR";0;0;0;25
+2011-09-27;"LV1";"ja";7;"BGR";0;0;0;7
+2011-09-27;"LV1";"ja";8;"BGR";0;25;0;0
+2011-09-27;"LV1";"ja";9;"BGR";0;0;0;25
+2011-09-27;"LV1";"ja";9;"BGR";0;0;0,5;0
+2011-09-27;"LV2";"nee";1;"EXC";0;0;0;25
+2011-09-27;"LV2";"nee";1;"EXC";0;0;0,5;0
+2011-09-27;"LV2";"nee";2;"EXC";0;0;0,5;0
+2011-09-27;"LV2";"nee";2;"EXC";0;0;0;15
+2011-09-27;"LV2";"nee";3;"EXC";0;0;0;25
+2011-09-27;"LV2";"nee";4;"EXC";0;0;0,5;0
+2011-09-27;"LV2";"nee";4;"EXC";0;0;0;55
+2011-09-27;"LV2";"nee";5;"EXC";0;0;0;25
+2011-09-27;"LV2";"nee";5;"EXC";0;0;3;0
+2011-09-27;"LV2";"nee";6;"BGR";0;0;0,5;0
+2011-09-27;"LV2";"nee";6;"BGR";0;0;0;25
+2011-09-27;"LV2";"nee";7;"BGR";0;0;0;25
+2011-09-27;"LV2";"nee";7;"BGR";0,5;0;0;0
+2011-09-27;"LV2";"nee";8;"BGR";0;0;0;35
+2011-09-27;"LV2";"nee";8;"BGR";0,5;0;0,5;0
+2011-09-27;"LV2";"nee";9;"BGR";0;0;0;45
+2011-09-27;"LV2";"nee";9;"BGR";0,5;0;3;0
+2012-06-07;"GB1";"nee";1;"EXC";0;15;0;0
+2012-06-07;"GB1";"nee";1;"EXC";3;0;0;0
+2012-06-07;"GB1";"nee";2;"EXC";0;7;0;0
+2012-06-07;"GB1";"nee";2;"EXC";7;0;0;0
+2012-06-07;"GB1";"nee";3;"EXC";7;0;0;0
+2012-06-07;"GB1";"nee";3;"EXC";0;15;0;0
+2012-06-07;"GB1";"nee";4;"EXC";0;25;0;0
+2012-06-07;"GB1";"nee";5;"EXC";0;15;0;0
+2012-06-07;"GB1";"nee";5;"EXC";0,5;0;0;0
+2012-06-07;"GB1";"nee";6;"BGR";0;15;0;0
+2012-06-07;"GB1";"nee";6;"BGR";7;0;0;0
+2012-06-07;"GB1";"nee";7;"BGR";0;15;0;0
+2012-07-03;"WD1";"ja";3;"EXC";0;15;3;0
+2012-07-03;"WD1";"ja";4;"EXC";0;15;7;0
+2012-07-03;"WD1";"ja";4;"EXC";0;0;0;55
+2012-07-03;"WD1";"ja";5;"EXC";0;0;0;3
+2012-07-03;"WD1";"ja";5;"EXC";0;7;3;0
+2012-07-03;"WD1";"ja";6;"BGR";0,5;0;3;0
+2012-07-03;"WD1";"ja";6;"BGR";0;0;0;25
+2012-07-03;"WD1";"ja";7;"BGR";7;0;0;3
+2012-07-03;"WD1";"ja";8;"BGR";0;0;0;15
+2012-07-03;"WD1";"ja";8;"BGR";0;3;3;0
+2012-07-03;"WD1";"ja";9;"BGR";0;0;0;15
+2012-07-03;"WD1";"ja";9;"BGR";3;0;3;0
+2012-07-03;"WD2";"ja";1;"EXC";0,5;0;3;3
+2012-07-03;"WD2";"ja";2;"EXC";7;0;7;3
+2012-07-03;"WD2";"ja";3;"EXC";0,5;0;15;3
+2012-07-03;"WD2";"ja";5;"EXC";25;0;7;7
+2012-07-03;"WD2";"ja";6;"BGR";0;0;7;0
+2012-07-03;"WD2";"ja";7;"BGR";0;0;3;7
+2012-07-03;"WD2";"ja";8;"BGR";0;0;15;0
+2012-07-03;"WD2";"ja";9;"BGR";0;0;3;3
+2012-07-30;"GB1";"nee";1;"EXC";3;0;0;0
+2012-07-30;"GB1";"nee";1;"EXC";0;7;0;0
+2012-07-30;"GB1";"nee";2;"EXC";0,5;0;0;0
+2012-07-30;"GB1";"nee";2;"EXC";0;15;0;0
+2012-07-30;"GB1";"nee";3;"EXC";0;45;0;0
+2012-07-30;"GB1";"nee";3;"EXC";0,5;0;0;0
+2012-07-30;"GB1";"nee";4;"EXC";0;25;0;0
+2012-07-30;"GB1";"nee";5;"EXC";0;55;0;0
+2012-07-30;"GB1";"nee";5;"EXC";0,5;0;0;0
+2012-07-30;"GB1";"nee";6;"BGR";0;25;0;0
+2012-06-07;"GB1";"nee";8;"BGR";0;15;0;0
+2012-06-07;"GB1";"nee";8;"BGR";0,5;0;0;0
+2012-06-07;"GB1";"nee";9;"BGR";0;15;0;0
+2012-06-07;"GB1";"nee";9;"BGR";0,5;0;0;0
+2012-06-07;"GB2";"nee";1;"EXC";0;3;0;0
+2012-06-07;"GB2";"nee";1;"EXC";0;0;0;25
+2012-06-07;"GB2";"nee";2;"EXC";0;3;0;0
+2012-06-07;"GB2";"nee";2;"EXC";0;0;0;45
+2012-06-07;"GB2";"nee";3;"EXC";0;0;0;35
+2012-06-07;"GB2";"nee";3;"EXC";0;7;0;0
+2012-06-07;"GB2";"nee";4;"EXC";0;0;0;45
+2012-06-07;"GB2";"nee";4;"EXC";0;3;0;0
+2012-06-07;"GB2";"nee";5;"EXC";0;7;0;0
+2012-06-07;"GB2";"nee";5;"EXC";0;0;0;65
+2012-06-07;"GB2";"nee";6;"BGR";0;0,5;0;0
+2012-06-07;"GB2";"nee";6;"BGR";0;0;0;65
+2012-06-07;"GB2";"nee";7;"BGR";25;0;0;0
+2012-06-07;"GB2";"nee";7;"BGR";0;3;0;0
+2012-06-07;"GB2";"nee";8;"BGR";0;7;0;0
+2012-06-07;"GB2";"nee";8;"BGR";3;0;0;85
+2012-06-07;"GB2";"nee";9;"BGR";35;0;0;25
+2012-06-07;"LV1";"ja";1;"EXC";0;0;3;35
+2012-06-07;"LV1";"ja";2;"EXC";3;0;3;3
+2012-06-07;"LV1";"ja";3;"EXC";0;0;0;7
+2012-06-07;"LV1";"ja";4;"EXC";3;0;0;15
+2012-06-07;"LV1";"ja";4;"EXC";0;0;3;0
+2012-06-07;"LV1";"ja";5;"EXC";3;0;0;0
+2012-06-07;"LV1";"ja";5;"EXC";0;0;0;25
+2012-06-07;"LV1";"ja";5;"EXC";0;0;0,5;0
+2012-06-07;"LV1";"ja";7;"BGR";0,5;0;0,5;0,5
+2012-06-07;"LV1";"ja";8;"BGR";0;0;0;25
+2012-06-07;"LV1";"ja";8;"BGR";0;0;0,5;0
+2012-06-07;"LV1";"ja";9;"BGR";0;0;0;15
+2012-06-07;"LV1";"ja";9;"BGR";0;0;0,5;0
+2012-06-07;"LV2";"nee";1;"EXC";0;0;0;65
+2012-06-07;"LV2";"nee";1;"EXC";0;0;3;0
+2012-06-07;"LV2";"nee";2;"EXC";0;0;0;75
+2012-06-07;"LV2";"nee";2;"EXC";0;0;3;0
+2012-06-07;"LV2";"nee";3;"EXC";0;0;3;65
+2012-06-07;"LV2";"nee";4;"EXC";0;0;3;65
+2012-06-07;"LV2";"nee";5;"EXC";0;0;0,5;0
+2012-06-07;"LV2";"nee";5;"EXC";0;0;0;15
+2012-06-07;"LV2";"nee";6;"BGR";0;0;0,5;0
+2012-06-07;"LV2";"nee";6;"BGR";0;0;0;25
+2012-06-07;"LV2";"nee";7;"BGR";0;0;3;0
+2012-06-07;"LV2";"nee";7;"BGR";0;0;0;55
+2012-06-07;"LV2";"nee";8;"BGR";0;0;0;15
+2012-06-07;"LV2";"nee";9;"BGR";0;0;3;65
+2012-06-07;"LV2";"nee";9;"BGR";0,5;0;0;0
+2012-06-07;"WD1";"ja";1;"EXC";0;0;3;0
+2012-06-07;"WD1";"ja";1;"EXC";0;0;0;7
+2012-06-07;"WD1";"ja";1;"EXC";3;0;0;0
+2012-06-07;"WD1";"ja";2;"EXC";3;0;0;0,5
+2012-06-07;"WD1";"ja";3;"EXC";0;0;3;0
+2012-06-07;"WD1";"ja";3;"EXC";0,5;0;0;3
+2013-10-01;"GB1";"nee";4;"EXC";0;85;0;0
+2013-06-17;"GB1";"nee";4;"EXC";0;25;0;0
+2013-08-28;"GB1";"nee";4;"EXC";3;0;0;0
+2013-07-30;"GB1";"nee";5;NA;0;25;0;0
+2013-10-01;"GB1";"nee";5;"EXC";0;45;0;0
+2013-06-17;"GB1";"nee";5;"EXC";3;0;0;0
+2013-08-28;"GB1";"nee";5;"EXC";0,5;0;0;0
+2013-08-28;"GB1";"nee";5;"EXC";0;25;0;0
+2013-06-17;"GB1";"nee";5;"EXC";0;25;0;0
+2013-07-30;"GB1";"nee";6;"BGR";0;3;0;0
+2013-06-17;"GB1";"nee";6;"BGR";0;25;0;0
+2013-06-17;"GB1";"nee";6;"BGR";3;0;0;0
+2013-10-01;"GB1";"nee";6;"BGR";0;3;0;0
+2013-08-28;"GB1";"nee";6;"BGR";0;25;0;0
+2013-08-28;"GB1";"nee";6;"BGR";0,5;0;0;0
+2013-07-30;"GB1";"nee";7;"BGR";0;15;0;0
+2013-06-17;"GB1";"nee";7;"BGR";0;55;0;0
+2013-10-01;"GB1";"nee";7;"BGR";3;0;0;0
+2013-10-01;"GB1";"nee";7;"BGR";0;75;0;0
+2013-08-28;"GB1";"nee";7;"BGR";0;25;0;0
+2013-07-30;"GB1";"nee";8;"BGR";0;15;0;0
+2013-10-01;"GB1";"nee";8;"BGR";0;25;0;0
+2013-08-28;"GB1";"nee";8;"BGR";0,5;0;0;0
+2013-06-17;"GB1";"nee";8;"BGR";0;55;0;0
+2013-06-17;"GB1";"nee";8;"BGR";3;0;0;0
+2013-08-28;"GB1";"nee";8;"BGR";0;25;0;0
+2013-10-01;"GB1";"nee";8;"BGR";3;0;0;0
+2013-08-28;"GB1";"nee";9;"BGR";3;0;0;0
+2013-07-30;"GB1";"nee";9;"BGR";0,5;0;0;0
+2013-07-30;"GB1";"nee";9;"BGR";0;15;0;0
+2013-06-17;"GB1";"nee";9;"BGR";3;0;0;0
+2013-10-01;"GB1";"nee";9;"BGR";0;15;0;0
+2013-06-17;"GB1";"nee";9;"BGR";0;7;0;0
+2013-08-28;"GB1";"nee";9;"BGR";0;7;0;0
+2013-08-28;"GB2";"nee";1;"EXC";0;0,5;0;0,5
+2013-10-01;"GB2";"nee";1;"EXC";0;0,5;0;0,5
+2013-07-30;"GB2";"nee";1;"EXC";0;3;0;3
+2013-06-17;"GB2";"nee";1;"EXC";0;0;0;7
+2013-06-17;"GB2";"nee";1;"EXC";0;3;0;0
+2013-06-17;"GB2";"nee";2;"EXC";0;3;0;95
+2013-07-30;"GB2";"nee";2;"EXC";0;0,5;0;0
+2013-10-01;"GB2";"nee";2;"EXC";0;0;0;99
+2013-08-28;"GB2";"nee";2;"EXC";0;0;0;85
+2013-07-30;"GB2";"nee";2;"EXC";0;0;0;85
+2013-10-01;"GB2";"nee";2;"EXC";0;0,5;0;0
+2013-06-17;"GB2";"nee";3;"EXC";0;7;0;0
+2013-08-28;"GB2";"nee";3;"EXC";0;0;0;75
+2013-07-30;"GB2";"nee";3;"EXC";0;0;0;95
+2013-08-28;"GB2";"nee";3;"EXC";0;3;0;0
+2013-07-30;"GB2";"nee";3;"EXC";0;3;0;0
+2013-06-17;"GB2";"nee";3;"EXC";0;0;0;7
+2013-07-30;"GB2";"nee";4;"EXC";0;0;0;95
+2013-10-01;"GB2";"nee";4;"EXC";0;3;0;0
+2013-07-30;"GB2";"nee";4;"EXC";0;3;0;0
+2013-08-28;"GB2";"nee";4;"EXC";0;0;0;65
+2013-10-01;"GB2";"nee";4;"EXC";0;0;0;95
+2013-06-17;"GB2";"nee";4;"EXC";0;3;0;35
+2013-08-28;"GB2";"nee";4;"EXC";0;3;0;0
+2013-07-30;"GB2";"nee";5;"EXC";0;0,5;0;95
+2013-08-28;"GB2";"nee";5;"EXC";0;3;0;0
+2013-08-28;"GB2";"nee";5;"EXC";0;0;0;85
+2013-06-17;"GB2";"nee";5;"EXC";0;0;0;35
+2013-06-17;"GB2";"nee";5;"EXC";0;3;0;0
+2013-10-01;"GB2";"nee";5;"EXC";0;0,5;0;0
+2013-10-01;"GB2";"nee";5;"EXC";0;0;0;95
+2013-08-28;"GB2";"nee";6;"BGR";0;3;0;7
+2013-10-01;"GB2";"nee";6;"BGR";0;0;0;3
+2013-07-30;"GB2";"nee";6;"BGR";0;3;0;0
+2013-06-17;"GB2";"nee";6;"BGR";0;55;0;0
+2013-10-01;"GB2";"nee";6;"BGR";0;3;0;0
+2013-07-30;"GB2";"nee";6;"BGR";0;0;0;15
+2013-08-28;"GB2";"nee";7;"BGR";0;0;0;95
+2013-06-17;"GB2";"nee";7;"BGR";3;0;0;75
+2013-07-30;"GB2";"nee";7;"BGR";3;0,5;0;35
+2013-06-17;"GB2";"nee";7;"BGR";0;7;0;0
+2013-10-01;"GB2";"nee";7;"BGR";0;0;0;15
+2013-10-01;"GB2";"nee";7;"BGR";3;3;0;0
+2013-08-28;"GB2";"nee";7;"BGR";0;0,5;0;0
+2013-06-17;"GB2";"nee";8;"BGR";7;0;0;25
+2013-08-28;"GB2";"nee";8;"BGR";15;3;0;7
+2013-07-30;"GB2";"nee";8;"BGR";3;0;0;35
+2013-07-30;"GB2";"nee";8;"BGR";0;3;0;0
+2013-10-01;"GB2";"nee";8;"BGR";0;0;0;3
+2013-06-17;"GB2";"nee";8;"BGR";0;3;0;0
+2013-10-01;"GB2";"nee";8;"BGR";0;35;0;0
+2013-08-28;"GB2";"nee";9;"BGR";7;0,5;0;0
+2013-10-01;"GB2";"nee";9;"BGR";3;0,5;0;0
+2013-08-28;"GB2";"nee";9;"BGR";0;0;0;15
+2013-07-30;"GB2";"nee";9;"BGR";0;3;0;0
+2013-10-01;"GB2";"nee";9;"BGR";0;0;0;25
+2013-06-17;"GB2";"nee";9;"BGR";0;3;0;0
+2013-06-17;"GB2";"nee";9;"BGR";0;0;0;45
+2013-07-30;"GB2";"nee";9;"BGR";0;0;0;45
+2013-06-17;"GB2";"nee";9;"BGR";3;0;0;0
+2013-08-28;"LV1";"ja";1;"EXC";0;0;0;3
+2013-10-01;"LV1";"ja";1;"EXC";0;0;0;0,5
+2013-07-30;"LV1";"ja";1;"EXC";0;0;3;7
+2013-06-17;"LV1";"ja";1;"EXC";0;0;7;7
+2013-08-28;"LV1";"ja";1;"EXC";0;0;0,5;0
+2013-06-17;"LV1";"ja";2;"EXC";3;0;3;15
+2013-08-28;"LV1";"ja";2;"EXC";0;0;0,5;0
+2013-10-01;"LV1";"ja";2;"EXC";3;0;0;0
+2013-10-01;"LV1";"ja";2;"EXC";0;0;7;0
+2013-07-30;"LV1";"ja";2;"EXC";0;0;0;0,5
+2013-10-01;"LV1";"ja";2;"EXC";0;0;0;15
+2013-07-30;"LV1";"ja";3;"EXC";0;0;0;25
+2013-10-01;"LV1";"ja";3;"EXC";0;0;0;15
+2013-06-17;"LV1";"ja";3;"EXC";15;0;3;55
+2013-08-28;"LV1";"ja";3;"EXC";0;0;0,5;0
+2013-07-30;"LV1";"ja";3;"EXC";0,5;0;0;0
+2013-08-28;"LV1";"ja";4;"EXC";0;0;0;75
+2013-10-01;"LV1";"ja";4;"EXC";0;0;0;99
+2013-06-17;"LV1";"ja";4;"EXC";0;0;0,5;75
+2013-07-30;"LV1";"ja";4;"EXC";0;0;0;95
+2012-06-07;"WD1";"ja";4;"EXC";0;0;3;7
+2012-06-07;"WD1";"ja";5;"EXC";0,5;0;0,5;0
+2012-06-07;"WD1";"ja";5;"EXC";0;0;0;7
+2012-06-07;"WD1";"ja";6;"BGR";0;0;7;0
+2012-06-07;"WD1";"ja";6;"BGR";3;0;0;0,5
+2012-06-07;"WD1";"ja";7;"BGR";0;0;0;35
+2012-06-07;"WD1";"ja";7;"BGR";0,5;0;0;0
+2012-06-07;"WD1";"ja";8;"BGR";0,5;0;3;0
+2012-06-07;"WD1";"ja";8;"BGR";0;0;0;35
+2012-06-07;"WD1";"ja";9;"BGR";0,5;0;3;0
+2012-06-07;"WD1";"ja";9;"BGR";0;0;0;35
+2012-06-07;"WD2";"ja";1;"EXC";0,5;0;0;0,5
+2012-06-07;"WD2";"ja";2;"EXC";0;0;0;25
+2012-06-07;"WD2";"ja";2;"EXC";3;0;7;0
+2012-06-07;"WD2";"ja";3;"EXC";0,5;0;0,5;3
+2012-06-07;"WD2";"ja";4;"EXC";3;0;0;0
+2012-06-07;"WD2";"ja";5;"EXC";0,5;0;0;0,5
+2012-06-07;"WD2";"ja";6;"BGR";3;0;3;0
+2012-06-07;"WD2";"ja";7;"BGR";0;0;0,5;0
+2012-06-07;"WD2";"ja";8;"BGR";0;0;3;3
+2012-06-07;"WD2";"ja";9;"BGR";0;0;3;3
+2012-07-03;"GB1";"nee";1;"EXC";0,5;15;0;0
+2012-07-03;"GB1";"nee";2;"EXC";0;45;0;0
+2012-07-03;"GB1";"nee";2;"EXC";7;0;0;0
+2012-07-03;"GB1";"nee";3;"EXC";0;45;0;0
+2012-07-03;"GB1";"nee";3;"EXC";7;0;0;0
+2012-07-03;"GB1";"nee";4;"EXC";35;0;0;0
+2012-07-03;"GB1";"nee";4;"EXC";0;25;0;0
+2012-07-03;"GB1";"nee";5;"EXC";0;75;0;0
+2012-07-03;"GB1";"nee";5;"EXC";35;0;0;0
+2012-07-03;"GB1";"nee";6;"BGR";0;35;0;0
+2012-07-03;"GB1";"nee";6;"BGR";7;0;0;0
+2012-07-03;"GB1";"nee";7;"BGR";0;55;0;0
+2012-07-03;"GB1";"nee";7;"BGR";7;0;0;0
+2012-07-03;"GB1";"nee";8;"BGR";7;0;0;0
+2012-07-03;"GB1";"nee";8;"BGR";0;35;0;0
+2012-07-03;"GB1";"nee";9;"BGR";0;45;0;0
+2012-07-03;"GB1";"nee";9;"BGR";7;0;0;0
+2012-07-03;"GB2";"nee";1;"EXC";0;0;0;25
+2012-07-03;"GB2";"nee";1;"EXC";0;15;0;0
+2012-07-03;"GB2";"nee";2;"EXC";0;15;0;0
+2012-07-03;"GB2";"nee";2;"EXC";0;0;0;55
+2012-07-03;"GB2";"nee";3;"EXC";0;25;0;0
+2012-07-03;"GB2";"nee";3;"EXC";0;0;0;65
+2012-07-03;"GB2";"nee";4;"EXC";0;25;0;0
+2012-07-03;"GB2";"nee";4;"EXC";0;0;0;65
+2012-07-03;"GB2";"nee";5;"EXC";0;7;0;0
+2012-07-03;"GB2";"nee";5;"EXC";0;0;0;45
+2012-07-03;"GB2";"nee";6;"BGR";0;15;0;0
+2012-07-03;"GB2";"nee";6;"BGR";0;0;0;75
+2012-07-03;"GB2";"nee";7;"BGR";0;3;0;7
+2012-07-03;"GB2";"nee";8;"BGR";0;15;0;0
+2012-07-03;"GB2";"nee";8;"BGR";0;0;0;75
+2012-07-03;"GB2";"nee";9;"BGR";0;0;0;25
+2012-07-03;"GB2";"nee";9;"BGR";0;55;0;0
+2012-07-03;"LV1";"ja";1;"EXC";0;0;3;0
+2012-07-03;"LV1";"ja";1;"EXC";0;0;0;25
+2012-07-03;"LV1";"ja";3;"EXC";0;7;0;0
+2012-07-03;"LV1";"ja";4;"EXC";0;3;7;0
+2012-07-03;"LV1";"ja";4;"EXC";0;0;0;75
+2012-07-03;"LV1";"ja";5;"EXC";0;0;3;25
+2012-07-03;"LV1";"ja";6;"BGR";0;0;0,5;0
+2012-07-03;"LV1";"ja";7;"BGR";0;3;3;0
+2012-07-03;"LV1";"ja";7;"BGR";0;0;0;75
+2012-07-03;"LV1";"ja";8;"BGR";0;3;7;0
+2012-07-03;"LV1";"ja";8;"BGR";0;0;0;25
+2012-07-03;"LV1";"ja";9;"BGR";0;0;3;25
+2012-07-03;"LV2";"nee";1;"EXC";0;25;3;0
+2012-07-03;"LV2";"nee";1;"EXC";0;0;0;45
+2012-07-03;"LV2";"nee";2;"EXC";0;0;3;0
+2012-07-03;"LV2";"nee";2;"EXC";0;0;0;25
+2012-07-03;"LV2";"nee";3;"EXC";0;3;3;55
+2012-07-03;"LV2";"nee";4;"EXC";0;0;3;7
+2012-07-03;"LV2";"nee";5;"EXC";0;0;0;85
+2012-07-03;"LV2";"nee";5;"EXC";0;7;7;0
+2012-07-03;"LV2";"nee";6;"BGR";0;3;3;0
+2012-07-03;"LV2";"nee";6;"BGR";0;0;0;25
+2012-07-03;"LV2";"nee";7;"BGR";0;3;0;0
+2012-07-03;"LV2";"nee";7;"BGR";0;0;0;35
+2012-07-03;"LV2";"nee";8;"BGR";0;0;0;45
+2012-07-03;"LV2";"nee";8;"BGR";0;0;3;0
+2012-07-03;"LV2";"nee";9;"BGR";0;0;3;0
+2012-07-03;"LV2";"nee";9;"BGR";0;0;0;45
+2012-07-03;"WD1";"ja";1;"EXC";3;7;15;0
+2012-07-03;"WD1";"ja";1;"EXC";0;0;0;3
+2012-07-03;"WD1";"ja";2;"EXC";0;0;3;3
+2012-07-03;"WD1";"ja";3;"EXC";0;0;0;65
+2012-07-30;"GB1";"nee";6;"BGR";7;0;0;0
+2012-07-30;"GB1";"nee";7;"BGR";0;25;0;0
+2012-07-30;"GB1";"nee";7;"BGR";7;0;0;0
+2012-07-30;"GB1";"nee";8;"BGR";3;0;0;0
+2012-07-30;"GB1";"nee";8;"BGR";0;45;0;0
+2012-07-30;"GB1";"nee";9;"BGR";3;0;0;0
+2012-07-30;"GB1";"nee";9;"BGR";0;25;0;0
+2012-07-30;"GB2";"nee";1;"EXC";0;0;0;7
+2012-07-30;"GB2";"nee";1;"EXC";0;3;0;0
+2012-07-30;"GB2";"nee";2;"EXC";0;0;0;75
+2012-07-30;"GB2";"nee";3;"EXC";0;0;0;85
+2012-07-30;"GB2";"nee";3;"EXC";0;0,5;0;0
+2012-07-30;"GB2";"nee";4;"EXC";0;0;0;35
+2012-07-30;"GB2";"nee";4;"EXC";0;3;0;0
+2012-07-30;"GB2";"nee";5;"EXC";0;3;0;0
+2012-07-30;"GB2";"nee";5;"EXC";0;0;0;95
+2012-07-30;"GB2";"nee";6;"BGR";3;0;0;0
+2012-07-30;"GB2";"nee";6;"BGR";0;0;0;15
+2012-07-30;"GB2";"nee";6;"BGR";0;7;0;0
+2012-07-30;"GB2";"nee";7;"BGR";0;3;0;0
+2012-07-30;"GB2";"nee";7;"BGR";0;0;0;25
+2012-07-30;"GB2";"nee";8;"BGR";0;0;0;45
+2012-07-30;"GB2";"nee";8;"BGR";15;0;0;0
+2012-07-30;"GB2";"nee";8;"BGR";0;3;0;0
+2012-07-30;"GB2";"nee";9;"BGR";0;0;0;65
+2012-07-30;"GB2";"nee";9;"BGR";7;0;0;0
+2012-07-30;"GB2";"nee";9;"BGR";0;7;0;0
+2012-07-30;"LV1";"ja";1;"EXC";0;0;3;0
+2012-07-30;"LV1";"ja";1;"EXC";0;0;0;15
+2012-07-30;"LV1";"ja";2;"EXC";0;0;0;0,5
+2012-07-30;"LV1";"ja";2;"EXC";0;3;0;0
+2012-07-30;"LV1";"ja";4;"EXC";0;0;3;0
+2012-07-30;"LV1";"ja";4;"EXC";0;0;0;85
+2012-07-30;"LV1";"ja";5;"EXC";15;0;0;0
+2012-07-30;"LV1";"ja";5;"EXC";0;0;0;15
+2012-07-30;"LV1";"ja";6;"BGR";0;0;3;0
+2012-07-30;"LV1";"ja";6;"BGR";0;0;0;35
+2012-07-30;"LV1";"ja";6;"BGR";0;15;0;0
+2012-07-30;"LV1";"ja";7;"BGR";0;0;0,5;0
+2012-07-30;"LV1";"ja";8;"BGR";0;3;3;0
+2012-07-30;"LV1";"ja";8;"BGR";0;0;0;35
+2012-07-30;"LV1";"ja";9;"BGR";0;0;3;3
+2012-07-30;"LV2";"nee";1;"EXC";0;0;0;45
+2012-07-30;"LV2";"nee";1;"EXC";0;0;0,5;0
+2012-07-30;"LV2";"nee";2;"EXC";0;0;3;0
+2012-07-30;"LV2";"nee";2;"EXC";0;0;0;3
+2012-07-30;"LV2";"nee";3;"EXC";0;0;0;95
+2012-07-30;"LV2";"nee";4;"EXC";0;0;0;45
+2012-07-30;"LV2";"nee";4;"EXC";0;0;3;0
+2012-07-30;"LV2";"nee";5;"EXC";0;0;0;35
+2012-07-30;"LV2";"nee";5;"EXC";0;0;25;0
+2012-07-30;"LV2";"nee";6;"BGR";0;0;3;0
+2012-07-30;"LV2";"nee";6;"BGR";0;0;0;7
+2012-07-30;"LV2";"nee";7;"BGR";0;0;0,5;0
+2012-07-30;"LV2";"nee";7;"BGR";0;0;0;25
+2012-07-30;"LV2";"nee";8;"BGR";0;0;0;75
+2012-07-30;"LV2";"nee";8;"BGR";0;0;3;0
+2012-07-30;"LV2";"nee";9;"BGR";0;0;0;25
+2012-07-30;"LV2";"nee";9;"BGR";0;0;3;0
+2012-07-30;"WD1";"ja";1;"EXC";3;0;3;3
+2012-07-30;"WD1";"ja";2;"EXC";0;0;0;7
+2012-07-30;"WD1";"ja";2;"EXC";7;0;0;0
+2012-07-30;"WD1";"ja";3;"EXC";0;0;0;55
+2012-07-30;"WD1";"ja";3;"EXC";0;0;7;0
+2012-07-30;"WD1";"ja";4;"EXC";0;0;7;0
+2012-07-30;"WD1";"ja";4;"EXC";0;0;0;15
+2012-07-30;"WD1";"ja";5;"EXC";0;0;0;7
+2012-07-30;"WD1";"ja";5;"EXC";0;0;15;0
+2012-07-30;"WD1";"ja";5;"EXC";3;0;0;0
+2012-07-30;"WD1";"ja";6;"BGR";0;0;0,5;0
+2012-07-30;"WD1";"ja";6;"BGR";0;0;0;35
+2012-07-30;"WD1";"ja";7;"BGR";0;0;0;45
+2012-07-30;"WD1";"ja";7;"BGR";0,5;0;0,5;0
+2012-07-30;"WD1";"ja";8;"BGR";0;0;0,5;0
+2012-07-30;"WD1";"ja";8;"BGR";0;0;0;85
+2012-07-30;"WD1";"ja";9;"BGR";0;0;0,5;7
+2012-07-30;"WD2";"ja";1;"EXC";0,5;0;3;3
+2012-07-30;"WD2";"ja";2;"EXC";0,5;0;15;3
+2012-07-30;"WD2";"ja";4;"EXC";0;0;0;3
+2012-07-30;"WD2";"ja";5;"EXC";3;0;0;7
+2012-07-30;"WD2";"ja";6;"BGR";3;3;25;0
+2012-07-30;"WD2";"ja";7;"BGR";0;0;0,5;0
+2012-07-30;"WD2";"ja";8;"BGR";3;0;3;3
+2012-07-30;"WD2";"ja";9;"BGR";0;0;0;55
+2012-07-30;"WD2";"ja";9;"BGR";0;0;3;0
+2012-09-04;"GB1";"nee";1;"EXC";0;0;0;3
+2012-09-04;"GB1";"nee";1;"EXC";0;3;0;0
+2012-09-04;"GB1";"nee";2;"EXC";0;0;0;75
+2012-09-04;"GB1";"nee";3;"EXC";0;0;0;85
+2012-09-04;"GB1";"nee";3;"EXC";0;0,5;0;0
+2012-09-04;"GB1";"nee";4;"EXC";0;3;0;0
+2012-09-04;"GB1";"nee";4;"EXC";0;0;0;95
+2012-09-04;"GB1";"nee";5;"EXC";0;0,5;0;0
+2012-09-04;"GB1";"nee";5;"EXC";0;0;0;85
+2012-09-04;"GB1";"nee";6;"BGR";0;15;0;0
+2012-09-04;"GB1";"nee";6;"BGR";0;0;0;15
+2012-09-04;"GB1";"nee";7;"BGR";0;0,5;0;0
+2012-09-04;"GB1";"nee";7;"BGR";0;0;0;25
+2012-09-04;"GB1";"nee";8;"BGR";0;0;0;55
+2012-09-04;"GB1";"nee";8;"BGR";7;0;0;0
+2012-09-04;"GB1";"nee";9;"BGR";3;3;0;0
+2012-09-04;"GB1";"nee";9;"BGR";0;0;0;55
+2012-09-04;"GB2";"nee";1;"EXC";0;3;0;0
+2012-09-04;"GB2";"nee";2;"EXC";0;15;0;0
+2012-09-04;"GB2";"nee";2;"EXC";0,5;0;0;0
+2012-09-04;"GB2";"nee";3;"EXC";3;0;0;0
+2012-09-04;"GB2";"nee";3;"EXC";0;35;0;0
+2012-09-04;"GB2";"nee";4;"EXC";0;35;0;0
+2012-09-04;"GB2";"nee";5;"EXC";0,5;0;0;0
+2012-09-04;"GB2";"nee";5;"EXC";0;55;0;0
+2012-09-04;"GB2";"nee";6;"BGR";0;35;0;0
+2012-09-04;"GB2";"nee";6;"BGR";0,5;0;0;0
+2012-09-04;"GB2";"nee";7;"BGR";0;75;0;0
+2012-09-04;"GB2";"nee";7;"BGR";0,5;0;0;0
+2012-09-04;"GB2";"nee";8;"BGR";0,5;0;0;0
+2012-09-04;"GB2";"nee";8;"BGR";0;75;0;0
+2012-09-04;"GB2";"nee";9;"BGR";0;35;0;0
+2012-09-04;"GB2";"nee";9;"BGR";0,5;0;0;0
+2012-09-04;"LV1";"ja";1;"EXC";0;0;0;25
+2012-09-04;"LV1";"ja";1;"EXC";0;0;0,5;0
+2012-09-04;"LV1";"ja";2;"EXC";0;0;0;45
+2012-09-04;"LV1";"ja";2;"EXC";0;0;7;0
+2012-09-04;"LV1";"ja";3;"EXC";0;0;0,5;0
+2012-09-04;"LV1";"ja";3;"EXC";0;0;0;95
+2012-09-04;"LV1";"ja";4;"EXC";0;0;0;75
+2012-09-04;"LV1";"ja";4;"EXC";0;0;0,5;0
+2012-09-04;"LV1";"ja";5;"EXC";0;0;0;85
+2012-09-04;"LV1";"ja";5;"EXC";0;0;3;0
+2012-09-04;"LV1";"ja";6;"BGR";0;0;0;55
+2012-09-04;"LV1";"ja";6;"BGR";0;0;0,5;0
+2012-09-04;"LV1";"ja";7;"BGR";0;0;0;7
+2012-09-04;"LV1";"ja";7;"BGR";0;0;3;0
+2012-09-04;"LV1";"ja";8;"BGR";0;0;3;0
+2012-09-04;"LV1";"ja";8;"BGR";0;0;0;25
+2012-09-04;"LV1";"ja";9;"BGR";0;0;0;15
+2012-09-04;"LV1";"ja";9;"BGR";0;0;7;0
+2012-09-04;"LV2";"nee";1;"EXC";0;0;7;0
+2012-09-04;"LV2";"nee";1;"EXC";0;0;0;15
+2012-09-04;"LV2";"nee";3;"EXC";0;0;0;3
+2012-09-04;"LV2";"nee";4;"EXC";0;0;0;65
+2012-09-04;"LV2";"nee";4;"EXC";0;0;0,5;0
+2012-09-04;"LV2";"nee";5;"EXC";0;0;0;45
+2012-09-04;"LV2";"nee";5;"EXC";0;0;7;0
+2012-09-04;"LV2";"nee";6;"BGR";0;0;3;0
+2012-09-04;"LV2";"nee";7;"BGR";0;0;0,5;0,5
+2012-09-04;"LV2";"nee";8;"BGR";0;0;0;7
+2012-09-04;"LV2";"nee";8;"BGR";0;0;3;0
+2012-09-04;"LV2";"nee";9;"BGR";0;0;0;3
+2012-09-04;"WD1";"ja";1;"EXC";0;0;7;0
+2012-09-04;"WD1";"ja";1;"EXC";3;0;0;0
+2012-09-04;"WD1";"ja";2;"EXC";0,5;0;0;0
+2012-09-04;"WD1";"ja";2;"EXC";0;0;3;0
+2012-09-04;"WD1";"ja";2;"EXC";0;0;0;3
+2012-09-04;"WD1";"ja";3;"EXC";0;0;0;65
+2012-09-04;"WD1";"ja";3;"EXC";0;0;3;0
+2012-09-04;"WD1";"ja";4;"EXC";0;0;0;95
+2012-09-04;"WD1";"ja";4;"EXC";0;0;3;0
+2012-09-04;"WD1";"ja";5;"EXC";0;0;0;35
+2012-09-04;"WD1";"ja";5;"EXC";0;0;7;0
+2012-09-04;"WD1";"ja";6;"BGR";3;0;0,5;0
+2012-09-04;"WD1";"ja";7;"BGR";0,5;0;3;0
+2012-09-04;"WD1";"ja";7;"BGR";0;0;0;7
+2012-09-04;"WD1";"ja";8;"BGR";0;0;0;35
+2012-09-04;"WD1";"ja";8;"BGR";0,5;0;3;0
+2012-09-04;"WD1";"ja";9;"BGR";0,5;0;3;0
+2012-09-04;"WD1";"ja";9;"BGR";0;0;0;3
+2012-09-04;"WD2";"ja";1;"EXC";0;0;3;3
+2012-09-04;"WD2";"ja";2;"EXC";0;0;0;15
+2012-09-04;"WD2";"ja";2;"EXC";0;0;3;0
+2012-09-04;"WD2";"ja";3;"EXC";3;0;0;0
+2012-09-04;"WD2";"ja";3;"EXC";0;0;0;3
+2012-09-04;"WD2";"ja";3;"EXC";0;0;35;0
+2012-09-04;"WD2";"ja";4;"EXC";0,5;0;0;0
+2012-09-04;"WD2";"ja";4;"EXC";0;0;25;0
+2012-09-04;"WD2";"ja";4;"EXC";0;0;0;15
+2012-09-04;"WD2";"ja";5;"EXC";0;0;0;15
+2012-09-04;"WD2";"ja";6;"BGR";0;0;3;0
+2012-09-04;"WD2";"ja";7;"BGR";0;0;0;3
+2012-09-04;"WD2";"ja";8;"BGR";0,5;0;15;0,5
+2012-09-04;"WD2";"ja";9;"BGR";0;0;0;35
+2012-09-04;"WD2";"ja";9;"BGR";0;0;7;0
+2013-08-28;"WD2";"ja";5;"EXC";3;0;0;7
+2013-10-01;"GB2";"nee";3;"EXC";0;0;0;95
+2013-10-01;"GB2";"nee";3;"EXC";0;0,5;0;0
+2013-10-01;"GB1";"nee";1;"EXC";0;3;0;3
+2013-08-28;"GB1";"nee";1;"EXC";0;0,5;0;3
+2013-06-17;"GB1";"nee";1;"EXC";0;15;0;0
+2013-07-30;"GB1";"nee";1;"EXC";0;3;0;0
+2013-06-17;"GB1";"nee";1;"EXC";0,5;0;0;0
+2013-06-17;"GB1";"nee";2;"EXC";0;15;0;0
+2013-10-01;"GB1";"nee";2;"EXC";0;75;0;0
+2013-08-28;"GB1";"nee";2;"EXC";0;0;0;0,5
+2013-10-01;"GB1";"nee";2;"EXC";0,5;0;0;0
+2013-07-30;"GB1";"nee";2;"EXC";0;15;0;0
+2013-08-28;"GB1";"nee";2;"EXC";0;7;0;0
+2013-08-28;"GB1";"nee";3;"EXC";0;0;0;0,5
+2013-06-17;"GB1";"nee";3;"EXC";0;7;0;0
+2013-07-30;"GB1";"nee";3;"EXC";0,5;0;0;0
+2013-06-17;"GB1";"nee";3;"EXC";0,5;0;0;0
+2013-10-01;"GB1";"nee";3;"EXC";0;75;0;0
+2013-07-30;"GB1";"nee";3;"EXC";0;25;0;0
+2013-08-28;"GB1";"nee";3;"EXC";3;0;0;0
+2013-08-28;"GB1";"nee";3;"EXC";0;25;0;0
+2013-07-30;"GB1";"nee";4;"EXC";0;85;0;0
+2013-08-28;"GB1";"nee";4;"EXC";0;75;0;0
+2013-08-28;"LV1";"ja";4;"EXC";0;0;0,5;0
+2013-08-28;"LV1";"ja";5;"EXC";0;0;0;95
+2013-07-30;"LV1";"ja";5;"EXC";0;0;3;0
+2013-06-17;"LV1";"ja";5;"EXC";0;0;3;75
+2013-07-30;"LV1";"ja";5;"EXC";0;0;0;95
+2013-10-01;"LV1";"ja";5;"EXC";0;0;0;99
+2013-07-30;"LV1";"ja";6;"BGR";0;0;7;0
+2013-07-30;"LV1";"ja";6;"BGR";0;0;0;55
+2013-10-01;"LV1";"ja";6;"BGR";0;0;0,5;0
+2013-06-17;"LV1";"ja";6;"BGR";0;0;15;15
+2013-08-28;"LV1";"ja";6;"BGR";0;0;3;0
+2013-06-17;"LV1";"ja";7;"BGR";0;7;3;45
+2013-07-30;"LV1";"ja";7;"BGR";0;0;0;7
+2013-10-01;"LV1";"ja";7;"BGR";0;0;0;15
+2013-08-28;"LV1";"ja";7;"BGR";0;0;3;3
+2013-07-30;"LV1";"ja";7;"BGR";0;0;3;0
+2013-10-01;"LV1";"ja";7;"BGR";0,5;0;0;0
+2013-06-17;"LV1";"ja";8;"BGR";7;0;7;15
+2013-07-30;"LV1";"ja";8;"BGR";3;0;7;0
+2013-08-28;"LV1";"ja";8;"BGR";0;0;3;0
+2013-10-01;"LV1";"ja";8;"BGR";0;0;25;7
+2013-08-28;"LV1";"ja";8;"BGR";0;0;0;65
+2013-07-30;"LV1";"ja";8;"BGR";0;0;0;25
+2013-08-28;"LV1";"ja";9;"BGR";0;0;3;0
+2013-10-01;"LV1";"ja";9;"BGR";0;0;0;35
+2013-06-17;"LV1";"ja";9;"BGR";0;0,5;15;45
+2013-07-30;"LV1";"ja";9;"BGR";0;0;0;3
+2013-06-17;"LV2";"nee";1;"EXC";0;15;7;7
+2013-08-28;"LV2";"nee";1;"EXC";0;0;3;15
+2013-10-01;"LV2";"nee";1;"EXC";0;0;3;25
+2013-07-30;"LV2";"nee";1;"EXC";0;0;0;35
+2013-07-30;"LV2";"nee";1;"EXC";0;0;3;0
+2013-08-28;"LV2";"nee";2;"EXC";0;0;7;7
+2013-07-30;"LV2";"nee";2;"EXC";0;0;35;25
+2013-06-17;"LV2";"nee";2;"EXC";0;3;3;85
+2013-10-01;"LV2";"nee";2;"EXC";0;0;55;0
+2013-10-01;"LV2";"nee";3;"EXC";0;0;0;85
+2013-06-17;"LV2";"nee";3;"EXC";0;3;3;75
+2013-08-28;"LV2";"nee";3;"EXC";0;0;0;65
+2013-08-28;"LV2";"nee";3;"EXC";0;0;3;0
+2013-07-30;"LV2";"nee";3;"EXC";0;0;0;95
+2013-07-30;"LV2";"nee";3;"EXC";0;0;0,5;0
+2013-10-01;"LV2";"nee";4;"EXC";0;0;0;85
+2013-08-28;"LV2";"nee";4;"EXC";0;0;3;0
+2013-06-17;"LV2";"nee";4;"EXC";0;0;3;55
+2013-07-30;"LV2";"nee";4;"EXC";0;0;0;45
+2013-08-28;"LV2";"nee";4;"EXC";0;0;0;85
+2013-07-30;"LV2";"nee";4;"EXC";0;0;7;0
+2013-10-01;"LV2";"nee";4;"EXC";0;0;3;0
+2013-08-28;"LV2";"nee";5;"EXC";0;0;3;0
+2013-10-01;"LV2";"nee";5;"EXC";0;0;3;0
+2013-06-17;"LV2";"nee";5;"EXC";0;3;15;55
+2013-07-30;"LV2";"nee";5;"EXC";0;0;3;0
+2013-07-30;"LV2";"nee";5;"EXC";0;0;0;85
+2013-10-01;"LV2";"nee";5;"EXC";0;0;0;65
+2013-08-28;"LV2";"nee";5;"EXC";0;0;0;65
+2013-06-17;"LV2";"nee";6;"BGR";3;0;0,5;15
+2013-10-01;"LV2";"nee";6;"BGR";0;0;0;75
+2013-07-30;"LV2";"nee";6;"BGR";0;0;0;75
+2013-07-30;"LV2";"nee";6;"BGR";0;0;7;0
+2013-10-01;"LV2";"nee";6;"BGR";0;0;3;0
+2013-08-28;"LV2";"nee";6;"BGR";0;0;3;0
+2013-08-28;"LV2";"nee";6;"BGR";0;0;0;25
+2013-07-30;"LV2";"nee";7;"BGR";0;0;7;0
+2013-08-28;"LV2";"nee";7;"BGR";0;0;3;0
+2013-06-17;"LV2";"nee";7;"BGR";7;0;0,5;15
+2013-08-28;"LV2";"nee";7;"BGR";0;0;0;55
+2013-08-28;"LV2";"nee";7;"BGR";25;0;0;0
+2013-10-01;"LV2";"nee";7;"BGR";0;0;3;0
+2013-07-30;"LV2";"nee";7;"BGR";0;0;0;35
+2013-10-01;"LV2";"nee";7;"BGR";0;0;0;35
+2013-07-30;"LV2";"nee";8;"BGR";0;0;7;35
+2013-06-17;"LV2";"nee";8;"BGR";0;15;3;25
+2013-08-28;"LV2";"nee";8;"BGR";0;0;0,5;0
+2013-10-01;"LV2";"nee";8;"BGR";0;0;0,5;0
+2013-10-01;"LV2";"nee";8;"BGR";0;0;0;25
+2013-08-28;"LV2";"nee";8;"BGR";0;0;0;55
+2013-10-01;"LV2";"nee";8;"BGR";0,5;0;0;0
+2013-07-30;"LV2";"nee";9;"BGR";3;0;0;0
+2013-08-28;"LV2";"nee";9;"BGR";0;0;45;0
+2013-07-30;"LV2";"nee";9;"BGR";0;0;3;0
+2013-10-01;"LV2";"nee";9;"BGR";0;0;3;0
+2013-06-17;"LV2";"nee";9;"BGR";7;0;0,5;15
+2013-07-30;"LV2";"nee";9;"BGR";0;0;0;45
+2013-10-01;"LV2";"nee";9;"BGR";0;0;0;35
+2013-06-17;"WD1";"ja";1;"EXC";0,5;0;7;3
+2013-08-28;"WD1";"ja";1;"EXC";3;0;3;3
+2013-10-01;"WD1";"ja";1;"EXC";3;0;3;3
+2013-07-30;"WD1";"ja";1;"EXC";3;0;3;3
+2013-06-17;"WD1";"ja";2;"EXC";15;0;0,5;0
+2013-06-17;"WD1";"ja";2;"EXC";0;0;0;7
+2013-10-01;"WD1";"ja";2;"EXC";0;0;25;0
+2013-08-28;"WD1";"ja";2;"EXC";0;0;55;0
+2013-10-01;"WD1";"ja";2;"EXC";25;0;0;0
+2013-06-17;"WD1";"ja";3;"EXC";3;0;7;75
+2013-08-28;"WD1";"ja";3;"EXC";3;0;0;0,5
+2013-10-01;"WD1";"ja";3;"EXC";0,5;0;3;25
+2013-07-30;"WD1";"ja";3;"EXC";0;0;0;25
+2013-08-28;"WD1";"ja";3;"EXC";0;0;35;0
+2013-07-30;"WD1";"ja";3;"EXC";3;0;3;0
+2013-08-28;"WD1";"ja";4;"EXC";0;0;0;35
+2013-07-30;"WD1";"ja";4;"EXC";0;0;0;15
+2013-06-17;"WD1";"ja";4;"EXC";0;0;0,5;15
+2013-10-01;"WD1";"ja";4;"EXC";0;0;0;35
+2013-07-30;"WD1";"ja";4;"EXC";3;0;0,5;0
+2013-07-30;"WD1";"ja";5;"EXC";0;0;0;25
+2013-07-30;"WD1";"ja";5;"EXC";3;0;0;0
+2013-10-01;"WD1";"ja";5;"EXC";0;0;0;7
+2013-10-01;"WD1";"ja";5;"EXC";7;0;0;0
+2013-06-17;"WD1";"ja";5;"EXC";0;0;7;3
+2013-07-30;"WD1";"ja";5;"EXC";0;0;7;0
+2013-10-01;"WD1";"ja";5;"EXC";0;0;15;0
+2013-08-28;"WD1";"ja";5;"EXC";0;0;0;35
+2013-08-28;"WD1";"ja";5;"EXC";3;0;0;0
+2013-08-28;"WD1";"ja";5;"EXC";0;0;3;0
+2013-07-30;"WD1";"ja";6;"BGR";0;0;7;3
+2013-10-01;"WD1";"ja";6;"BGR";0;0;15;3
+2013-06-17;"WD1";"ja";6;"BGR";3;0;15;15
+2013-08-28;"WD1";"ja";6;"BGR";0;0;7;3
+2013-06-17;"WD1";"ja";7;"BGR";15;0;3;0
+2013-07-30;"WD1";"ja";7;"BGR";0;0;3;0
+2013-10-01;"WD1";"ja";7;"BGR";0,5;0;0;0
+2013-07-30;"WD1";"ja";7;"BGR";0;0;0;35
+2013-10-01;"WD1";"ja";7;"BGR";0;0;0;25
+2013-08-28;"WD1";"ja";7;"BGR";0;0;0;75
+2013-08-28;"WD1";"ja";7;"BGR";0;0;3;0
+2013-07-30;"WD1";"ja";8;"BGR";0;0;3;0
+2013-06-17;"WD1";"ja";8;"BGR";0;0;3;15
+2013-10-01;"WD1";"ja";8;"BGR";0;0;0;45
+2013-07-30;"WD1";"ja";8;"BGR";0;0;0;75
+2013-10-01;"WD1";"ja";8;"BGR";0;0;3;0
+2013-08-28;"WD1";"ja";8;"BGR";0;0;0,5;0
+2013-08-28;"WD1";"ja";8;"BGR";0;0;0;65
+2013-10-01;"WD1";"ja";9;"BGR";3;0;3;3
+2013-07-30;"WD1";"ja";9;"BGR";0;0;3;7
+2013-08-28;"WD1";"ja";9;"BGR";0;0;3;7
+2013-06-17;"WD1";"ja";9;"BGR";0;0;3;25
+2013-07-30;"WD2";"ja";1;"EXC";0;0;0;0,5
+2013-08-28;"WD2";"ja";1;"EXC";0;0;0,5;3
+2013-06-17;"WD2";"ja";1;"EXC";0;0;3;3
+2013-10-01;"WD2";"ja";1;"EXC";0;0;0;0,5
+2013-06-17;"WD2";"ja";2;"EXC";3;0;3;3
+2013-10-01;"WD2";"ja";2;"EXC";0;0;0;99
+2013-07-30;"WD2";"ja";2;"EXC";7;0;0;0
+2013-08-28;"WD2";"ja";2;"EXC";0;0;0;35
+2013-10-01;"WD2";"ja";2;"EXC";3;0;0;0
+2013-08-28;"WD2";"ja";2;"EXC";3;0;15;0
+2013-07-30;"WD2";"ja";2;"EXC";0;0;0;35
+2013-07-30;"WD2";"ja";2;"EXC";0;0;7;0
+2013-06-17;"WD2";"ja";3;"EXC";7;0;35;7
+2013-07-30;"WD2";"ja";3;"EXC";0;0;0;3
+2013-06-17;"WD2";"ja";4;"EXC";0;0;0,5;0
+2013-07-30;"WD2";"ja";4;"EXC";0;0;0;25
+2013-07-30;"WD2";"ja";4;"EXC";0;0;7;0
+2013-06-17;"WD2";"ja";5;"EXC";3;0;7;3
+2013-10-01;"WD2";"ja";5;"EXC";3;0;0;0
+2013-10-01;"WD2";"ja";5;"EXC";0;0;0;15
+2013-07-30;"WD2";"ja";5;"EXC";3;0;25;7
+2013-08-28;"WD2";"ja";5;"EXC";0;0;25;0
+2013-10-01;"WD2";"ja";5;"EXC";0;0;7;0
+2013-07-30;"WD2";"ja";6;"BGR";0,5;0;0;0
+2013-08-28;"WD2";"ja";6;"BGR";0;0;15;0
+2013-10-01;"WD2";"ja";6;"BGR";3;0;15;0,5
+2013-06-17;"WD2";"ja";7;"BGR";0;0;3;7
+2013-08-28;"WD2";"ja";7;"BGR";0;0;3;0,5
+2013-10-01;"WD2";"ja";7;"BGR";0;0;3;0
+2013-07-30;"WD2";"ja";7;"BGR";0;0;0;0,5
+2013-10-01;"WD2";"ja";8;"BGR";0,5;0;0,5;0,5
+2013-08-28;"WD2";"ja";8;"BGR";0;0;25;15
+2013-07-30;"WD2";"ja";8;"BGR";0;0;0,5;0
+2013-06-17;"WD2";"ja";8;"BGR";0;0;7;15
+2013-10-01;"WD2";"ja";9;"BGR";0,5;0;0,5;3
+2013-06-17;"WD2";"ja";9;"BGR";0;0;15;45
+2013-07-30;"WD2";"ja";9;"BGR";0;35;0;0
+2013-08-28;"WD2";"ja";9;"BGR";0;3;35;3
+NA;NA;"nee";NA;"BGR";0;0;0;55
+2013-08-28;"LV2";"nee";9;"BGR";0;0;0;55
