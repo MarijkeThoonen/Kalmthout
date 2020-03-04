@@ -30,6 +30,8 @@ vegstr_kh <- dplyr::rename(vegstr_kh, beh_typ = Begraasd.Niet.Begr,
                            brand2011 = Afgebrand.2011,
                            y = jaar, m = maand, zone = ID_Exclosure_zone)
 vegstr_kh <- dplyr::rename(vegstr_kh, veg_aanw = Vegetatie.aanwezig)
+vegstr_kh <- dplyr::rename(vegstr_kh, datum = Datum)
+vegstr_kh <- dplyr::rename(vegstr_kh, h_gem = H_gemd, sdev = Sdev)
 
 #waarden kol beh_typ hernoemen
 distinct(vegstr_kh, beh_typ)
@@ -44,3 +46,9 @@ vegstr_kh$veg_aanw <- mapvalues(vegstr_kh$veg_aanw, from = c("WAAR", "ONWAAR"),
 distinct(vegstr_kh, veg_aanw)
 vegstr_kh$brand2011 <- mapvalues(vegstr_kh$brand2011, from = c("WAAR", "ONWAAR"),
                                 to = c("ja", "nee"))
+
+#omzetten naar datum
+
+#waarden van elke variabele weergeven: gaat beter in Excel
+#vegstr_kh_data <-  distinct(vegstr_kh,datum)
+
