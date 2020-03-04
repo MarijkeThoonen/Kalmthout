@@ -1,5 +1,7 @@
+library(lubridate)
 library(tidyverse)
 library(plyr)
+
 
 #Import and control of dataset
 vegstr_kh <- read.csv2("./Data/Basisdatasets/HTbl_Exclosure_opname_2011_2014.csv",
@@ -47,7 +49,24 @@ distinct(vegstr_kh, veg_aanw)
 vegstr_kh$brand2011 <- mapvalues(vegstr_kh$brand2011, from = c("WAAR", "ONWAAR"),
                                 to = c("ja", "nee"))
 
-#omzetten naar datum
+###uitleesdatum in als datatype datum
+vegstr_kh$datum <- dmy(vegstr_kh$datum)
+
+
+#veranderen waardes zone in nummers
+distinct(vegstr_kh, zone)
+vegstr_kh$zone <- mapvalues(vegstr_kh$zone, 
+                            from = c("Excl, Centrum", "Excl, zone A",
+                                     "Excl, zone B", "Excl, zone C", "Excl, zone D",
+                                     "Begraasd, A","Begraasd, B", "Begraasd, C", 
+                                     "Begraasd, D"), 
+                            to = c(1, 2, 3, 4, 5, 6, 7, 8, 9))
+
+vegstr_kh$zone <- as.integer(vegstr_kh$zone)
+
+#wegschrijven .csv
+write.csv2(vegstr_kh, row.names = FALSE,
+           file = "Data/Afgeleide datasets/vegstr_kh.csv")
 
 #waarden van elke variabele weergeven: gaat beter in Excel
 #vegstr_kh_data <-  distinct(vegstr_kh,datum)
