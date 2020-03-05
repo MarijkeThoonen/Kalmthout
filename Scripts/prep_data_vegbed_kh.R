@@ -45,10 +45,15 @@ spread(soort, bedekking_getal, fill = 0)
 vegbed_kh_breed <- clean_names(vegbed_kh_breed)
 
 #verwijderen variabelen die dubbel zijn
-vegbed_kh_breed <- select(vegbed_kh_breed, -aant_bloeist_pijpenstro, -mos, -kale_bodem, -totale_bedekking, 
-       -staal_ingezameld)
+# vegbed_kh_breed <- select(vegbed_kh_breed, -aant_bloeist_pijpenstro, -mos, -kale_bodem, -totale_bedekking, 
+#        -staal_ingezameld)
 
 
 #wegschrijven .csv
 write.csv2(vegbed_kh_breed, row.names = FALSE,
            file = "Data/Afgeleide datasets/vegbed_kh_breed.csv")
+
+#unieke combinatie maken van zone en proeflocatie, want bv LV1, zone 1
+# kan een bedekking hebben voor heide en pijpenstro, weet niet goed hoe dit te verwerken
+# je mag die bedekkingen mos en open bodem dan ook niet behouden, want die waarden 
+# vermenigvuldigen dan bij omzetting van lang naar breed denk ik

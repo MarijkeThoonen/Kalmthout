@@ -22,8 +22,7 @@ vegstr_kh$ID_Exclosure <- mapvalues(vegstr_kh$ID_Exclosure, from = c(1, 2, 3, 4,
 vegstr_kh <- vegstr_kh %>% 
   select(-ID_Exclosure_opname, -Deelgebied, -Opmerking, - Afstand_m, 
          -Hoek_gr, -Bedekking.mos, -Bedekking.kale.bodem, -strooisel.ingezameld,
-         -bodemstalen.ingezameld, -H1_cm, -H2_cm, -H3_cm, -H4_cm, 
-         -H5_cm, -H6_cm, -H7_cm, -H8_cm)
+         -bodemstalen.ingezameld, -H_gemd, -Sdev)
 
 #kolomnamen hernoemen, let op er zijn twee functies rename in tidyverse en dplyr,
 # daarom specifiek deze van dplyr oproepen door dplyr::rename, anders error!
@@ -33,7 +32,6 @@ vegstr_kh <- dplyr::rename(vegstr_kh, beh_typ = Begraasd.Niet.Begr,
                            y = jaar, m = maand, zone = ID_Exclosure_zone)
 vegstr_kh <- dplyr::rename(vegstr_kh, veg_aanw = Vegetatie.aanwezig)
 vegstr_kh <- dplyr::rename(vegstr_kh, datum = Datum)
-vegstr_kh <- dplyr::rename(vegstr_kh, h_gem = H_gemd, sdev = Sdev)
 
 #waarden kol beh_typ hernoemen
 distinct(vegstr_kh, beh_typ)
@@ -64,10 +62,21 @@ vegstr_kh$zone <- mapvalues(vegstr_kh$zone,
 
 vegstr_kh$zone <- as.integer(vegstr_kh$zone)
 
+#berekenen gemiddelde per zone en per exc_id voor elke combinatie m en y
+#berekenen standaard deviatie per zone en per exc_id voor elke combinatie m en y
+
 #wegschrijven .csv
 write.csv2(vegstr_kh, row.names = FALSE,
            file = "Data/Afgeleide datasets/vegstr_kh.csv")
 
-#waarden van elke variabele weergeven: gaat beter in Excel
-#vegstr_kh_data <-  distinct(vegstr_kh,datum)
+#aantal behandelingen waarvan en data waarom de structuur werd genomen
+vegstr_kh_opnames <- distinct(vegstr_kh, exc_id, beh_typ, y, m)
+write.csv2(vegstr_kh_opnames, row.names = FALSE, 
+           file = "Data/Afgeleide datasets/vegstr_kh_opnames.csv")
 
+#aantal plots waarvan de structuur werd genomen
+vegstr_kh_zones_sdev <- distinct(vegstr_kh, zone, exc_id, beh_typ, y, m, sdev)
+write.csv2(vegstr_kh_zones_sdev, row.names = FALSE, 
+           file = "Data/Afgeleide datasets/vegstr_kh_zones_sdev.csv")
+
+        
