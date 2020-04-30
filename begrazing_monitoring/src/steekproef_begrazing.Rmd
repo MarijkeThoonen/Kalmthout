@@ -1,0 +1,156 @@
+---
+title: "Steekproef voor monitoring geherderde schapenbegrazing"
+author: "Hans Van Calster"
+date: "30 april 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(echo = TRUE)
+
+library(n2khab) 
+#to install run
+#Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS = "true") # as a precaution
+#remotes::install_github("inbo/n2khab",
+#                        build_vignettes = TRUE,
+#                        upgrade = TRUE)
+library(sf)
+library(gdalUtils)
+library(raster)
+library(tidyverse)
+library(rprojroot)
+
+git_root <- find_root(is_git_root)
+begrazing_root <- file.path(git_root, "begrazing_monitoring")
+```
+
+
+# Kalmthout beheerindeling
+
+```{r}
+begrazingsplan <- read_sf(file.path(begrazing_root,
+                  "data", 
+                  "begrazingsplan schapen Kalmthoutse Heide 2020-1.kml")
+                  )
+
+begrazingsplan <- begrazingsplan %>%
+  mutate(Description = ifelse(Description == "", NA, Description),
+         gebruik = case_when(
+           str_detect(Description, "W") ~ "weekendpark",
+           str_detect(Description, "H") ~ "geherderd",
+           str_detect(Description, "N") ~ "nachtpark",
+           str_detect(Description, "G") ~ "geherderd"
+         ),
+         beheer_grof = case_when(
+           str_detect(Description, "W1") ~ "stootbegrazing",
+           str_detect(Description, "W2") ~ "extensieve begrazing",
+           str_detect(Description, "H") ~ "stootbegrazing",
+           str_detect(Description, "N") ~ "overnachting",
+           str_detect(Description, "G") ~ "extensieve begrazing")) %>%
+  filter(!is.na(Description))
+
+                  
+```
+
+
+```{r}
+ggplot(begrazingsplan) +
+  geom_sf(aes(fill = beheer_grof, colour = gebruik),
+          alpha = 0.3)
+```
+
+s het mogelijk om ook voldoende meetpunten in de weekendparken (code = 2020W1 en 2020W2) te leggen zodat we eventueel ook een uitspraak kunnen doen over het verschil in beheervorm? (eventueel via gefaseerd veldwerk zoals we bespraken?)
+
+
+de oppervlakte met extensieve begrazing is wel 4 keer kleiner dan die met geherderde begrazing. De vraag is hoeveel meetpunten nodig zijn in elk type om te kunnen vergelijken. (wanneer dat blijkt dat de tijd beschikbaar is)
+
+
+```{r}
+boundingbox <- begrazingsplan %>%
+  st_transform(crs = 31370) %>%
+  st_bbox()
+```
+
+
+
+# Habitatkaart
+
+
+
+```{r}
+wfs_bwk <- "https://geoservices.informatievlaanderen.be/overdrachtdiensten/BWK/wfs?"
+
+wfs_request <- "request=GetFeature"
+wfs_service <- "service=WFS"
+wfs_version <- "version=1.1.0"
+wfs_typename <- "typename=BWK:Bwkhab"
+wfs_srsname <- "srsName=EPSG:31370"
+wfs_bbox <- paste0("bbox=",
+                   paste(
+                     round(boundingbox$xmin - 200), 
+                     round(boundingbox$ymin - 200), 
+                     round(boundingbox$xmax + 200), 
+                     round(boundingbox$ymax + 200),
+                     sep = ",")
+                   )
+wfs_outputformat <- "outputFormat=application/json"
+
+wfs_fullrequest <- paste(wfs_request, 
+                         wfs_service, 
+                         wfs_version, 
+                         wfs_typename, 
+                         wfs_srsname,
+                         wfs_bbox,
+                         wfs_outputformat,
+                         sep = "&")
+
+habkaart_kalmthout <- paste0(wfs_bwk, wfs_fullrequest)
+
+bwkhab <- read_sf(habkaart_kalmthout)
+
+bwkhab <- bwkhab %>%
+  st_crop(boundingbox)
+```
+
+
+```{r}
+ggplot(bwkhab) +
+  geom_sf() + 
+  geom_sf(data = begrazingsplan, 
+          aes(fill = gebruik),
+          alpha = 0.2)
+```
+
+
+# GRTS raster 32 x 32 m Vlaanderen
+
+Zie https://inbo.github.io/n2khab/articles/v030_GRTSmh.html
+
+
+```{r eval=!file.exists(file.path(git_root, "n2khab_data/10_raw/GRTSmaster_habitats/GRTSmaster_habitats.tif"))}
+fileman_folders(root = "git")
+dir.create(file.path(git_root, "n2khab_data/10_raw/GRTSmaster_habitats"))
+download_zenodo(doi = "10.5281/zenodo.2682323", 
+                path = file.path(git_root, "n2khab_data/10_raw/GRTSmaster_habitats"))
+
+
+```
+
+```{r eval=file.exists(file.path(git_root, "n2khab_data/10_raw/GRTSmaster_habitats/GRTSmaster_habitats.tif"))}
+grts <- read_GRTSmh()
+```
+
+```{r}
+grts <- crop(grts, begrazingsplan %>% st_transform(crs = 31370))
+```
+
+
+# Steekproeftrekking
+
+
+
+
+
+
+
