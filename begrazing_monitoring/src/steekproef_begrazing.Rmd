@@ -207,4 +207,16 @@ begrazing_doelpop_habitat %>%
   kable()
 ```
 
+Verder filteren van doelpopulatie en samennemen van habitattypes minder categorieën.
+
+Daarna
+
+- oppervlaktes berekenen van de verschillende strata 
+- steekproefgrootte verdelen over strata
+- GRTS punten selecteren in elk van de strata + reservepunten
+- geselecteerde punten + proefvlakcirkels exporteren naar kml bestand
+
+
+
+
 
