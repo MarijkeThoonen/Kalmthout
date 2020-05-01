@@ -148,9 +148,63 @@ grts <- crop(grts, begrazingsplan %>% st_transform(crs = 31370))
 
 # Steekproeftrekking
 
+```{r}
+begrazing_doelpop <- begrazingsplan %>% 
+  st_transform(crs = 31370) %>%
+  filter(gebruik != "nachtpark")
+
+```
+
+```{r}
+begrazing_doelpop %>%
+  mutate(opp_m2 = st_area(.)) %>%
+  group_by(gebruik, beheer_grof) %>%
+  summarise(opp = sum(opp_m2)) %>%
+  st_drop_geometry()
+```
+
+```{r}
+begrazing_doelpop <- begrazing_doelpop %>%
+  st_intersection(bwkhab) 
 
 
 
+begrazing_doelpop_habitat <- begrazing_doelpop %>%
+  mutate(opp_m2 = st_area(.)) %>%
+  st_drop_geometry() %>%
+  mutate(HAB1 = ifelse(HAB1 == "gh", EENH1, HAB1),
+         HAB2 = ifelse(HAB2 == "gh", EENH2, HAB2),
+         HAB3 = ifelse(HAB3 == "gh", EENH3, HAB3),
+         HAB4 = ifelse(HAB4 == "gh", EENH4, HAB4),
+         HAB5 = ifelse(HAB5 == "gh", EENH5, HAB5),
+         ) %>%
+  select(Name, Description, gebruik, beheer_grof, UIDN, OIDN, 
+         starts_with("HAB"), starts_with("PHAB"), -HABLEGENDE, opp_m2) %>%
+  mutate(hab_phab_1 = paste(HAB1, PHAB1, sep = "__"),
+         hab_phab_2 = paste(HAB2, PHAB2, sep = "__"),
+         hab_phab_3 = paste(HAB3, PHAB3, sep = "__"),
+         hab_phab_4 = paste(HAB4, PHAB4, sep = "__"),
+         hab_phab_5 = paste(HAB5, PHAB5, sep = "__")
+         ) %>%
+  gather("hab_phab_nr", "hab_phab", starts_with("hab_phab")) %>% 
+  filter(hab_phab != "__0") %>%
+  separate(hab_phab, into = c("hab", "phab"), sep = "__") %>% 
+  mutate(positie = as.numeric(str_sub(hab_phab_nr, start = -1L, end = -1L)),
+         phab = as.numeric(phab)) %>%
+  select(-(HAB1:HAB5), -(PHAB1:PHAB5), -hab_phab_nr) %>%
+  group_by(Name, UIDN, OIDN) %>%
+  arrange(Name, UIDN, OIDN, positie) %>%
+  mutate(aantal = n()) %>%
+  mutate(p_opp_m2 = opp_m2 * phab/100) %>%
+  ungroup()
+```
 
+
+```{r}
+begrazing_doelpop_habitat %>%
+  group_by(gebruik, beheer_grof, hab) %>%
+  summarize(opp_ha = round(sum(p_opp_m2)/1e4, 1)) %>%
+  kable()
+```
 
 
