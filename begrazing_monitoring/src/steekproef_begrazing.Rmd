@@ -201,11 +201,50 @@ begrazing_doelpop_habitat <- begrazing_doelpop %>%
 
 
 ```{r}
+droge_heide <- c("kha",
+                 "2310",
+                 "2330",
+                 "2330_bu",
+                 "4030",
+                 "6230_hn",
+                 "cm",
+                 "cmb")
+natte_heide <- c("4010", 
+                 "4010,403", 
+                 "6230_hmo", 
+                 "7140_oli",
+                 "7150")
+
+```
+
+
+```{r}
+begrazing_doelpop_habitat <- begrazing_doelpop_habitat %>%
+  mutate(doeltype = case_when(
+    hab %in% droge_heide ~ "droge heide",
+    hab %in% natte_heide ~ "natte heide",
+    TRUE ~ NA_character_
+  )) %>%
+  filter(!is.na(doeltype))
+```
+
+
+```{r}
 begrazing_doelpop_habitat %>%
-  group_by(gebruik, beheer_grof, hab) %>%
+  group_by(gebruik, beheer_grof, doeltype, hab) %>%
   summarize(opp_ha = round(sum(p_opp_m2)/1e4, 1)) %>%
   kable()
 ```
+
+```{r}
+begrazing_doelpop_habitat %>%
+  group_by(gebruik, beheer_grof, doeltype) %>%
+  summarize(opp_ha = round(sum(p_opp_m2)/1e4, 1)) %>%
+  kable()
+```
+
+
+
 
 Verder filteren van doelpopulatie en samennemen van habitattypes minder categorieën.
 
