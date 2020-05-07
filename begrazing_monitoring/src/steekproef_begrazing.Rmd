@@ -20,19 +20,20 @@ library(gdalUtils)
 library(raster)
 library(tidyverse)
 library(rprojroot)
-
-git_root <- find_root(is_git_root)
-begrazing_root <- file.path(git_root, "begrazing_monitoring")
+library(leaflet)
+library(htmltools)
 ```
 
 
 # Kalmthout beheerindeling
 
 ```{r}
-begrazingsplan <- read_sf(file.path(begrazing_root,
-                  "data", 
-                  "begrazingsplan schapen Kalmthoutse Heide 2020-1.kml")
-                  )
+begrazingsplan <- read_sf(find_root_file(
+  "begrazing_monitoring/data", 
+  "begrazingsplan schapen Kalmthoutse Heide 2020-1.kml",
+  criterion = is_git_root
+)
+)
 
 begrazingsplan <- begrazingsplan %>%
   mutate(Description = ifelse(Description == "", NA, Description),
@@ -50,7 +51,6 @@ begrazingsplan <- begrazingsplan %>%
            str_detect(Description, "G") ~ "extensieve begrazing")) %>%
   filter(!is.na(Description))
 
-                  
 ```
 
 
@@ -128,7 +128,7 @@ ggplot(bwkhab) +
 Zie https://inbo.github.io/n2khab/articles/v030_GRTSmh.html
 
 
-```{r eval=!file.exists(file.path(git_root, "n2khab_data/10_raw/GRTSmaster_habitats/GRTSmaster_habitats.tif"))}
+```{r eval=!file.exists(find_root_file( "n2khab_data/10_raw/GRTSmaster_habitats/GRTSmaster_habitats.tif", criterion = is_git_root))}
 fileman_folders(root = "git")
 dir.create(file.path(git_root, "n2khab_data/10_raw/GRTSmaster_habitats"))
 download_zenodo(doi = "10.5281/zenodo.2682323", 
@@ -137,7 +137,7 @@ download_zenodo(doi = "10.5281/zenodo.2682323",
 
 ```
 
-```{r eval=file.exists(file.path(git_root, "n2khab_data/10_raw/GRTSmaster_habitats/GRTSmaster_habitats.tif"))}
+```{r eval=file.exists(find_root_file( "n2khab_data/10_raw/GRTSmaster_habitats/GRTSmaster_habitats.tif", criterion = is_git_root))}
 grts <- read_GRTSmh()
 ```
 
@@ -146,13 +146,14 @@ grts <- crop(grts, begrazingsplan %>% st_transform(crs = 31370))
 ```
 
 
-# Steekproeftrekking
+# Steekproefontwerp
+
+## Doelpopulatie
 
 ```{r}
 begrazing_doelpop <- begrazingsplan %>% 
   st_transform(crs = 31370) %>%
   filter(gebruik != "nachtpark")
-
 ```
 
 ```{r}
@@ -163,7 +164,7 @@ begrazing_doelpop %>%
   st_drop_geometry()
 ```
 
-```{r}
+```{r warning=FALSE}
 begrazing_doelpop <- begrazing_doelpop %>%
   st_intersection(bwkhab) 
 
@@ -232,30 +233,181 @@ begrazing_doelpop_habitat <- begrazing_doelpop_habitat %>%
 ```{r}
 begrazing_doelpop_habitat %>%
   group_by(gebruik, beheer_grof, doeltype, hab) %>%
-  summarize(opp_ha = round(sum(p_opp_m2)/1e4, 1)) %>%
+  summarize(opp_ha = round(sum(p_opp_m2)/1e4, 2)) %>%
   kable()
 ```
 
 ```{r}
 begrazing_doelpop_habitat %>%
   group_by(gebruik, beheer_grof, doeltype) %>%
-  summarize(opp_ha = round(sum(p_opp_m2)/1e4, 1)) %>%
+  summarize(opp_ha = round(sum(p_opp_m2)/1e4, 2)) %>%
   kable()
+```
+
+geherderd + extensieve begrazing < 1 ha: verwijderen uit doelpopulatie
+
+```{r}
+begrazing_doelpop_habitat <- begrazing_doelpop_habitat %>%
+  filter(!(beheer_grof == "extensieve begrazing" & 
+           gebruik == "geherderd"))
+```
+
+
+
+## Steekproefgrootte en verdeling over strata
+
+Geherderd vs weekendpark:
+
+- geherderd belangrijkste stratum => ongeveer dubbel aantal steekproefpunten 
+- geherderd + stootbegrazing: ongeveer even veel droge als natte heide
+
+Binnen weekendpark is er zowel stootbegrazing als extensieve begrazing. Misschien best stootbegrazing toevoegen bij geherderd. Dan hebben we enkel de vergelijking stootbegrazing (geherderd + weekendpark) versus extensieve begrazing (enkel weekendpark) voor zowel droge als natte heide.
+
+Laten we voor de strata stootbegrazing een steekproefgrootte van 100 vooropstellen en voor extensieve begrazing een steekproefgrootte van 50. 
+
+
+```{r}
+steekproefgrootte <- begrazing_doelpop_habitat %>%
+  group_by(beheer_grof, Name, Description, UIDN, OIDN) %>%
+  summarise(opp_droge_heide = sum(p_opp_m2[doeltype == "droge heide"])/1e4,
+            opp_natte_heide = sum(p_opp_m2[doeltype == "natte heide"])/1e4,
+            doeltype = case_when(
+              opp_droge_heide > 0 & opp_natte_heide > 0 ~ "natte heide, droge heide",
+              opp_droge_heide > 0 ~ "droge heide",
+              opp_natte_heide > 0 ~ "natte heide"
+            )
+            ) %>% 
+  group_by(beheer_grof, doeltype) %>%
+  summarize(opp_ha = round(sum(opp_droge_heide + opp_natte_heide), 2),
+            aandeel_nat = round(sum(opp_natte_heide) / sum(opp_natte_heide + opp_droge_heide),2)) %>%
+  group_by(beheer_grof) %>%
+  mutate(n = ifelse(beheer_grof == "extensieve begrazing",
+                    round(50 * opp_ha / sum(opp_ha)),
+                    round(100 * opp_ha / sum(opp_ha)))
+         ) 
+steekproefgrootte %>%
+  kable()
+```
+
+
+## Steekproeftrekking
+
+GRTS punten selecteren in elk van de strata + reservepunten
+
+
+```{r}
+te_selecteren_polygonen <- begrazing_doelpop_habitat %>% 
+  distinct(Name, Description, UIDN, OIDN, doeltype, p_opp_m2) %>%
+  group_by(Name, Description, UIDN, OIDN) %>%
+  summarise(opp_droge_heide = sum(p_opp_m2[doeltype == "droge heide"])/1e4,
+            opp_natte_heide = sum(p_opp_m2[doeltype == "natte heide"])/1e4,
+            doeltype = case_when(
+              opp_droge_heide > 0 & opp_natte_heide > 0 ~ "natte heide, droge heide",
+              opp_droge_heide > 0 ~ "droge heide",
+              opp_natte_heide > 0 ~ "natte heide"
+            )
+            )
+
+
+begrazing_doelpop <- begrazing_doelpop %>%
+  right_join(te_selecteren_polygonen)
+```
+
+
+```{r}
+ggplot(begrazing_doelpop) +
+  geom_sf(aes(fill = doeltype)) + 
+  geom_sf(alpha = 0,
+          size = 2,
+          data = begrazing_doelpop %>%
+            group_by(beheer_grof) %>%
+            summarize() %>%
+            filter(beheer_grof == "extensieve begrazing"))
+```
+
+```{r}
+grts_stars <- stars::st_as_stars(grts)
+
+grts_sf <- st_as_sf(grts_stars, as_points = TRUE, merge = FALSE)
+
+```
+
+
+```{r}
+grts_sample <- grts_sf %>%
+  st_transform(crs = 31370) %>%
+  st_join(begrazing_doelpop,
+          left = FALSE) %>%
+  left_join(steekproefgrootte %>%
+              select(-opp_ha)) %>%
+  group_by(beheer_grof, doeltype) %>% 
+  arrange(beheer_grof, doeltype, GRTSmaster_habitats) %>%
+  slice(1:n[1]) %>%
+  mutate(grts_volgorde = 1:n())
+
+
+
+```
+
+
+```{r}
+pal <- colorFactor(palette = topo.colors(3),
+                   factor(grts_sample$doeltype))
+
+pal2 <- colorFactor(palette = "Greens",
+                    factor(grts_sample$beheer_grof))
+
+leaflet(grts_sample %>%
+          st_transform(crs = 4326)) %>%
+  addProviderTiles(providers$Esri.WorldImagery,
+                   group = "World Imagery") %>%
+  addPolygons(data = begrazing_doelpop %>%
+                mutate(doeltype = factor(doeltype)) %>%
+                st_transform(crs = 4326), 
+              stroke = FALSE,
+              fillColor = ~pal(doeltype),
+              fillOpacity = 0.7,
+              group = "polygons"
+              ) %>%
+  addCircles(radius = 18,
+             color = ~pal2(beheer_grof),
+             fillColor = ~pal(doeltype),
+             fillOpacity = 0.7,
+             popup = ~htmlEscape(GRTSmaster_habitats),
+             label = ~htmlEscape(grts_volgorde),
+             labelOptions = labelOptions(permanent = TRUE, noHide = TRUE,
+                                         offset = c(0,0), textOnly = TRUE),
+             group = "grts"
+             ) %>%
+  addLegend(pal = pal, values = ~doeltype, group = "polygons") %>%
+  addLegend(pal = pal2, values = ~beheer_grof, group = "grts")
 ```
 
 
 
 
-Verder filteren van doelpopulatie en samennemen van habitattypes minder categorieën.
-
-Daarna
-
-- oppervlaktes berekenen van de verschillende strata 
-- steekproefgrootte verdelen over strata
-- GRTS punten selecteren in elk van de strata + reservepunten
-- geselecteerde punten + proefvlakcirkels exporteren naar kml bestand
+## Geselecteerde punten + proefvlakcirkels exporteren naar kml bestand
 
 
+```{r}
+st_write(grts_sample %>%
+           st_transform(crs = 4326), 
+         dsn = find_root_file(
+           "begrazing_monitoring/data",
+           "grts_sample_punten.kml", 
+           criterion = is_git_root), 
+         driver = "KML")
+
+st_write(grts_sample %>%
+           st_buffer(dist = 18) %>%
+           st_transform(crs = 4326), 
+         dsn = find_root_file(
+           "begrazing_monitoring/data",
+           "grts_sample_18m_cirkels.kml", 
+           criterion = is_git_root), 
+         driver = "KML")
+
+```
 
 
 
