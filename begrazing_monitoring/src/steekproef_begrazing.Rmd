@@ -361,6 +361,10 @@ leaflet(grts_sample %>%
           st_transform(crs = 4326)) %>%
   addProviderTiles(providers$Esri.WorldImagery,
                    group = "World Imagery") %>%
+  addRasterImage(x = grts, 
+                 opacity = 0.5,
+                 project = TRUE,
+                 group = "grtsraster") %>%
   addPolygons(data = begrazing_doelpop %>%
                 mutate(doeltype = factor(doeltype)) %>%
                 st_transform(crs = 4326), 
@@ -380,7 +384,11 @@ leaflet(grts_sample %>%
              group = "grts"
              ) %>%
   addLegend(pal = pal, values = ~doeltype, group = "polygons") %>%
-  addLegend(pal = pal2, values = ~beheer_grof, group = "grts")
+  addLegend(pal = pal2, values = ~beheer_grof, group = "grts") %>%
+  addLayersControl(
+    overlayGroups = c("grtsraster"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
 ```
 
 
@@ -389,7 +397,7 @@ leaflet(grts_sample %>%
 ## Geselecteerde punten + proefvlakcirkels exporteren naar kml bestand
 
 
-```{r}
+```{r eval=FALSE}
 st_write(grts_sample %>%
            st_transform(crs = 4326), 
          dsn = find_root_file(
